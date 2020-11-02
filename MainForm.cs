@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Drawing.Text;
+using System.IO;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -6,6 +9,8 @@ namespace Etwaps_Detector
 {
     public partial class MainForm : Form
     {
+        private readonly string Version = "201102";
+
         public MainForm()
         {
             InitializeComponent();
@@ -89,6 +94,48 @@ namespace Etwaps_Detector
             btn_Dashboard.Enabled = false;
             btn_Users.Enabled = true;
             btn_Console.Enabled = true;
+        }
+
+        public string getVersion()
+        {
+            return Version;
+        }
+
+        private void checkForUpdate()
+        {
+            string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
+            string AppName = "Etwap.exe";
+            string ServerVersion;
+            string ServerVersionName = "Release.txt";
+
+            WebRequest req = WebRequest.Create(URL + ServerVersionName);
+            WebResponse res = req.GetResponse();
+            Stream str = res.GetResponseStream();
+            StreamReader stdr = new StreamReader(str);
+            ServerVersion = stdr.ReadLine();
+
+            if (getVersion() != ServerVersion)
+            {
+                WebClient client = new WebClient();
+                byte[] appdata = client.DownloadData(URL + AppName);
+
+                if (SaveFileDialogUpdate.ShowDialog() == DialogResult.OK)
+                {
+                    using (FileStream fs = File.Create(SaveFileDialogUpdate.FileName))
+                    {
+                        fs.Write(appdata, 0, appdata.Length);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Etwap is up-to-date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            checkForUpdate();
         }
     }
 }
