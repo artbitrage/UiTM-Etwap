@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing.Text;
 using System.IO;
 using System.Net;
 using System.Runtime.InteropServices;
@@ -9,7 +8,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201102";
+        private readonly string Version = "201103";
 
         public MainForm()
         {

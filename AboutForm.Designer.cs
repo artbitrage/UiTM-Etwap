@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelDesc = new System.Windows.Forms.Panel();
+            this.labelSubtitle = new System.Windows.Forms.Label();
+            this.labelVersion = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.panelDev = new System.Windows.Forms.Panel();
             this.panelBottom = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.labelVersion = new System.Windows.Forms.Label();
-            this.labelSubtitle = new System.Windows.Forms.Label();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelDesc.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,21 @@
             resources.ApplyResources(this.panelDesc, "panelDesc");
             this.panelDesc.Name = "panelDesc";
             // 
+            // labelSubtitle
+            // 
+            resources.ApplyResources(this.labelSubtitle, "labelSubtitle");
+            this.labelSubtitle.Name = "labelSubtitle";
+            // 
+            // labelVersion
+            // 
+            resources.ApplyResources(this.labelVersion, "labelVersion");
+            this.labelVersion.Name = "labelVersion";
+            // 
+            // labelTitle
+            // 
+            resources.ApplyResources(this.labelTitle, "labelTitle");
+            this.labelTitle.Name = "labelTitle";
+            // 
             // panelDev
             // 
             resources.ApplyResources(this.panelDev, "panelDev");
@@ -62,21 +77,6 @@
             // 
             resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Name = "panelBottom";
-            // 
-            // labelTitle
-            // 
-            resources.ApplyResources(this.labelTitle, "labelTitle");
-            this.labelTitle.Name = "labelTitle";
-            // 
-            // labelVersion
-            // 
-            resources.ApplyResources(this.labelVersion, "labelVersion");
-            this.labelVersion.Name = "labelVersion";
-            // 
-            // labelSubtitle
-            // 
-            resources.ApplyResources(this.labelSubtitle, "labelSubtitle");
-            this.labelSubtitle.Name = "labelSubtitle";
             // 
             // panelLogo
             // 
