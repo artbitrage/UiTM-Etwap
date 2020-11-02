@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Etwaps_Detector
+namespace Etwap_Detector
 {
     public partial class AboutForm : Form
     {

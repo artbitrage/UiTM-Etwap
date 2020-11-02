@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Etwaps_Detector
+namespace Etwap_Detector
 {
     internal static class Program
     {

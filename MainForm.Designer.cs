@@ -1,4 +1,4 @@
-﻿namespace Etwaps_Detector
+﻿namespace Etwap_Detector
 {
     partial class MainForm
     {
@@ -72,7 +72,7 @@
             // 
             // panel_Logo
             // 
-            this.panel_Logo.BackgroundImage = global::Etwaps_Detector.Properties.Resources.android_chrome_96x96;
+            this.panel_Logo.BackgroundImage = global::Etwap_Detector.Properties.Resources.android_chrome_96x96;
             resources.ApplyResources(this.panel_Logo, "panel_Logo");
             this.panel_Logo.Name = "panel_Logo";
             // 

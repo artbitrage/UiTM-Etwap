@@ -1,4 +1,4 @@
-﻿namespace Etwaps_Detector
+﻿namespace Etwap_Detector
 {
     partial class ConsoleForm
     {

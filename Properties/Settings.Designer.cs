@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Etwaps_Detector.Properties
+namespace Etwap_Detector.Properties
 {
 
 
