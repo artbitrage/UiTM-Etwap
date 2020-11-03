@@ -8,7 +8,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201104";
+        private readonly string Version = "201103";
 
         public MainForm()
         {
@@ -71,17 +71,11 @@ namespace Etwap_Detector
 
         private void consoleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openChildForm(new DashboardForm());
+            openChildForm(new ConsoleForm());
 
-            [DllImport("kernel32.dll", SetLastError = true)]
-            [return: MarshalAs(UnmanagedType.Bool)]
-            static extern bool AllocConsole();
-
-            AllocConsole();
-
-            string msg_Intro = "Hello World!";
-
-            Console.WriteLine(msg_Intro);
+            btn_Dashboard.Enabled = true;
+            btn_Users.Enabled = true;
+            btn_Console.Enabled = false;
         }
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)

@@ -461,7 +461,7 @@
     <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>UpdateForm</value>
+    <value>New Update Available!</value>
   </data>
   <data name="&gt;&gt;SaveFileDialogUpdate.Name" xml:space="preserve">
     <value>SaveFileDialogUpdate</value>
