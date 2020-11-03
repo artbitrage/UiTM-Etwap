@@ -48,6 +48,8 @@ namespace Etwap_Detector
 
         private void btn_Console_Click(object sender, EventArgs e)
         {
+            openChildForm(new ConsoleForm());
+
             btn_Dashboard.Enabled = true;
             btn_Users.Enabled = true;
             btn_Console.Enabled = false;

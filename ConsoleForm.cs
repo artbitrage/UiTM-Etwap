@@ -13,6 +13,12 @@ namespace Etwap_Detector
 
         private void ConsoleForm_Load(object sender, EventArgs e)
         {
+            ConsoleBox.ReadOnly = true;
+            ConsoleBox.Text = DashboardForm.ConsoleLog;
+        }
+
+        private void btn_CMD_Click(object sender, EventArgs e)
+        {
             AllocConsole();
 
             [DllImport("kernel32.dll", SetLastError = true)]

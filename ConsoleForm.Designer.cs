@@ -29,21 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsoleForm));
+            this.ConsoleBox = new System.Windows.Forms.TextBox();
+            this.btn_Export = new System.Windows.Forms.Button();
+            this.btn_CMD = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // ConsoleBox
+            // 
+            this.ConsoleBox.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.ConsoleBox, "ConsoleBox");
+            this.ConsoleBox.ForeColor = System.Drawing.Color.White;
+            this.ConsoleBox.Name = "ConsoleBox";
+            // 
+            // btn_Export
+            // 
+            resources.ApplyResources(this.btn_Export, "btn_Export");
+            this.btn_Export.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.UseVisualStyleBackColor = true;
+            // 
+            // btn_CMD
+            // 
+            resources.ApplyResources(this.btn_CMD, "btn_CMD");
+            this.btn_CMD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CMD.Name = "btn_CMD";
+            this.btn_CMD.UseVisualStyleBackColor = true;
+            this.btn_CMD.Click += new System.EventHandler(this.btn_CMD_Click);
             // 
             // ConsoleForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_CMD);
+            this.Controls.Add(this.btn_Export);
+            this.Controls.Add(this.ConsoleBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConsoleForm";
             this.Load += new System.EventHandler(this.ConsoleForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox ConsoleBox;
+        private System.Windows.Forms.Button btn_Export;
+        private System.Windows.Forms.Button btn_CMD;
     }
 }

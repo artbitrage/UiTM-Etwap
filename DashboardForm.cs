@@ -14,6 +14,8 @@ namespace Etwap_Detector
             InitializeComponent();
         }
 
+        public static string ConsoleLog = "";
+
         private string RunScript(string script)
         {
             Runspace runspace = RunspaceFactory.CreateRunspace();
@@ -33,12 +35,16 @@ namespace Etwap_Detector
         {
             ConsoleBox.Clear();
             ConsoleBox.Text = RunScript("netsh wlan show network mode=bssid");
+
+            ConsoleLog = ConsoleBox.Text;
         }
 
         private void btnExec_Click(object sender, EventArgs e)
         {
             SubConsoleBox.Clear();
             SubConsoleBox.Text = RunScript(CmdBox.Text);
+
+            ConsoleLog = SubConsoleBox.Text;
         }
     }
 }
