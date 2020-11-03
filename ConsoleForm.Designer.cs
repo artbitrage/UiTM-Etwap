@@ -47,6 +47,7 @@
             this.btn_Export.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Export.Name = "btn_Export";
             this.btn_Export.UseVisualStyleBackColor = true;
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // btn_CMD
             // 

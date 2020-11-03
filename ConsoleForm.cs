@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -24,6 +25,13 @@ namespace Etwap_Detector
             [DllImport("kernel32.dll", SetLastError = true)]
             [return: MarshalAs(UnmanagedType.Bool)]
             static extern bool AllocConsole();
+        }
+
+        private void btn_Export_Click(object sender, EventArgs e)
+        {
+            TextWriter txt = new StreamWriter("Report.txt");
+            txt.Write(ConsoleBox.Text);
+            txt.Close();
         }
     }
 }
