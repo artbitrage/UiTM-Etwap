@@ -1,14 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201103";
+        private readonly string Version = "201104";
 
         public MainForm()
         {
@@ -111,6 +110,7 @@ namespace Etwap_Detector
             if (getVersion() != ServerVersion)
             {
                 UpdateForm updateForm = new UpdateForm();
+                updateForm.StartPosition = FormStartPosition.CenterParent;
                 updateForm.Show();
             }
             else

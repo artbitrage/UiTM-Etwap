@@ -32,6 +32,8 @@
             this.ConsoleBox = new System.Windows.Forms.TextBox();
             this.btn_Export = new System.Windows.Forms.Button();
             this.btn_CMD = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // ConsoleBox
@@ -57,6 +59,11 @@
             this.btn_CMD.UseVisualStyleBackColor = true;
             this.btn_CMD.Click += new System.EventHandler(this.btn_CMD_Click);
             // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.CheckFileExists = true;
+            this.saveFileDialog.DefaultExt = "txt";
+            // 
             // ConsoleForm
             // 
             resources.ApplyResources(this, "$this");
@@ -79,5 +86,7 @@
         private System.Windows.Forms.TextBox ConsoleBox;
         private System.Windows.Forms.Button btn_Export;
         private System.Windows.Forms.Button btn_CMD;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }
 }

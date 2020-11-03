@@ -29,9 +29,15 @@ namespace Etwap_Detector
 
         private void btn_Export_Click(object sender, EventArgs e)
         {
-            TextWriter txt = new StreamWriter("Report.txt");
-            txt.Write(ConsoleBox.Text);
-            txt.Close();
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                TextWriter txt = new StreamWriter(folderBrowserDialog.SelectedPath + "Report.txt");
+                // write a line of text to the file
+                txt.WriteLine(ConsoleBox.Text);
+                // close the stream
+                txt.Close();
+                MessageBox.Show("Saved to " + folderBrowserDialog.SelectedPath + "\\Report.txt", "Saved Log File", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

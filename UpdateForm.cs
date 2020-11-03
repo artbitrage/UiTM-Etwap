@@ -25,9 +25,7 @@ namespace Etwap_Detector
             using (var response = webRequest.GetResponse())
             using (var content = response.GetResponseStream())
             using (var reader = new StreamReader(content))
-            {
-                var strContent = reader.ReadToEnd();
-            }
+            { var strContent = reader.ReadToEnd(); }
 
             HttpClient client = new HttpClient();
             string result = client.GetStringAsync(@"https://servdocs.syafiqhadzir.dev/Projects/Etwap/ReleaseNote.txt").Result;
