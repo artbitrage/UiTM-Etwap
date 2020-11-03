@@ -129,6 +129,9 @@
   <data name="btn_Console.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lbl_MainTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 16</value>
   </data>
@@ -156,9 +159,6 @@
   <data name="btn_Console.Text" xml:space="preserve">
     <value>Console</value>
   </data>
-  <data name="btn_Dashboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
   <data name="btn_Users.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
@@ -173,9 +173,6 @@
   </data>
   <data name="&gt;&gt;MainPanel.Name" xml:space="preserve">
     <value>MainPanel</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>793, 519</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
@@ -576,9 +573,6 @@
   <data name="btn_Console.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 328</value>
   </data>
-  <data name="&gt;&gt;SaveFileDialogUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;lbl_MainVersion.Parent" xml:space="preserve">
     <value>pnl_MainVersion</value>
   </data>
@@ -590,6 +584,9 @@
   </data>
   <data name="&gt;&gt;lbl_MainVersion.Name" xml:space="preserve">
     <value>lbl_MainVersion</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -656,14 +653,17 @@
   <data name="&gt;&gt;toolStripMenu.Name" xml:space="preserve">
     <value>toolStripMenu</value>
   </data>
-  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
-    <value>menuStrip</value>
+  <data name="btn_Users.Text" xml:space="preserve">
+    <value>Users</value>
   </data>
   <data name="btn_Dashboard.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btn_Users.Text" xml:space="preserve">
-    <value>Users</value>
+  <data name="&gt;&gt;SaveFileDialogUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_Users.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -770,8 +770,8 @@
   <data name="btn_Console.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>793, 519</value>
   </data>
   <data name="panel_Logo.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 40</value>
@@ -794,8 +794,8 @@
   <data name="pnl_MainVersion.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 47</value>
   </data>
-  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btn_Dashboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="&gt;&gt;btn_Users.Parent" xml:space="preserve">
     <value>MainPanel</value>

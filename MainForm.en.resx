@@ -130,6 +130,9 @@
         HfVlYUcyLO3LUjb25YWstahKliD4Ae/VXaw7u8/VAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="lbl_MainVersion.Text" xml:space="preserve">
+    <value>v0.1a (Build 201104)</value>
+  </data>
   <data name="btn_Users.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAe5JREFUSEuV
