@@ -118,136 +118,42 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ConsoleBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Console, 8.25pt</value>
+  <data name="btn_Console.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAYVJREFUSEvt
+        lU0rRGEUxy8bbOULWFkgb3kp7KRsJVsREpKFl1I+gmSr5DsoX0D5DrKVyDth5e3/O3eecefOfa6ZaaYs
+        5le/uuc8554zPc/TnaDKf6BfNoWPlaVBvstjiyrMmPyWmxaVgTW5FT7msScZ1mFRWEd9SWxIml3LOhIx
+        zuWlrJGsU0c97xXFquTFG9lGIkazZP3AopAWeSXJF7y1K/JLPshuEgksS5pOWPRLu7yVrK2TSGNWMuhR
+        9pDwwA38kI0W5cIZ3kn6LJFIYkZ+yifZS8JDvXyTJxYl0ynvJQMXSUQZlwyiSdogGJVsk++WOuhDP/rS
+        P0urdHvNmaWxK6nznaeDPtTRl/45RPeaC+DjTHLruPI+5uSfZ5+618Jd+UOLkin07I0u6QYukIjAD2DY
+        pEX5TEs3qI9EIQzIZ8nAeRIZjqTvyk9JBr3KYRLFMChfMvI5QhqdyjisuVreKwn+r4bCx2BEsoXbFuVD
+        HfVlYUcyLO3LUjb25YWstahKliD4Ae/VXaw7u8/VAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="ConsoleBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="btn_Users.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAe5JREFUSEuV
+        1DtoFFEUh/EFX0gKFUTBNFF81IJioYWgJBAbba3UUhFRERsFC8FXoZUpFJUUCSnURix8gY2BFLbaCD46
+        ba18f9+yVzZnz+zM/OHHsveec3ZmdmY6IWsxjW/4jKtYgSaxznr77HeO89IsxQL+BvfRJA8Qe99iGQZy
+        ALG42IBhGUXWp0kM5ASyYu2G2YazuNb73AqzB1mfnDuQvciKf2IdbuBXb63w+3Wsh3X9e4Vz0zxBLL4M
+        zySu97sC6+K689KswXJcxBu8wDFsRjyjyLPaBOvts/8CnOfcRTkFB85hAt6yq7EFp5H9QOQM61fBfuc4
+        z7kn8T/vkQ24B/+TbC+yzvps7x26GcEfZEXPcD6sVTmH52Gt+I2VGPqMfMUuVB1M4f5O+ObI9tV9Vv1j
+        s83iOHz1ZHuFb49hz6k2ovua+tRbKDzSO9gOj8hL8Aj9NcVDuG+d9XcRr8RHLEE3Y7iFp/C6H8FhfIHF
+        L+Gd5h02hce4jXG47r511tt3FM5x3k04vzIHEY/OW9izOINDvU+/x2fQPvsbxdP9gP4BbS26bMOyD9mA
+        tpxTm0vImttyTm1mkTW3NYPavELW3JZzavMaWXNbzqlN1cu0LefUxrfAD2QDmvLZ24FG2Y95fEc2rIr1
+        9tkf0un8A/5Nllpc8HmCAAAAAElFTkSuQmCC
+</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ConsoleBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ConsoleBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="ConsoleBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 461</value>
-  </data>
-  <data name="ConsoleBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;ConsoleBox.Name" xml:space="preserve">
-    <value>ConsoleBox</value>
-  </data>
-  <data name="&gt;&gt;ConsoleBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConsoleBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ConsoleBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="btn_Export.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btn_Export.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_Export.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Export.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="btn_Export.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 485</value>
-  </data>
-  <data name="btn_Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_Export.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btn_Export.Text" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="&gt;&gt;btn_Export.Name" xml:space="preserve">
-    <value>btn_Export</value>
-  </data>
-  <data name="&gt;&gt;btn_Export.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Export.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Export.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="btn_CMD.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btn_CMD.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_CMD.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btn_CMD.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_CMD.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="btn_CMD.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_CMD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 485</value>
-  </data>
-  <data name="btn_CMD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_CMD.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btn_CMD.Text" xml:space="preserve">
-    <value>CMD</value>
-  </data>
-  <data name="&gt;&gt;btn_CMD.Name" xml:space="preserve">
-    <value>btn_CMD</value>
-  </data>
-  <data name="&gt;&gt;btn_CMD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_CMD.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_CMD.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 21</value>
-  </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 520</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+  <data name="btn_Dashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAUZJREFUSEvt
+        1TErhVEYwPGr2HwDRZmIjGKxUcoHsCgWo9UmH8DEIPkOlEEZGFgtDBaDSZSiLITw/9c5t+N2uO9xbe5T
+        v3re857neXrvufe9tXb8ZXRjJTCPMYetwPxX0YNTfATn6IOxj7huXhzjuIUNHgLzG4yhpQE+8jMsvsRQ
+        YO7aE65DXjSgA6t4h4Un6MceDkJ+iNi4aIAHuINYtI1BXCRrPsEwNpI1NR3gwZ3Bza9YwiTuw1rKNe+5
+        x72uXaEX2fAwPTg3PmIGi3gJazlvWMYU4uHfYQJfYhbpYY7AjyZt9hP3WhMP3172rMcavHGEARyH6xLW
+        WGsPr+1Zj07Mowu7aCyuylp7LMCe2Uh/OKUqfU2/G7AOD13muT0tDZhGDPPcnn8ywPdNrrjKAGubxig2
+        Ef9EIt89Mcwb71tjbTtKolb7BBmV1+O1fYqoAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -504,17 +410,5 @@
         XP+jeFz/o3hc/6N4XP/PuauYAAAAAPgfAADwDwAA4AcAAMADAADAAwAAgAEAAIABAACAAQAAgAEAAIAB
         AACAAQAAgAEAAIABAACAAQAAgAEAAIABAAA=
 </value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>ConsoleForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ConsoleForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

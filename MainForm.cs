@@ -105,7 +105,6 @@ namespace Etwap_Detector
         private void checkForUpdate()
         {
             string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
-            string AppName = "Etwap.exe";
             string ServerVersion;
             string ServerVersionName = "Release.txt";
 
@@ -117,16 +116,8 @@ namespace Etwap_Detector
 
             if (getVersion() != ServerVersion)
             {
-                WebClient client = new WebClient();
-                byte[] appdata = client.DownloadData(URL + AppName);
-
-                if (SaveFileDialogUpdate.ShowDialog() == DialogResult.OK)
-                {
-                    using (FileStream fs = File.Create(SaveFileDialogUpdate.FileName))
-                    {
-                        fs.Write(appdata, 0, appdata.Length);
-                    }
-                }
+                UpdateForm updateForm = new UpdateForm();
+                updateForm.Show();
             }
             else
             {

@@ -44,7 +44,6 @@
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.SaveFileDialogUpdate = new System.Windows.Forms.SaveFileDialog();
             this.MainPanel.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -72,8 +71,8 @@
             // 
             // panel_Logo
             // 
-            this.panel_Logo.BackgroundImage = global::Etwap_Detector.Properties.Resources.android_chrome_96x96;
             resources.ApplyResources(this.panel_Logo, "panel_Logo");
+            this.panel_Logo.BackgroundImage = global::Etwap_Detector.Properties.Resources.android_chrome_96x96;
             this.panel_Logo.Name = "panel_Logo";
             // 
             // pnl_MainVersion
@@ -111,20 +110,20 @@
             // 
             // menuStrip
             // 
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenu});
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
             // toolStripMenu
             // 
+            resources.ApplyResources(this.toolStripMenu, "toolStripMenu");
             this.toolStripMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
             this.consoleToolStripMenuItem,
             this.updateToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.toolStripMenu.Name = "toolStripMenu";
-            resources.ApplyResources(this.toolStripMenu, "toolStripMenu");
             // 
             // aboutToolStripMenuItem
             // 
@@ -140,8 +139,8 @@
             // 
             // updateToolStripMenuItem
             // 
-            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             resources.ApplyResources(this.updateToolStripMenuItem, "updateToolStripMenuItem");
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
@@ -192,6 +191,5 @@
         private System.Windows.Forms.Button btn_Console;
         private System.Windows.Forms.ToolStripMenuItem consoleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
-        private System.Windows.Forms.SaveFileDialog SaveFileDialogUpdate;
     }
 }
