@@ -79,6 +79,7 @@
             this.btn_Filter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Filter.Name = "btn_Filter";
             this.btn_Filter.UseVisualStyleBackColor = true;
+            this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click);
             // 
             // panel_Console
             // 
