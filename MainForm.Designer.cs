@@ -44,15 +44,18 @@
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.panelUpdate = new System.Windows.Forms.Panel();
+            this.lbl_Update = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
             this.menuStrip.SuspendLayout();
+            this.panelUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
             resources.ApplyResources(this.MainPanel, "MainPanel");
-            this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainPanel.Controls.Add(this.panelUpdate);
             this.MainPanel.Controls.Add(this.btn_Console);
             this.MainPanel.Controls.Add(this.panel_Logo);
             this.MainPanel.Controls.Add(this.pnl_MainVersion);
@@ -71,8 +74,8 @@
             // 
             // panel_Logo
             // 
-            resources.ApplyResources(this.panel_Logo, "panel_Logo");
             this.panel_Logo.BackgroundImage = global::Etwap_Detector.Properties.Resources.android_chrome_96x96;
+            resources.ApplyResources(this.panel_Logo, "panel_Logo");
             this.panel_Logo.Name = "panel_Logo";
             // 
             // pnl_MainVersion
@@ -110,20 +113,20 @@
             // 
             // menuStrip
             // 
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenu});
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
             // toolStripMenu
             // 
-            resources.ApplyResources(this.toolStripMenu, "toolStripMenu");
             this.toolStripMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
             this.consoleToolStripMenuItem,
             this.updateToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.toolStripMenu.Name = "toolStripMenu";
+            resources.ApplyResources(this.toolStripMenu, "toolStripMenu");
             // 
             // aboutToolStripMenuItem
             // 
@@ -139,8 +142,8 @@
             // 
             // updateToolStripMenuItem
             // 
-            resources.ApplyResources(this.updateToolStripMenuItem, "updateToolStripMenuItem");
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            resources.ApplyResources(this.updateToolStripMenuItem, "updateToolStripMenuItem");
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
@@ -154,6 +157,17 @@
             resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            // 
+            // panelUpdate
+            // 
+            resources.ApplyResources(this.panelUpdate, "panelUpdate");
+            this.panelUpdate.Controls.Add(this.lbl_Update);
+            this.panelUpdate.Name = "panelUpdate";
+            // 
+            // lbl_Update
+            // 
+            resources.ApplyResources(this.lbl_Update, "lbl_Update");
+            this.lbl_Update.Name = "lbl_Update";
             // 
             // MainForm
             // 
@@ -170,6 +184,8 @@
             this.pnl_MainVersion.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            this.panelUpdate.ResumeLayout(false);
+            this.panelUpdate.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -191,5 +207,7 @@
         private System.Windows.Forms.Button btn_Console;
         private System.Windows.Forms.ToolStripMenuItem consoleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.Panel panelUpdate;
+        private System.Windows.Forms.Label lbl_Update;
     }
 }

@@ -7,11 +7,21 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201104";
+        private string Version = "201106";
+
+        private string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
+        private string ServerVersion;
+        private string ServerVersionName = "Release.txt";
 
         public MainForm()
         {
             InitializeComponent();
+
+            WebRequest req = WebRequest.Create(URL + ServerVersionName);
+            WebResponse res = req.GetResponse();
+            Stream str = res.GetResponseStream();
+            StreamReader stdr = new StreamReader(str);
+            ServerVersion = stdr.ReadLine();
         }
 
         private Form activeForm = null;
@@ -88,6 +98,15 @@ namespace Etwap_Detector
             btn_Dashboard.Enabled = false;
             btn_Users.Enabled = true;
             btn_Console.Enabled = true;
+
+            if (getVersion() != ServerVersion)
+            {
+                lbl_Update.Text = "New update available!";
+            }
+            else
+            {
+                lbl_Update.Text = "Etwap is up-to-date!";
+            }
         }
 
         public string getVersion()
@@ -97,16 +116,6 @@ namespace Etwap_Detector
 
         private void checkForUpdate()
         {
-            string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
-            string ServerVersion;
-            string ServerVersionName = "Release.txt";
-
-            WebRequest req = WebRequest.Create(URL + ServerVersionName);
-            WebResponse res = req.GetResponse();
-            Stream str = res.GetResponseStream();
-            StreamReader stdr = new StreamReader(str);
-            ServerVersion = stdr.ReadLine();
-
             if (getVersion() != ServerVersion)
             {
                 UpdateForm updateForm = new UpdateForm();
