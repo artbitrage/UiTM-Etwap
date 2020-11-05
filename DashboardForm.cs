@@ -16,6 +16,7 @@ namespace Etwap_Detector
 
         public static string ConsoleLog = "";
         public static string BSSID = "";
+        public static string Detailed = "";
         public static string Aggressive = "";
 
         private string RunScript(string script)
@@ -48,6 +49,20 @@ namespace Etwap_Detector
                 BSSID = " networks";
             }
 
+            if (checkBox2.Checked == true)
+            {
+                BSSID = "";
+                Detailed = " all";
+                if (checkBox3.Checked == true)
+                {
+                    checkBox1.Checked = false;
+                }
+            }
+            if (checkBox2.Checked == false)
+            {
+                Detailed = "";
+            }
+
             if (checkBox3.Checked == true)
             {
                 BSSID = "";
@@ -62,7 +77,7 @@ namespace Etwap_Detector
                 Aggressive = "";
             }
 
-            ConsoleBox.Text = RunScript("netsh wlan show" + BSSID + Aggressive);
+            ConsoleBox.Text = RunScript("netsh wlan show" + BSSID + Detailed + Aggressive);
 
             ConsoleLog = ConsoleBox.Text;
         }

@@ -135,6 +135,9 @@
   <data name="btn_Scan.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="ConsoleBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
@@ -170,9 +173,6 @@
   </data>
   <data name="&gt;&gt;btn_Deauth.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel_Config.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;panel_Console.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -210,9 +210,6 @@
   <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
     <value>checkBox5</value>
   </data>
-  <data name="btn_Filter.Text" xml:space="preserve">
-    <value>Filter</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>DashboardForm</value>
   </data>
@@ -224,6 +221,9 @@
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -538,13 +538,7 @@
   <data name="&gt;&gt;btn_Deauth.Name" xml:space="preserve">
     <value>btn_Deauth</value>
   </data>
-  <data name="&gt;&gt;btn_Scan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="SubConsoleBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;panel3.Name" xml:space="preserve">
@@ -564,9 +558,6 @@
   </data>
   <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;btn_Scan.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -649,6 +640,9 @@
   <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
+  <data name="CmdBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 21</value>
+  </data>
   <data name="btn_Nmap.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -709,11 +703,14 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
+  <data name="&gt;&gt;ConsoleBox.Name" xml:space="preserve">
+    <value>ConsoleBox</value>
+  </data>
   <data name="panel_Console.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="checkBox2.Text" xml:space="preserve">
-    <value>Show Channel</value>
+    <value>Detailed Scan</value>
   </data>
   <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 21</value>
@@ -763,6 +760,9 @@
   <data name="&gt;&gt;btn_Nmap.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="checkBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
+  </data>
   <data name="panel_Console.Size" type="System.Drawing.Size, System.Drawing">
     <value>528, 184</value>
   </data>
@@ -808,8 +808,8 @@
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 240</value>
   </data>
-  <data name="&gt;&gt;ConsoleBox.Name" xml:space="preserve">
-    <value>ConsoleBox</value>
+  <data name="&gt;&gt;btn_Scan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -817,7 +817,7 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Preferences</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="SubConsoleBox.Location" type="System.Drawing.Point, System.Drawing">
@@ -838,8 +838,8 @@
   <data name="ConsoleBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="ConsoleBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>624, 520</value>
@@ -856,11 +856,11 @@
   <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 176</value>
   </data>
-  <data name="checkBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
+  <data name="&gt;&gt;panel_Config.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="CmdBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 21</value>
+  <data name="btn_Filter.Text" xml:space="preserve">
+    <value>Filter</value>
   </data>
   <data name="&gt;&gt;ConsoleBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -922,9 +922,6 @@
   <metadata name="btn_Scan.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -943,13 +940,16 @@
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
   </metadata>
+  <metadata name="btnExec.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="checkBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="btnExec.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="checkBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
