@@ -89,18 +89,18 @@
             // 
             // ConsoleBox
             // 
-            resources.ApplyResources(this.ConsoleBox, "ConsoleBox");
             this.ConsoleBox.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.ConsoleBox, "ConsoleBox");
             this.ConsoleBox.ForeColor = System.Drawing.Color.White;
             this.ConsoleBox.Name = "ConsoleBox";
             // 
             // panel_Config
             // 
-            resources.ApplyResources(this.panel_Config, "panel_Config");
             this.panel_Config.Controls.Add(this.btnExec);
             this.panel_Config.Controls.Add(this.CmdBox);
             this.panel_Config.Controls.Add(this.SubConsoleBox);
             this.panel_Config.Controls.Add(this.panel3);
+            resources.ApplyResources(this.panel_Config, "panel_Config");
             this.panel_Config.Name = "panel_Config";
             // 
             // btnExec
@@ -118,20 +118,20 @@
             // 
             // SubConsoleBox
             // 
-            resources.ApplyResources(this.SubConsoleBox, "SubConsoleBox");
             this.SubConsoleBox.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.SubConsoleBox, "SubConsoleBox");
             this.SubConsoleBox.ForeColor = System.Drawing.Color.White;
             this.SubConsoleBox.Name = "SubConsoleBox";
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.checkBox5);
             this.panel3.Controls.Add(this.checkBox4);
             this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.checkBox2);
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // checkBox5
@@ -147,6 +147,7 @@
             this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 

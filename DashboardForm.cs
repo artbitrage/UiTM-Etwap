@@ -18,6 +18,7 @@ namespace Etwap_Detector
         public static string BSSID = " networks";
         public static string Detailed = "";
         public static string Aggressive = "";
+        public static string Profile = "";
 
         private string RunScript(string script)
         {
@@ -36,7 +37,7 @@ namespace Etwap_Detector
 
         private void btn_Scan_Click(object sender, EventArgs e)
         {
-            ConsoleBox.Text = RunScript("netsh wlan show" + BSSID + Detailed + Aggressive);
+            ConsoleBox.Text = RunScript("netsh wlan show" + BSSID + Detailed + Aggressive + Profile);
 
             ConsoleLog = ConsoleBox.Text;
 
@@ -45,6 +46,9 @@ namespace Etwap_Detector
                 case CheckState.Checked:
 
                     checkBox1.Checked = false;
+                    checkBox2.Enabled = true;
+                    checkBox3.Enabled = true;
+                    checkBox4.Enabled = true;
                     break;
             }
 
@@ -55,6 +59,7 @@ namespace Etwap_Detector
                     checkBox2.Checked = false;
                     checkBox1.Enabled = true;
                     checkBox3.Enabled = true;
+                    checkBox4.Enabled = true;
                     break;
             }
 
@@ -65,12 +70,25 @@ namespace Etwap_Detector
                     checkBox3.Checked = false;
                     checkBox1.Enabled = true;
                     checkBox2.Enabled = true;
+                    checkBox4.Enabled = true;
+                    break;
+            }
+
+            switch (checkBox4.CheckState)
+            {
+                case CheckState.Checked:
+
+                    checkBox4.Checked = false;
+                    checkBox1.Enabled = true;
+                    checkBox2.Enabled = true;
+                    checkBox3.Enabled = true;
                     break;
             }
 
             BSSID = " networks";
             Detailed = "";
             Aggressive = "";
+            Profile = "";
         }
 
         private void btnExec_Click(object sender, EventArgs e)
@@ -98,6 +116,14 @@ namespace Etwap_Detector
             BSSID = " networks mode=bssid";
             Detailed = "";
             Aggressive = "";
+            Profile = "";
+
+            checkBox2.Checked = false;
+            checkBox2.Enabled = false;
+            checkBox3.Checked = false;
+            checkBox3.Enabled = false;
+            checkBox4.Checked = false;
+            checkBox4.Enabled = false;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -105,11 +131,14 @@ namespace Etwap_Detector
             BSSID = "";
             Detailed = " all";
             Aggressive = "";
+            Profile = "";
 
             checkBox1.Checked = false;
             checkBox1.Enabled = false;
             checkBox3.Checked = false;
             checkBox3.Enabled = false;
+            checkBox4.Checked = false;
+            checkBox4.Enabled = false;
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
@@ -117,11 +146,29 @@ namespace Etwap_Detector
             BSSID = "";
             Detailed = "";
             Aggressive = " interfaces";
+            Profile = "";
 
             checkBox1.Checked = false;
             checkBox1.Enabled = false;
             checkBox2.Checked = false;
             checkBox2.Enabled = false;
+            checkBox4.Checked = false;
+            checkBox4.Enabled = false;
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            BSSID = "";
+            Detailed = "";
+            Aggressive = "";
+            Profile = " profiles";
+
+            checkBox1.Checked = false;
+            checkBox1.Enabled = false;
+            checkBox2.Checked = false;
+            checkBox2.Enabled = false;
+            checkBox3.Checked = false;
+            checkBox3.Enabled = false;
         }
     }
 }
