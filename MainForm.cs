@@ -44,7 +44,7 @@ namespace Etwap_Detector
             openChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            btn_Users.Enabled = true;
+            btn_Users.Enabled = false;
             btn_Console.Enabled = true;
         }
 
@@ -60,7 +60,7 @@ namespace Etwap_Detector
             openChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = true;
+            btn_Users.Enabled = false;
             btn_Console.Enabled = false;
         }
 
@@ -69,7 +69,7 @@ namespace Etwap_Detector
             openChildForm(new AboutForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = true;
+            btn_Users.Enabled = false;
             btn_Console.Enabled = true;
         }
 
@@ -83,7 +83,7 @@ namespace Etwap_Detector
             openChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = true;
+            btn_Users.Enabled = false;
             btn_Console.Enabled = false;
         }
 
@@ -96,7 +96,7 @@ namespace Etwap_Detector
             openChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            btn_Users.Enabled = true;
+            btn_Users.Enabled = false;
             btn_Console.Enabled = true;
 
             if (getVersion() != ServerVersion)
