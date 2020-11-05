@@ -61,7 +61,6 @@
             // 
             // saveFileDialog
             // 
-            this.saveFileDialog.CheckFileExists = true;
             this.saveFileDialog.DefaultExt = "txt";
             // 
             // ConsoleForm

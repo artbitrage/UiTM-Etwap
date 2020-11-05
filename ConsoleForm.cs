@@ -31,11 +31,7 @@ namespace Etwap_Detector
         {
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-                TextWriter txt = new StreamWriter(folderBrowserDialog.SelectedPath + "Report.txt");
-                // write a line of text to the file
-                txt.WriteLine(ConsoleBox.Text);
-                // close the stream
-                txt.Close();
+                File.WriteAllText(folderBrowserDialog.SelectedPath + "\\Report.txt", ConsoleBox.Text);
                 MessageBox.Show("Saved to " + folderBrowserDialog.SelectedPath + "\\Report.txt", "Saved Log File", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
