@@ -88,18 +88,18 @@
             // 
             // ConsoleBox
             // 
-            this.ConsoleBox.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.ConsoleBox, "ConsoleBox");
+            this.ConsoleBox.BackColor = System.Drawing.Color.Black;
             this.ConsoleBox.ForeColor = System.Drawing.Color.White;
             this.ConsoleBox.Name = "ConsoleBox";
             // 
             // panel_Config
             // 
+            resources.ApplyResources(this.panel_Config, "panel_Config");
             this.panel_Config.Controls.Add(this.btnExec);
             this.panel_Config.Controls.Add(this.CmdBox);
             this.panel_Config.Controls.Add(this.SubConsoleBox);
             this.panel_Config.Controls.Add(this.panel3);
-            resources.ApplyResources(this.panel_Config, "panel_Config");
             this.panel_Config.Name = "panel_Config";
             // 
             // btnExec
@@ -117,20 +117,20 @@
             // 
             // SubConsoleBox
             // 
-            this.SubConsoleBox.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.SubConsoleBox, "SubConsoleBox");
+            this.SubConsoleBox.BackColor = System.Drawing.Color.Black;
             this.SubConsoleBox.ForeColor = System.Drawing.Color.White;
             this.SubConsoleBox.Name = "SubConsoleBox";
             // 
             // panel3
             // 
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.checkBox5);
             this.panel3.Controls.Add(this.checkBox4);
             this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.checkBox2);
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.label1);
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // checkBox5

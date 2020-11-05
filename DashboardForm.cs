@@ -15,6 +15,7 @@ namespace Etwap_Detector
         }
 
         public static string ConsoleLog = "";
+        public static string BSSID = "";
 
         private string RunScript(string script)
         {
@@ -34,7 +35,16 @@ namespace Etwap_Detector
         private void btn_Scan_Click(object sender, EventArgs e)
         {
             ConsoleBox.Clear();
-            ConsoleBox.Text = RunScript("netsh wlan show network mode=bssid");
+            if (checkBox1.Checked == true)
+            {
+                BSSID = " mode=bssid";
+            }
+            if (checkBox1.Checked == false)
+            {
+                BSSID = "";
+            }
+
+            ConsoleBox.Text = RunScript("netsh wlan show network" + BSSID);
 
             ConsoleLog = ConsoleBox.Text;
         }
