@@ -16,6 +16,7 @@ namespace Etwap_Detector
 
         public static string ConsoleLog = "";
         public static string BSSID = "";
+        public static string Aggressive = "";
 
         private string RunScript(string script)
         {
@@ -34,24 +35,40 @@ namespace Etwap_Detector
 
         private void btn_Scan_Click(object sender, EventArgs e)
         {
-            ConsoleBox.Clear();
             if (checkBox1.Checked == true)
             {
-                BSSID = " mode=bssid";
+                BSSID = " networks mode=bssid";
+                if (checkBox3.Checked == true)
+                {
+                    checkBox1.Checked = false;
+                }
             }
             if (checkBox1.Checked == false)
             {
-                BSSID = "";
+                BSSID = " networks";
             }
 
-            ConsoleBox.Text = RunScript("netsh wlan show network" + BSSID);
+            if (checkBox3.Checked == true)
+            {
+                BSSID = "";
+                Aggressive = " interfaces";
+                if (checkBox1.Checked == true)
+                {
+                    checkBox1.Checked = false;
+                }
+            }
+            if (checkBox3.Checked == false)
+            {
+                Aggressive = "";
+            }
+
+            ConsoleBox.Text = RunScript("netsh wlan show" + BSSID + Aggressive);
 
             ConsoleLog = ConsoleBox.Text;
         }
 
         private void btnExec_Click(object sender, EventArgs e)
         {
-            SubConsoleBox.Clear();
             SubConsoleBox.Text = RunScript(CmdBox.Text);
 
             ConsoleLog = SubConsoleBox.Text;
