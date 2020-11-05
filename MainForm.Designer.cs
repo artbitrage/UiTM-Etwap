@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.panelUpdate = new System.Windows.Forms.Panel();
+            this.lbl_Update = new System.Windows.Forms.Label();
             this.btn_Console = new System.Windows.Forms.Button();
             this.panel_Logo = new System.Windows.Forms.Panel();
             this.pnl_MainVersion = new System.Windows.Forms.Panel();
@@ -44,12 +46,10 @@
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.panelUpdate = new System.Windows.Forms.Panel();
-            this.lbl_Update = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
+            this.panelUpdate.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
             this.menuStrip.SuspendLayout();
-            this.panelUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -63,6 +63,17 @@
             this.MainPanel.Controls.Add(this.btn_Dashboard);
             this.MainPanel.Controls.Add(this.menuStrip);
             this.MainPanel.Name = "MainPanel";
+            // 
+            // panelUpdate
+            // 
+            resources.ApplyResources(this.panelUpdate, "panelUpdate");
+            this.panelUpdate.Controls.Add(this.lbl_Update);
+            this.panelUpdate.Name = "panelUpdate";
+            // 
+            // lbl_Update
+            // 
+            resources.ApplyResources(this.lbl_Update, "lbl_Update");
+            this.lbl_Update.Name = "lbl_Update";
             // 
             // btn_Console
             // 
@@ -158,17 +169,6 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
-            // panelUpdate
-            // 
-            resources.ApplyResources(this.panelUpdate, "panelUpdate");
-            this.panelUpdate.Controls.Add(this.lbl_Update);
-            this.panelUpdate.Name = "panelUpdate";
-            // 
-            // lbl_Update
-            // 
-            resources.ApplyResources(this.lbl_Update, "lbl_Update");
-            this.lbl_Update.Name = "lbl_Update";
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -180,12 +180,12 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
+            this.panelUpdate.ResumeLayout(false);
+            this.panelUpdate.PerformLayout();
             this.pnl_MainVersion.ResumeLayout(false);
             this.pnl_MainVersion.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
-            this.panelUpdate.ResumeLayout(false);
-            this.panelUpdate.PerformLayout();
             this.ResumeLayout(false);
 
         }

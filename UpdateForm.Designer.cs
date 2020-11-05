@@ -47,10 +47,6 @@
             this.btn_Update.UseVisualStyleBackColor = true;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // SaveFileDialogUpdate
-            // 
-            this.SaveFileDialogUpdate.CheckFileExists = true;
-            // 
             // UpdateForm
             // 
             resources.ApplyResources(this, "$this");

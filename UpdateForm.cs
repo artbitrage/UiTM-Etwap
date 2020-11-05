@@ -20,13 +20,6 @@ namespace Etwap_Detector
         {
             ReleaseNote.ReadOnly = true;
 
-            var webRequest = WebRequest.Create(@"https://servdocs.syafiqhadzir.dev/Projects/Etwap/ReleaseNote.txt");
-
-            using (var response = webRequest.GetResponse())
-            using (var content = response.GetResponseStream())
-            using (var reader = new StreamReader(content))
-            { var strContent = reader.ReadToEnd(); }
-
             HttpClient client = new HttpClient();
             string result = client.GetStringAsync(@"https://servdocs.syafiqhadzir.dev/Projects/Etwap/ReleaseNote.txt").Result;
 
