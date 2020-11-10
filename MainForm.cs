@@ -7,7 +7,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private string Version = "201106";
+        private string Version = "201111";
 
         private string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private string ServerVersion;

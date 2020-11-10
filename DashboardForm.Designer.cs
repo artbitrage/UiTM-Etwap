@@ -46,6 +46,8 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_Upload = new System.Windows.Forms.Button();
+            this.openFileDialogUpload = new System.Windows.Forms.OpenFileDialog();
             this.panel_Console.SuspendLayout();
             this.panel_Config.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -179,10 +181,23 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Name = "label1";
             // 
+            // btn_Upload
+            // 
+            resources.ApplyResources(this.btn_Upload, "btn_Upload");
+            this.btn_Upload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Upload.Name = "btn_Upload";
+            this.btn_Upload.UseVisualStyleBackColor = true;
+            this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click);
+            // 
+            // openFileDialogUpload
+            // 
+            this.openFileDialogUpload.FileName = "openFileDialogUpload";
+            // 
             // DashboardForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_Upload);
             this.Controls.Add(this.panel_Config);
             this.Controls.Add(this.panel_Console);
             this.Controls.Add(this.btn_Filter);
@@ -222,5 +237,7 @@
         private System.Windows.Forms.TextBox ConsoleBox;
         private System.Windows.Forms.Button btnExec;
         private System.Windows.Forms.TextBox CmdBox;
+        private System.Windows.Forms.Button btn_Upload;
+        private System.Windows.Forms.OpenFileDialog openFileDialogUpload;
     }
 }

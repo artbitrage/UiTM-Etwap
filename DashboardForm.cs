@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using System.Text;
@@ -169,6 +170,28 @@ namespace Etwap_Detector
             checkBox2.Enabled = false;
             checkBox3.Checked = false;
             checkBox3.Enabled = false;
+        }
+
+        private void btn_Upload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.CheckFileExists = true;
+            openFileDialog.CheckPathExists = true;
+            openFileDialog.Multiselect = false;
+            openFileDialog.AddExtension = true;
+            openFileDialog.Filter = "Text files (*.txt)|*.txt";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                foreach (string fileName in openFileDialog.FileNames)
+                {
+                    Process.Start(fileName);
+                    string text = System.IO.File.ReadAllText(fileName);
+                    CmdBox.Text = text;
+                    SubConsoleBox.Text = RunScript(text);
+                    ConsoleLog = SubConsoleBox.Text;
+                }
+            }
         }
     }
 }
