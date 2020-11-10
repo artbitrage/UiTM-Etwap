@@ -64,29 +64,6 @@ namespace Etwap_Detector
             btn_Console.Enabled = false;
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            openChildForm(new AboutForm());
-
-            btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = false;
-            btn_Console.Enabled = true;
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void consoleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ConsoleForm());
-
-            btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = false;
-            btn_Console.Enabled = false;
-        }
-
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
         }
@@ -128,9 +105,32 @@ namespace Etwap_Detector
             }
         }
 
-        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        private void aboutMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AboutForm());
+
+            btn_Dashboard.Enabled = true;
+            btn_Users.Enabled = false;
+            btn_Console.Enabled = true;
+        }
+
+        private void consoleMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConsoleForm());
+
+            btn_Dashboard.Enabled = true;
+            btn_Users.Enabled = false;
+            btn_Console.Enabled = false;
+        }
+
+        private void updateMenuItem_Click(object sender, EventArgs e)
         {
             checkForUpdate();
+        }
+
+        private void ExitMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

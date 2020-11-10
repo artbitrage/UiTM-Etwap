@@ -40,19 +40,18 @@
             this.btn_Users = new System.Windows.Forms.Button();
             this.btn_Dashboard = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consoleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.createMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.MainPanel.SuspendLayout();
             this.panelUpdate.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
@@ -132,71 +131,68 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
+            this.toolStripMenuItem,
             this.toolStripMenu});
             resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
-            // toolStripMenuItem1
+            // toolStripMenuItem
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutMenuItem,
+            this.consoleMenuItem,
+            this.updateMenuItem,
+            this.ExitMenuItem});
+            this.toolStripMenuItem.Name = "toolStripMenuItem";
+            resources.ApplyResources(this.toolStripMenuItem, "toolStripMenuItem");
             // 
-            // toolStripMenuItem2
+            // aboutMenuItem
             // 
-            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            resources.ApplyResources(this.aboutMenuItem, "aboutMenuItem");
+            this.aboutMenuItem.Name = "aboutMenuItem";
+            this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
-            // toolStripMenuItem3
+            // consoleMenuItem
             // 
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            resources.ApplyResources(this.consoleMenuItem, "consoleMenuItem");
+            this.consoleMenuItem.Name = "consoleMenuItem";
+            this.consoleMenuItem.Click += new System.EventHandler(this.consoleMenuItem_Click);
             // 
-            // toolStripMenuItem4
+            // updateMenuItem
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
+            this.updateMenuItem.Name = "updateMenuItem";
+            resources.ApplyResources(this.updateMenuItem, "updateMenuItem");
+            this.updateMenuItem.Click += new System.EventHandler(this.updateMenuItem_Click);
             // 
-            // toolStripMenuItem5
+            // ExitMenuItem
             // 
-            resources.ApplyResources(this.toolStripMenuItem5, "toolStripMenuItem5");
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.ExitMenuItem.Name = "ExitMenuItem";
+            resources.ApplyResources(this.ExitMenuItem, "ExitMenuItem");
+            this.ExitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
             // toolStripMenu
             // 
             this.toolStripMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.createToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.consoleToolStripMenuItem});
+            this.createMenuItem,
+            this.openMenuItem,
+            this.configMenuItem});
             this.toolStripMenu.Name = "toolStripMenu";
             resources.ApplyResources(this.toolStripMenu, "toolStripMenu");
             // 
-            // aboutToolStripMenuItem
+            // createMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.createMenuItem.Name = "createMenuItem";
+            resources.ApplyResources(this.createMenuItem, "createMenuItem");
             // 
-            // consoleToolStripMenuItem
+            // openMenuItem
             // 
-            resources.ApplyResources(this.consoleToolStripMenuItem, "consoleToolStripMenuItem");
-            this.consoleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.autoToolStripMenuItem,
-            this.manualToolStripMenuItem});
-            this.consoleToolStripMenuItem.Name = "consoleToolStripMenuItem";
-            this.consoleToolStripMenuItem.Click += new System.EventHandler(this.consoleToolStripMenuItem_Click);
+            this.openMenuItem.Name = "openMenuItem";
+            resources.ApplyResources(this.openMenuItem, "openMenuItem");
             // 
-            // panelChildForm
+            // configMenuItem
             // 
-            resources.ApplyResources(this.panelChildForm, "panelChildForm");
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            this.configMenuItem.Name = "configMenuItem";
+            resources.ApplyResources(this.configMenuItem, "configMenuItem");
             // 
             // autoToolStripMenuItem
             // 
@@ -208,15 +204,11 @@
             this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
             resources.ApplyResources(this.manualToolStripMenuItem, "manualToolStripMenuItem");
             // 
-            // createToolStripMenuItem
+            // panelChildForm
             // 
-            this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            resources.ApplyResources(this.createToolStripMenuItem, "createToolStripMenuItem");
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            resources.ApplyResources(this.openToolStripMenuItem, "openToolStripMenuItem");
+            resources.ApplyResources(this.panelChildForm, "panelChildForm");
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // MainForm
             // 
@@ -246,23 +238,22 @@
         private System.Windows.Forms.Button btn_Dashboard;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenu;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Panel pnl_MainVersion;
         private System.Windows.Forms.Label lbl_MainTitle;
         private System.Windows.Forms.Label lbl_MainVersion;
         private System.Windows.Forms.Panel panel_Logo;
         private System.Windows.Forms.Button btn_Console;
-        private System.Windows.Forms.ToolStripMenuItem consoleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configMenuItem;
         private System.Windows.Forms.Panel panelUpdate;
         private System.Windows.Forms.Label lbl_Update;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consoleMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
     }
