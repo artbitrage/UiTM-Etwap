@@ -7,7 +7,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private string Version = "201111";
+        private string Version = "201116";
 
         private string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private string ServerVersion;
@@ -44,14 +44,16 @@ namespace Etwap_Detector
             openChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            btn_Users.Enabled = false;
+            btn_Interface.Enabled = true;
             btn_Console.Enabled = true;
         }
 
         private void btn_Users_Click(object sender, EventArgs e)
         {
+            openChildForm(new InterfaceForm());
+
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = false;
+            btn_Interface.Enabled = false;
             btn_Console.Enabled = true;
         }
 
@@ -60,7 +62,7 @@ namespace Etwap_Detector
             openChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = false;
+            btn_Interface.Enabled = true;
             btn_Console.Enabled = false;
         }
 
@@ -73,8 +75,6 @@ namespace Etwap_Detector
             openChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            btn_Users.Enabled = false;
-            btn_Console.Enabled = true;
 
             if (getVersion() != ServerVersion)
             {
@@ -110,7 +110,7 @@ namespace Etwap_Detector
             openChildForm(new AboutForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = false;
+            btn_Interface.Enabled = true;
             btn_Console.Enabled = true;
         }
 
@@ -119,7 +119,7 @@ namespace Etwap_Detector
             openChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Users.Enabled = false;
+            btn_Interface.Enabled = true;
             btn_Console.Enabled = false;
         }
 

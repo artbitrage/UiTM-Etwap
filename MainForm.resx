@@ -298,7 +298,7 @@
     <value>1</value>
   </data>
   <data name="lbl_MainVersion.Text" xml:space="preserve">
-    <value>v0.1a (Build 201111)</value>
+    <value>v0.2a (Build 201116)</value>
   </data>
   <data name="&gt;&gt;lbl_MainVersion.Name" xml:space="preserve">
     <value>lbl_MainVersion</value>
@@ -369,63 +369,62 @@
   <data name="&gt;&gt;pnl_MainVersion.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="btn_Users.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btn_Interface.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btn_Users.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_Interface.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="btn_Users.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Interface.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btn_Users.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Interface.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="btn_Users.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_Interface.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAe5JREFUSEuV
-        1DtoFFEUh/EFX0gKFUTBNFF81IJioYWgJBAbba3UUhFRERsFC8FXoZUpFJUUCSnURix8gY2BFLbaCD46
-        ba18f9+yVzZnz+zM/OHHsveec3ZmdmY6IWsxjW/4jKtYgSaxznr77HeO89IsxQL+BvfRJA8Qe99iGQZy
-        ALG42IBhGUXWp0kM5ASyYu2G2YazuNb73AqzB1mfnDuQvciKf2IdbuBXb63w+3Wsh3X9e4Vz0zxBLL4M
-        zySu97sC6+K689KswXJcxBu8wDFsRjyjyLPaBOvts/8CnOfcRTkFB85hAt6yq7EFp5H9QOQM61fBfuc4
-        z7kn8T/vkQ24B/+TbC+yzvps7x26GcEfZEXPcD6sVTmH52Gt+I2VGPqMfMUuVB1M4f5O+ObI9tV9Vv1j
-        s83iOHz1ZHuFb49hz6k2ovua+tRbKDzSO9gOj8hL8Aj9NcVDuG+d9XcRr8RHLEE3Y7iFp/C6H8FhfIHF
-        L+Gd5h02hce4jXG47r511tt3FM5x3k04vzIHEY/OW9izOINDvU+/x2fQPvsbxdP9gP4BbS26bMOyD9mA
-        tpxTm0vImttyTm1mkTW3NYPavELW3JZzavMaWXNbzqlN1cu0LefUxrfAD2QDmvLZ24FG2Y95fEc2rIr1
-        9tkf0un8A/5Nllpc8HmCAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGtSURBVEhL7dU7SxxRGIfxiSARBaMfwMImYNIYUgkKRgRbL1iG1BElgRBrOxFEJGkVFBu/QUS0
+        UGwsbLSyCmgIeKlCKs3teXbPwDg5u+tGN1j4hx9nz5nzvjPOHjW5q3mIJ+hBfxidu37j1KEXH3GAn/gd
+        4fo+PsD91l07TXiLz4g1r8Q66+1TNqM4RqxJtY5gv7/SiGXEii6wifcYRjeehtH5JLzuvlj9EuxfSCt2
+        kN90jndoQTa+nvYwZuM+91uX72V/75O8wC+kF/zCZ9AM8xg+/Ta+I9vE+Ra87j7zCNZnD5T9vU8hY/iB
+        Mwy4QDqwilKnMM997rfO2Md+9rX/lXhs24ofk3FcIta0EuusN/azb8nMItbkEHPwKQfxClPYRfZrSNmn
+        Yl4iW7SOLpTLc2wgW2efa2UCXzFSmBVP3muswXWPueMnuO7RfhA+f4P1VaU+jEM4Rfap807gqzUNYaw6
+        HufY9xHjvvT4/3OmkTb8gnn4e+XoPL3mvluJzd8g/+/Euev+Kbv1PMMK9sLYiZrFnzB9bXJes3i8F+GN
+        FsK8pvEGfWG8z/9OkvwBG7/HVkPFp2AAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_Users.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Interface.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Users.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Interface.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 248</value>
   </data>
-  <data name="btn_Users.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Interface.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 79</value>
   </data>
-  <data name="btn_Users.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Interface.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btn_Users.Text" xml:space="preserve">
-    <value>Users</value>
+  <data name="btn_Interface.Text" xml:space="preserve">
+    <value>Interface</value>
   </data>
-  <data name="btn_Users.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Interface.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btn_Users.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Interface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="&gt;&gt;btn_Users.Name" xml:space="preserve">
-    <value>btn_Users</value>
+  <data name="&gt;&gt;btn_Interface.Name" xml:space="preserve">
+    <value>btn_Interface</value>
   </data>
-  <data name="&gt;&gt;btn_Users.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Interface.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Users.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Interface.Parent" xml:space="preserve">
     <value>MainPanel</value>
   </data>
-  <data name="&gt;&gt;btn_Users.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Interface.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <metadata name="btn_Dashboard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -494,7 +493,7 @@
     <value>None</value>
   </data>
   <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>About</value>
@@ -503,19 +502,19 @@
     <value>None</value>
   </data>
   <data name="consoleMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="consoleMenuItem.Text" xml:space="preserve">
     <value>Console</value>
   </data>
   <data name="updateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="updateMenuItem.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="ExitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="ExitMenuItem.Text" xml:space="preserve">
     <value>Exit</value>

@@ -37,7 +37,7 @@
             this.pnl_MainVersion = new System.Windows.Forms.Panel();
             this.lbl_MainVersion = new System.Windows.Forms.Label();
             this.lbl_MainTitle = new System.Windows.Forms.Label();
-            this.btn_Users = new System.Windows.Forms.Button();
+            this.btn_Interface = new System.Windows.Forms.Button();
             this.btn_Dashboard = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +65,7 @@
             this.MainPanel.Controls.Add(this.btn_Console);
             this.MainPanel.Controls.Add(this.panel_Logo);
             this.MainPanel.Controls.Add(this.pnl_MainVersion);
-            this.MainPanel.Controls.Add(this.btn_Users);
+            this.MainPanel.Controls.Add(this.btn_Interface);
             this.MainPanel.Controls.Add(this.btn_Dashboard);
             this.MainPanel.Controls.Add(this.menuStrip);
             this.MainPanel.Name = "MainPanel";
@@ -112,13 +112,13 @@
             resources.ApplyResources(this.lbl_MainTitle, "lbl_MainTitle");
             this.lbl_MainTitle.Name = "lbl_MainTitle";
             // 
-            // btn_Users
+            // btn_Interface
             // 
-            resources.ApplyResources(this.btn_Users, "btn_Users");
-            this.btn_Users.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Users.Name = "btn_Users";
-            this.btn_Users.UseVisualStyleBackColor = true;
-            this.btn_Users.Click += new System.EventHandler(this.btn_Users_Click);
+            resources.ApplyResources(this.btn_Interface, "btn_Interface");
+            this.btn_Interface.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Interface.Name = "btn_Interface";
+            this.btn_Interface.UseVisualStyleBackColor = true;
+            this.btn_Interface.Click += new System.EventHandler(this.btn_Users_Click);
             // 
             // btn_Dashboard
             // 
@@ -234,7 +234,7 @@
         #endregion
 
         private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.Button btn_Users;
+        private System.Windows.Forms.Button btn_Interface;
         private System.Windows.Forms.Button btn_Dashboard;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenu;

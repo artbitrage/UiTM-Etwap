@@ -117,245 +117,98 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="panelTop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="listView_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="panelTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
+  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 457</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelTop.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panelTop.Name" xml:space="preserve">
-    <value>panelTop</value>
+  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
+    <value>listView_AP</value>
   </data>
-  <data name="&gt;&gt;panelTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelTop.Parent" xml:space="preserve">
+  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelTop.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <metadata name="panelDesc.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelSubtitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="labelSubtitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="clmAccessPoint.Text" xml:space="preserve">
+    <value>Access Point(s)</value>
   </data>
-  <data name="labelSubtitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 15.75pt, style=Bold</value>
+  <data name="clmAccessPoint.Width" type="System.Int32, mscorlib">
+    <value>195</value>
+  </data>
+  <data name="clmSignal.Text" xml:space="preserve">
+    <value>Signal Strength</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelSubtitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelSubtitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 40</value>
-  </data>
-  <data name="labelSubtitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 25</value>
-  </data>
-  <data name="labelSubtitle.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelSubtitle.Text" xml:space="preserve">
-    <value>An Evil Twin Detector</value>
-  </data>
-  <data name="labelSubtitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;labelSubtitle.Name" xml:space="preserve">
-    <value>labelSubtitle</value>
-  </data>
-  <data name="&gt;&gt;labelSubtitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelSubtitle.Parent" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;labelSubtitle.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="labelVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="labelVersion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 80</value>
-  </data>
-  <data name="labelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 21</value>
-  </data>
-  <data name="labelVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelVersion.Text" xml:space="preserve">
-    <value>v0.2a (Build 201116)</value>
-  </data>
-  <data name="labelVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;labelVersion.Name" xml:space="preserve">
-    <value>labelVersion</value>
-  </data>
-  <data name="&gt;&gt;labelVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVersion.Parent" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;labelVersion.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="labelTitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="labelTitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 20.25pt, style=Bold</value>
-  </data>
-  <data name="labelTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 8</value>
-  </data>
-  <data name="labelTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 32</value>
-  </data>
-  <data name="labelTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelTitle.Text" xml:space="preserve">
-    <value>UiTM Etwap</value>
-  </data>
-  <data name="labelTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.Name" xml:space="preserve">
-    <value>labelTitle</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.Parent" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 208</value>
-  </data>
-  <data name="panelDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelDesc.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.Name" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="panelDev.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="panelDev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 312</value>
-  </data>
-  <data name="panelDev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelDev.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panelDev.Name" xml:space="preserve">
-    <value>panelDev</value>
-  </data>
-  <data name="&gt;&gt;panelDev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelDev.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelDev.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="panelBottom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="panelBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 416</value>
-  </data>
-  <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Name" xml:space="preserve">
-    <value>panelBottom</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="panelLogo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="panelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="clmSignal.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="panelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 104</value>
+  <data name="clmSignal.Width" type="System.Int32, mscorlib">
+    <value>195</value>
   </data>
-  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
+  <metadata name="pnl_Btns.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btn_Connect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btn_Connect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="btn_Connect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 47</value>
   </data>
-  <data name="&gt;&gt;panelLogo.Name" xml:space="preserve">
-    <value>panelLogo</value>
+  <data name="btn_Connect.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panelLogo.Type" xml:space="preserve">
+  <data name="btn_Connect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="&gt;&gt;btn_Connect.Name" xml:space="preserve">
+    <value>btn_Connect</value>
+  </data>
+  <data name="&gt;&gt;btn_Connect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Connect.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;btn_Connect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 12</value>
+  </data>
+  <data name="pnl_Btns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 457</value>
+  </data>
+  <data name="pnl_Btns.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Name" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelLogo.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnl_Btns.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;pnl_Btns.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -366,8 +219,11 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>10, 21</value>
   </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 520</value>
+    <value>608, 481</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
@@ -632,10 +488,22 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>AboutForm</value>
+    <value>InterfaceForm</value>
+  </data>
+  <data name="&gt;&gt;clmAccessPoint.Name" xml:space="preserve">
+    <value>clmAccessPoint</value>
+  </data>
+  <data name="&gt;&gt;clmAccessPoint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clmSignal.Name" xml:space="preserve">
+    <value>clmSignal</value>
+  </data>
+  <data name="&gt;&gt;clmSignal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AboutForm</value>
+    <value>InterfaceForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
