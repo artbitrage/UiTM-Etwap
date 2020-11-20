@@ -35,6 +35,9 @@ namespace Etwap_Detector
             this.clmSignal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnl_Btns = new System.Windows.Forms.Panel();
             this.btn_Connect = new System.Windows.Forms.Button();
+            this.lbl_Password = new System.Windows.Forms.Label();
+            this.txBox_Password = new System.Windows.Forms.TextBox();
+            this.lbl_Status = new System.Windows.Forms.Label();
             this.pnl_Btns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +62,9 @@ namespace Etwap_Detector
             // 
             // pnl_Btns
             // 
+            this.pnl_Btns.Controls.Add(this.lbl_Status);
+            this.pnl_Btns.Controls.Add(this.txBox_Password);
+            this.pnl_Btns.Controls.Add(this.lbl_Password);
             this.pnl_Btns.Controls.Add(this.btn_Connect);
             resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
             this.pnl_Btns.Name = "pnl_Btns";
@@ -69,6 +75,22 @@ namespace Etwap_Detector
             resources.ApplyResources(this.btn_Connect, "btn_Connect");
             this.btn_Connect.Name = "btn_Connect";
             this.btn_Connect.UseVisualStyleBackColor = true;
+            this.btn_Connect.Click += new System.EventHandler(this.btn_Connect_Click);
+            // 
+            // lbl_Password
+            // 
+            resources.ApplyResources(this.lbl_Password, "lbl_Password");
+            this.lbl_Password.Name = "lbl_Password";
+            // 
+            // txBox_Password
+            // 
+            resources.ApplyResources(this.txBox_Password, "txBox_Password");
+            this.txBox_Password.Name = "txBox_Password";
+            // 
+            // lbl_Status
+            // 
+            resources.ApplyResources(this.lbl_Status, "lbl_Status");
+            this.lbl_Status.Name = "lbl_Status";
             // 
             // InterfaceForm
             // 
@@ -82,6 +104,7 @@ namespace Etwap_Detector
             this.Name = "InterfaceForm";
             this.Load += new System.EventHandler(this.InterfaceForm_Load);
             this.pnl_Btns.ResumeLayout(false);
+            this.pnl_Btns.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -93,5 +116,8 @@ namespace Etwap_Detector
         private System.Windows.Forms.ColumnHeader clmAccessPoint;
         private System.Windows.Forms.ColumnHeader clmSignal;
         private System.Windows.Forms.Button btn_Connect;
+        private System.Windows.Forms.TextBox txBox_Password;
+        private System.Windows.Forms.Label lbl_Password;
+        private System.Windows.Forms.Label lbl_Status;
     }
 }

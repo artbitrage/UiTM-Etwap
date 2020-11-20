@@ -383,15 +383,15 @@
   </data>
   <data name="btn_Interface.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGtSURBVEhL7dU7SxxRGIfxiSARBaMfwMImYNIYUgkKRgRbL1iG1BElgRBrOxFEJGkVFBu/QUS0
-        UGwsbLSyCmgIeKlCKs3teXbPwDg5u+tGN1j4hx9nz5nzvjPOHjW5q3mIJ+hBfxidu37j1KEXH3GAn/gd
-        4fo+PsD91l07TXiLz4g1r8Q66+1TNqM4RqxJtY5gv7/SiGXEii6wifcYRjeehtH5JLzuvlj9EuxfSCt2
-        kN90jndoQTa+nvYwZuM+91uX72V/75O8wC+kF/zCZ9AM8xg+/Ta+I9vE+Ra87j7zCNZnD5T9vU8hY/iB
-        Mwy4QDqwilKnMM997rfO2Md+9rX/lXhs24ofk3FcIta0EuusN/azb8nMItbkEHPwKQfxClPYRfZrSNmn
-        Yl4iW7SOLpTLc2wgW2efa2UCXzFSmBVP3muswXWPueMnuO7RfhA+f4P1VaU+jEM4Rfap807gqzUNYaw6
-        HufY9xHjvvT4/3OmkTb8gnn4e+XoPL3mvluJzd8g/+/Euev+Kbv1PMMK9sLYiZrFnzB9bXJes3i8F+GN
-        FsK8pvEGfWG8z/9OkvwBG7/HVkPFp2AAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAa1JREFUSEvt
+        1TtLHFEYh/GJIBEFox/AwiZg0hhSCQpGBFsvWIbUESWBEGs7EUQkaRUUG79BRLRQbCxstLIKaAh4qUIq
+        ze15ds/AODm760Y3WPiHH2fPmfO+M84eNbmreYgn6EF/GJ27fuPUoRcfcYCf+B3h+j4+wP3WXTtNeIvP
+        iDWvxDrr7VM2ozhGrEm1jmC/v9KIZcSKLrCJ9xhGN56G0fkkvO6+WP0S7F9IK3aQ33SOd2hBNr6e9jBm
+        4z73W5fvZX/vk7zAL6QX/MJn0AzzGD79Nr4j28T5FrzuPvMI1mcPlP29TyFj+IEzDLhAOrCKUqcwz33u
+        t87Yx372tf+VeGzbih+TcVwi1rQS66w39rNvycwi1uQQc/ApB/EKU9hF9mtI2adiXiJbtI4ulMtzbCBb
+        Z59rZQJfMVKYFU/ea6zBdY+54ye47tF+ED5/g/VVpT6MQzhF9qnzTuCrNQ1hrDoe59j3EeO+9Pj/c6aR
+        NvyCefh75eg8vea+W4nN3yD/78S56/4pu/U8wwr2wtiJmsWfMH1tcl6zeLwX4Y0Wwrym8QZ9YbzP/06S
+        /AEbv8dWQ8WnYAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btn_Interface.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -493,7 +493,7 @@
     <value>None</value>
   </data>
   <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>About</value>
@@ -502,19 +502,19 @@
     <value>None</value>
   </data>
   <data name="consoleMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="consoleMenuItem.Text" xml:space="preserve">
     <value>Console</value>
   </data>
   <data name="updateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="updateMenuItem.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="ExitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ExitMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
