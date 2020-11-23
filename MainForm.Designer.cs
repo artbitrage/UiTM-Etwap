@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.panelUpdate = new System.Windows.Forms.Panel();
@@ -52,6 +53,7 @@
             this.autoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.MainPanel.SuspendLayout();
             this.panelUpdate.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
@@ -210,6 +212,10 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
+            // notifyIcon
+            // 
+            resources.ApplyResources(this.notifyIcon, "notifyIcon");
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -258,5 +264,6 @@
         private System.Windows.Forms.ToolStripMenuItem openMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }

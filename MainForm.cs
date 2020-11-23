@@ -79,10 +79,16 @@ namespace Etwap_Detector
             if (getVersion() != ServerVersion)
             {
                 lbl_Update.Text = "New update available!";
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = "New update available!";
+                notifyIcon.ShowBalloonTip(1000);
             }
             else
             {
                 lbl_Update.Text = "Etwap is up-to-date!";
+                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                notifyIcon.BalloonTipText = "Etwap is up-to-date!";
+                notifyIcon.ShowBalloonTip(1000);
             }
         }
 
