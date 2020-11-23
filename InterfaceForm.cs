@@ -24,9 +24,26 @@ namespace Etwap_Detector
             {
                 ListViewItem listView = new ListViewItem(ap.Name);
                 listView.SubItems.Add(ap.SignalStrength + "%");
+                listView.SubItems.Add(ap.IsSecure.ToString());
+
                 listView.Tag = ap;
 
                 listView_AP.Items.Add(listView);
+
+                if (wifi.ConnectionStatus == WifiStatus.Connected)
+                {
+                    lbl_Status.Text = ap.Name;
+                    btn_Connect.Enabled = false;
+                    txBox_Password.Enabled = false;
+                    btn_Disconnect.Enabled = true;
+                }
+                else
+                {
+                    lbl_Status.Text = "Not connected.";
+                    btn_Connect.Enabled = true;
+                    txBox_Password.Enabled = true;
+                    btn_Disconnect.Enabled = false;
+                }
             }
         }
 
@@ -40,10 +57,16 @@ namespace Etwap_Detector
 
                 if (connecter(ap, txBox_Password.Text))
                 {
-                    lbl_Status.Text = "Connected to " + ap.Name + ".";
+                    lbl_Status.Text = ap.Name;
+                    btn_Connect.Enabled = false;
+                    txBox_Password.Enabled = false;
+                    btn_Disconnect.Enabled = true;
                 }
 
                 lbl_Status.Text = "Not connected.";
+                btn_Connect.Enabled = true;
+                txBox_Password.Enabled = true;
+                btn_Disconnect.Enabled = false;
             }
         }
 
@@ -53,6 +76,12 @@ namespace Etwap_Detector
             authRequest.Password = password;
 
             return ap.Connect(authRequest);
+        }
+
+        private void btn_Disconnect_Click(object sender, EventArgs e)
+        {
+            if (wifi.ConnectionStatus == WifiStatus.Connected)
+                wifi.Disconnect();
         }
     }
 }

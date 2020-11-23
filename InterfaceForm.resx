@@ -120,6 +120,32 @@
   <metadata name="listView_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="clmAccessPoint.Text" xml:space="preserve">
+    <value>Access Point(s)</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="clmAccessPoint.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="clmSignal.Text" xml:space="preserve">
+    <value>Signal Strength</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="clmSignal.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="clmSignal.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="clmSecure.Text" xml:space="preserve">
+    <value>Secure</value>
+  </data>
+  <data name="clmSecure.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="clmSecure.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -127,7 +153,6 @@
   <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 457</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -143,25 +168,75 @@
   <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="clmAccessPoint.Text" xml:space="preserve">
-    <value>Access Point(s)</value>
-  </data>
-  <data name="clmAccessPoint.Width" type="System.Int32, mscorlib">
-    <value>195</value>
-  </data>
-  <data name="clmSignal.Text" xml:space="preserve">
-    <value>Signal Strength</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="clmSignal.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="clmSignal.Width" type="System.Int32, mscorlib">
-    <value>195</value>
-  </data>
   <metadata name="pnl_Btns.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="pnl_Btns.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="lbl_Stat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_Stat.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Stat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_Stat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 348</value>
+  </data>
+  <data name="lbl_Stat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="lbl_Stat.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_Stat.Text" xml:space="preserve">
+    <value>Status:-</value>
+  </data>
+  <data name="&gt;&gt;lbl_Stat.Name" xml:space="preserve">
+    <value>lbl_Stat</value>
+  </data>
+  <data name="&gt;&gt;lbl_Stat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Stat.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;lbl_Stat.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="btn_Disconnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btn_Disconnect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Disconnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 205</value>
+  </data>
+  <data name="btn_Disconnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 47</value>
+  </data>
+  <data name="btn_Disconnect.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_Disconnect.Text" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="&gt;&gt;btn_Disconnect.Name" xml:space="preserve">
+    <value>btn_Disconnect</value>
+  </data>
+  <data name="&gt;&gt;btn_Disconnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Disconnect.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;btn_Disconnect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="lbl_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -190,7 +265,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="txBox_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -217,7 +292,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;txBox_Password.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="lbl_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -247,7 +322,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Password.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <metadata name="btn_Connect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -274,7 +349,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;btn_Connect.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 12</value>
@@ -587,6 +662,12 @@
     <value>clmSignal</value>
   </data>
   <data name="&gt;&gt;clmSignal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clmSecure.Name" xml:space="preserve">
+    <value>clmSecure</value>
+  </data>
+  <data name="&gt;&gt;clmSecure.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

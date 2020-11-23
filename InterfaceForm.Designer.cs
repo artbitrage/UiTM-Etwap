@@ -34,10 +34,13 @@ namespace Etwap_Detector
             this.clmAccessPoint = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSignal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnl_Btns = new System.Windows.Forms.Panel();
-            this.btn_Connect = new System.Windows.Forms.Button();
-            this.lbl_Password = new System.Windows.Forms.Label();
-            this.txBox_Password = new System.Windows.Forms.TextBox();
             this.lbl_Status = new System.Windows.Forms.Label();
+            this.txBox_Password = new System.Windows.Forms.TextBox();
+            this.lbl_Password = new System.Windows.Forms.Label();
+            this.btn_Connect = new System.Windows.Forms.Button();
+            this.clmSecure = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_Disconnect = new System.Windows.Forms.Button();
+            this.lbl_Stat = new System.Windows.Forms.Label();
             this.pnl_Btns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +48,8 @@ namespace Etwap_Detector
             // 
             this.listView_AP.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmAccessPoint,
-            this.clmSignal});
+            this.clmSignal,
+            this.clmSecure});
             this.listView_AP.HideSelection = false;
             resources.ApplyResources(this.listView_AP, "listView_AP");
             this.listView_AP.Name = "listView_AP";
@@ -62,12 +66,30 @@ namespace Etwap_Detector
             // 
             // pnl_Btns
             // 
+            resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
+            this.pnl_Btns.Controls.Add(this.lbl_Stat);
+            this.pnl_Btns.Controls.Add(this.btn_Disconnect);
             this.pnl_Btns.Controls.Add(this.lbl_Status);
             this.pnl_Btns.Controls.Add(this.txBox_Password);
             this.pnl_Btns.Controls.Add(this.lbl_Password);
             this.pnl_Btns.Controls.Add(this.btn_Connect);
-            resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
             this.pnl_Btns.Name = "pnl_Btns";
+            // 
+            // lbl_Status
+            // 
+            resources.ApplyResources(this.lbl_Status, "lbl_Status");
+            this.lbl_Status.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Status.Name = "lbl_Status";
+            // 
+            // txBox_Password
+            // 
+            resources.ApplyResources(this.txBox_Password, "txBox_Password");
+            this.txBox_Password.Name = "txBox_Password";
+            // 
+            // lbl_Password
+            // 
+            resources.ApplyResources(this.lbl_Password, "lbl_Password");
+            this.lbl_Password.Name = "lbl_Password";
             // 
             // btn_Connect
             // 
@@ -77,20 +99,22 @@ namespace Etwap_Detector
             this.btn_Connect.UseVisualStyleBackColor = true;
             this.btn_Connect.Click += new System.EventHandler(this.btn_Connect_Click);
             // 
-            // lbl_Password
+            // clmSecure
             // 
-            resources.ApplyResources(this.lbl_Password, "lbl_Password");
-            this.lbl_Password.Name = "lbl_Password";
+            resources.ApplyResources(this.clmSecure, "clmSecure");
             // 
-            // txBox_Password
+            // btn_Disconnect
             // 
-            resources.ApplyResources(this.txBox_Password, "txBox_Password");
-            this.txBox_Password.Name = "txBox_Password";
+            this.btn_Disconnect.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btn_Disconnect, "btn_Disconnect");
+            this.btn_Disconnect.Name = "btn_Disconnect";
+            this.btn_Disconnect.UseVisualStyleBackColor = true;
+            this.btn_Disconnect.Click += new System.EventHandler(this.btn_Disconnect_Click);
             // 
-            // lbl_Status
+            // lbl_Stat
             // 
-            resources.ApplyResources(this.lbl_Status, "lbl_Status");
-            this.lbl_Status.Name = "lbl_Status";
+            resources.ApplyResources(this.lbl_Stat, "lbl_Stat");
+            this.lbl_Stat.Name = "lbl_Stat";
             // 
             // InterfaceForm
             // 
@@ -106,6 +130,7 @@ namespace Etwap_Detector
             this.pnl_Btns.ResumeLayout(false);
             this.pnl_Btns.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -119,5 +144,8 @@ namespace Etwap_Detector
         private System.Windows.Forms.TextBox txBox_Password;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Label lbl_Status;
+        private System.Windows.Forms.ColumnHeader clmSecure;
+        private System.Windows.Forms.Button btn_Disconnect;
+        private System.Windows.Forms.Label lbl_Stat;
     }
 }
