@@ -32,14 +32,14 @@ namespace Etwap_Detector
 
                 if (wifi.ConnectionStatus == WifiStatus.Connected)
                 {
-                    lbl_Status.Text = ap.Name;
+                    lbl_Status.Text = wifi.ConnectionStatus.ToString();
                     btn_Connect.Enabled = false;
                     txBox_Password.Enabled = false;
                     btn_Disconnect.Enabled = true;
                 }
                 else
                 {
-                    lbl_Status.Text = "Not connected.";
+                    lbl_Status.Text = wifi.ConnectionStatus.ToString();
                     btn_Connect.Enabled = true;
                     txBox_Password.Enabled = true;
                     btn_Disconnect.Enabled = false;
@@ -57,13 +57,13 @@ namespace Etwap_Detector
 
                 if (Connecter(ap, txBox_Password.Text))
                 {
-                    lbl_Status.Text = ap.Name;
+                    lbl_Status.Text = wifi.ConnectionStatus.ToString();
                     btn_Connect.Enabled = false;
                     txBox_Password.Enabled = false;
                     btn_Disconnect.Enabled = true;
                 }
 
-                lbl_Status.Text = "Not connected.";
+                lbl_Status.Text = wifi.ConnectionStatus.ToString();
                 btn_Connect.Enabled = true;
                 txBox_Password.Enabled = true;
                 btn_Disconnect.Enabled = false;
@@ -84,6 +84,11 @@ namespace Etwap_Detector
         {
             if (wifi.ConnectionStatus == WifiStatus.Connected)
                 wifi.Disconnect();
+
+            lbl_Status.Text = wifi.ConnectionStatus.ToString();
+            btn_Connect.Enabled = true;
+            txBox_Password.Enabled = true;
+            btn_Disconnect.Enabled = false;
         }
     }
 }
