@@ -8,8 +8,8 @@ namespace Etwap_Detector
 {
     public partial class UpdateForm : Form
     {
-        private string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
-        private string AppName = "Etwap.exe";
+        private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
+        private readonly string AppName = "Etwap.exe";
 
         public UpdateForm()
         {
@@ -46,10 +46,8 @@ namespace Etwap_Detector
 
             if (SaveFileDialogUpdate.ShowDialog() == DialogResult.OK)
             {
-                using (FileStream fs = File.Create(SaveFileDialogUpdate.FileName))
-                {
-                    fs.Write(appdata, 0, appdata.Length);
-                }
+                using FileStream fs = File.Create(SaveFileDialogUpdate.FileName);
+                fs.Write(appdata, 0, appdata.Length);
             }
         }
     }

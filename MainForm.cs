@@ -7,11 +7,11 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private string Version = "201116";
+        private readonly string Version = "201116";
 
-        private string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
-        private string ServerVersion;
-        private string ServerVersionName = "Release.txt";
+        private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
+        private readonly string ServerVersion;
+        private readonly string ServerVersionName = "Release.txt";
 
         public MainForm()
         {
@@ -26,7 +26,7 @@ namespace Etwap_Detector
 
         private Form activeForm = null;
 
-        private void openChildForm(Form childForm)
+        private void OpenChildForm(Form childForm)
         {
             if (activeForm != null) activeForm.Close();
             activeForm = childForm;
@@ -39,44 +39,44 @@ namespace Etwap_Detector
             childForm.Show();
         }
 
-        private void btn_Dashboard_Click(object sender, EventArgs e)
+        private void Btn_Dashboard_Click(object sender, EventArgs e)
         {
-            openChildForm(new DashboardForm());
+            OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
             btn_Interface.Enabled = true;
             btn_Console.Enabled = true;
         }
 
-        private void btn_Users_Click(object sender, EventArgs e)
+        private void Btn_Users_Click(object sender, EventArgs e)
         {
-            openChildForm(new InterfaceForm());
+            OpenChildForm(new InterfaceForm());
 
             btn_Dashboard.Enabled = true;
             btn_Interface.Enabled = false;
             btn_Console.Enabled = true;
         }
 
-        private void btn_Console_Click(object sender, EventArgs e)
+        private void Btn_Console_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsoleForm());
+            OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
             btn_Interface.Enabled = true;
             btn_Console.Enabled = false;
         }
 
-        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        private void PanelChildForm_Paint(object sender, PaintEventArgs e)
         {
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            openChildForm(new DashboardForm());
+            OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
 
-            if (getVersion() != ServerVersion)
+            if (GetVersion() != ServerVersion)
             {
                 lbl_Update.Text = "New update available!";
                 notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
@@ -92,17 +92,19 @@ namespace Etwap_Detector
             }
         }
 
-        public string getVersion()
+        public string GetVersion()
         {
             return Version;
         }
 
-        private void checkForUpdate()
+        private void CheckForUpdate()
         {
-            if (getVersion() != ServerVersion)
+            if (GetVersion() != ServerVersion)
             {
-                UpdateForm updateForm = new UpdateForm();
-                updateForm.StartPosition = FormStartPosition.CenterParent;
+                UpdateForm updateForm = new UpdateForm
+                {
+                    StartPosition = FormStartPosition.CenterParent
+                };
                 updateForm.Show();
             }
             else
@@ -111,27 +113,27 @@ namespace Etwap_Detector
             }
         }
 
-        private void aboutMenuItem_Click(object sender, EventArgs e)
+        private void AboutMenuItem_Click(object sender, EventArgs e)
         {
-            openChildForm(new AboutForm());
+            OpenChildForm(new AboutForm());
 
             btn_Dashboard.Enabled = true;
             btn_Interface.Enabled = true;
             btn_Console.Enabled = true;
         }
 
-        private void consoleMenuItem_Click(object sender, EventArgs e)
+        private void ConsoleMenuItem_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsoleForm());
+            OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
             btn_Interface.Enabled = true;
             btn_Console.Enabled = false;
         }
 
-        private void updateMenuItem_Click(object sender, EventArgs e)
+        private void UpdateMenuItem_Click(object sender, EventArgs e)
         {
-            checkForUpdate();
+            CheckForUpdate();
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)

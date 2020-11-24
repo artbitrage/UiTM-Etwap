@@ -97,7 +97,7 @@ namespace Etwap_Detector
             resources.ApplyResources(this.btn_Connect, "btn_Connect");
             this.btn_Connect.Name = "btn_Connect";
             this.btn_Connect.UseVisualStyleBackColor = true;
-            this.btn_Connect.Click += new System.EventHandler(this.btn_Connect_Click);
+            this.btn_Connect.Click += new System.EventHandler(this.Btn_Connect_Click);
             // 
             // clmSecure
             // 
@@ -109,7 +109,7 @@ namespace Etwap_Detector
             resources.ApplyResources(this.btn_Disconnect, "btn_Disconnect");
             this.btn_Disconnect.Name = "btn_Disconnect";
             this.btn_Disconnect.UseVisualStyleBackColor = true;
-            this.btn_Disconnect.Click += new System.EventHandler(this.btn_Disconnect_Click);
+            this.btn_Disconnect.Click += new System.EventHandler(this.Btn_Disconnect_Click);
             // 
             // lbl_Stat
             // 

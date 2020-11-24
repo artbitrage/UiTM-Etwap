@@ -36,53 +36,53 @@ namespace Etwap_Detector
             return stringBuilder.ToString();
         }
 
-        private void btn_Scan_Click(object sender, EventArgs e)
+        private void Btn_Scan_Click(object sender, EventArgs e)
         {
             ConsoleBox.Text = RunScript("netsh wlan show" + BSSID + Detailed + Aggressive + Profile);
 
             ConsoleLog = ConsoleBox.Text;
 
-            switch (checkBox1.CheckState)
+            switch (cbx_BSSID.CheckState)
             {
                 case CheckState.Checked:
 
-                    checkBox1.Checked = false;
-                    checkBox2.Enabled = true;
-                    checkBox3.Enabled = true;
-                    checkBox4.Enabled = true;
+                    cbx_BSSID.Checked = false;
+                    cbx_Detailed.Enabled = true;
+                    cbx_Aggressive.Enabled = true;
+                    cbx_Profiles.Enabled = true;
                     break;
             }
 
-            switch (checkBox2.CheckState)
+            switch (cbx_Detailed.CheckState)
             {
                 case CheckState.Checked:
 
-                    checkBox2.Checked = false;
-                    checkBox1.Enabled = true;
-                    checkBox3.Enabled = true;
-                    checkBox4.Enabled = true;
+                    cbx_Detailed.Checked = false;
+                    cbx_BSSID.Enabled = true;
+                    cbx_Aggressive.Enabled = true;
+                    cbx_Profiles.Enabled = true;
                     break;
             }
 
-            switch (checkBox3.CheckState)
+            switch (cbx_Aggressive.CheckState)
             {
                 case CheckState.Checked:
 
-                    checkBox3.Checked = false;
-                    checkBox1.Enabled = true;
-                    checkBox2.Enabled = true;
-                    checkBox4.Enabled = true;
+                    cbx_Aggressive.Checked = false;
+                    cbx_BSSID.Enabled = true;
+                    cbx_Detailed.Enabled = true;
+                    cbx_Profiles.Enabled = true;
                     break;
             }
 
-            switch (checkBox4.CheckState)
+            switch (cbx_Profiles.CheckState)
             {
                 case CheckState.Checked:
 
-                    checkBox4.Checked = false;
-                    checkBox1.Enabled = true;
-                    checkBox2.Enabled = true;
-                    checkBox3.Enabled = true;
+                    cbx_Profiles.Checked = false;
+                    cbx_BSSID.Enabled = true;
+                    cbx_Detailed.Enabled = true;
+                    cbx_Aggressive.Enabled = true;
                     break;
             }
 
@@ -92,94 +92,96 @@ namespace Etwap_Detector
             Profile = "";
         }
 
-        private void btnExec_Click(object sender, EventArgs e)
+        private void BtnExec_Click(object sender, EventArgs e)
         {
             SubConsoleBox.Text = RunScript(CmdBox.Text);
 
             ConsoleLog = SubConsoleBox.Text;
         }
 
-        private void btn_Filter_Click(object sender, EventArgs e)
+        private void Btn_Filter_Click(object sender, EventArgs e)
         {
             ConsoleBox.Text = RunScript("netsh wlan show filters");
 
-            checkBox1.Checked = false;
-            checkBox2.Checked = false;
-            checkBox3.Checked = false;
-            checkBox4.Checked = false;
-            checkBox5.Checked = false;
+            cbx_BSSID.Checked = false;
+            cbx_Detailed.Checked = false;
+            cbx_Aggressive.Checked = false;
+            cbx_Profiles.Checked = false;
+            cbx_Stations.Checked = false;
 
             ConsoleLog = ConsoleBox.Text;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             BSSID = " networks mode=bssid";
             Detailed = "";
             Aggressive = "";
             Profile = "";
 
-            checkBox2.Checked = false;
-            checkBox2.Enabled = false;
-            checkBox3.Checked = false;
-            checkBox3.Enabled = false;
-            checkBox4.Checked = false;
-            checkBox4.Enabled = false;
+            cbx_Detailed.Checked = false;
+            cbx_Detailed.Enabled = false;
+            cbx_Aggressive.Checked = false;
+            cbx_Aggressive.Enabled = false;
+            cbx_Profiles.Checked = false;
+            cbx_Profiles.Enabled = false;
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
             BSSID = "";
             Detailed = " all";
             Aggressive = "";
             Profile = "";
 
-            checkBox1.Checked = false;
-            checkBox1.Enabled = false;
-            checkBox3.Checked = false;
-            checkBox3.Enabled = false;
-            checkBox4.Checked = false;
-            checkBox4.Enabled = false;
+            cbx_BSSID.Checked = false;
+            cbx_BSSID.Enabled = false;
+            cbx_Aggressive.Checked = false;
+            cbx_Aggressive.Enabled = false;
+            cbx_Profiles.Checked = false;
+            cbx_Profiles.Enabled = false;
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox3_CheckedChanged(object sender, EventArgs e)
         {
             BSSID = "";
             Detailed = "";
             Aggressive = " interfaces";
             Profile = "";
 
-            checkBox1.Checked = false;
-            checkBox1.Enabled = false;
-            checkBox2.Checked = false;
-            checkBox2.Enabled = false;
-            checkBox4.Checked = false;
-            checkBox4.Enabled = false;
+            cbx_BSSID.Checked = false;
+            cbx_BSSID.Enabled = false;
+            cbx_Detailed.Checked = false;
+            cbx_Detailed.Enabled = false;
+            cbx_Profiles.Checked = false;
+            cbx_Profiles.Enabled = false;
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox4_CheckedChanged(object sender, EventArgs e)
         {
             BSSID = "";
             Detailed = "";
             Aggressive = "";
             Profile = " profiles";
 
-            checkBox1.Checked = false;
-            checkBox1.Enabled = false;
-            checkBox2.Checked = false;
-            checkBox2.Enabled = false;
-            checkBox3.Checked = false;
-            checkBox3.Enabled = false;
+            cbx_BSSID.Checked = false;
+            cbx_BSSID.Enabled = false;
+            cbx_Detailed.Checked = false;
+            cbx_Detailed.Enabled = false;
+            cbx_Aggressive.Checked = false;
+            cbx_Aggressive.Enabled = false;
         }
 
-        private void btn_Upload_Click(object sender, EventArgs e)
+        private void Btn_Upload_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.CheckFileExists = true;
-            openFileDialog.CheckPathExists = true;
-            openFileDialog.Multiselect = false;
-            openFileDialog.AddExtension = true;
-            openFileDialog.Filter = "Text files (*.txt)|*.txt";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                CheckFileExists = true,
+                CheckPathExists = true,
+                Multiselect = false,
+                AddExtension = true,
+                Filter = "Text files (*.txt)|*.txt"
+            };
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {

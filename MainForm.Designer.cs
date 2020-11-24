@@ -89,7 +89,7 @@
             this.btn_Console.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Console.Name = "btn_Console";
             this.btn_Console.UseVisualStyleBackColor = true;
-            this.btn_Console.Click += new System.EventHandler(this.btn_Console_Click);
+            this.btn_Console.Click += new System.EventHandler(this.Btn_Console_Click);
             // 
             // panel_Logo
             // 
@@ -120,7 +120,7 @@
             this.btn_Interface.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Interface.Name = "btn_Interface";
             this.btn_Interface.UseVisualStyleBackColor = true;
-            this.btn_Interface.Click += new System.EventHandler(this.btn_Users_Click);
+            this.btn_Interface.Click += new System.EventHandler(this.Btn_Users_Click);
             // 
             // btn_Dashboard
             // 
@@ -128,7 +128,7 @@
             this.btn_Dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Dashboard.Name = "btn_Dashboard";
             this.btn_Dashboard.UseVisualStyleBackColor = true;
-            this.btn_Dashboard.Click += new System.EventHandler(this.btn_Dashboard_Click);
+            this.btn_Dashboard.Click += new System.EventHandler(this.Btn_Dashboard_Click);
             // 
             // menuStrip
             // 
@@ -152,19 +152,19 @@
             // 
             resources.ApplyResources(this.aboutMenuItem, "aboutMenuItem");
             this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
+            this.aboutMenuItem.Click += new System.EventHandler(this.AboutMenuItem_Click);
             // 
             // consoleMenuItem
             // 
             resources.ApplyResources(this.consoleMenuItem, "consoleMenuItem");
             this.consoleMenuItem.Name = "consoleMenuItem";
-            this.consoleMenuItem.Click += new System.EventHandler(this.consoleMenuItem_Click);
+            this.consoleMenuItem.Click += new System.EventHandler(this.ConsoleMenuItem_Click);
             // 
             // updateMenuItem
             // 
             this.updateMenuItem.Name = "updateMenuItem";
             resources.ApplyResources(this.updateMenuItem, "updateMenuItem");
-            this.updateMenuItem.Click += new System.EventHandler(this.updateMenuItem_Click);
+            this.updateMenuItem.Click += new System.EventHandler(this.UpdateMenuItem_Click);
             // 
             // ExitMenuItem
             // 
@@ -210,7 +210,7 @@
             // 
             resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelChildForm_Paint);
             // 
             // notifyIcon
             // 

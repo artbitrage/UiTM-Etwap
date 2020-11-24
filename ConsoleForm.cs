@@ -18,7 +18,7 @@ namespace Etwap_Detector
             ConsoleBox.Text = DashboardForm.ConsoleLog;
         }
 
-        private void btn_CMD_Click(object sender, EventArgs e)
+        private void Btn_CMD_Click(object sender, EventArgs e)
         {
             AllocConsole();
 
@@ -27,7 +27,7 @@ namespace Etwap_Detector
             static extern bool AllocConsole();
         }
 
-        private void btn_Export_Click(object sender, EventArgs e)
+        private void Btn_Export_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {

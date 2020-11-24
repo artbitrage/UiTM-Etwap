@@ -47,7 +47,7 @@ namespace Etwap_Detector
             }
         }
 
-        private void btn_Connect_Click(object sender, EventArgs e)
+        private void Btn_Connect_Click(object sender, EventArgs e)
         {
             if (listView_AP.SelectedItems.Count > 0 && txBox_Password.Text.Length > 0)
             {
@@ -55,7 +55,7 @@ namespace Etwap_Detector
 
                 AccessPoint ap = (AccessPoint)selectedItem.Tag;
 
-                if (connecter(ap, txBox_Password.Text))
+                if (Connecter(ap, txBox_Password.Text))
                 {
                     lbl_Status.Text = ap.Name;
                     btn_Connect.Enabled = false;
@@ -70,15 +70,17 @@ namespace Etwap_Detector
             }
         }
 
-        private bool connecter(AccessPoint ap, string password)
+        private bool Connecter(AccessPoint ap, string password)
         {
-            AuthRequest authRequest = new AuthRequest(ap);
-            authRequest.Password = password;
+            AuthRequest authRequest = new AuthRequest(ap)
+            {
+                Password = password
+            };
 
             return ap.Connect(authRequest);
         }
 
-        private void btn_Disconnect_Click(object sender, EventArgs e)
+        private void Btn_Disconnect_Click(object sender, EventArgs e)
         {
             if (wifi.ConnectionStatus == WifiStatus.Connected)
                 wifi.Disconnect();

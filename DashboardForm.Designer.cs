@@ -40,11 +40,11 @@
             this.CmdBox = new System.Windows.Forms.TextBox();
             this.SubConsoleBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbx_Stations = new System.Windows.Forms.CheckBox();
+            this.cbx_Profiles = new System.Windows.Forms.CheckBox();
+            this.cbx_Aggressive = new System.Windows.Forms.CheckBox();
+            this.cbx_Detailed = new System.Windows.Forms.CheckBox();
+            this.cbx_BSSID = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Upload = new System.Windows.Forms.Button();
             this.openFileDialogUpload = new System.Windows.Forms.OpenFileDialog();
@@ -59,7 +59,7 @@
             this.btn_Scan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Scan.Name = "btn_Scan";
             this.btn_Scan.UseVisualStyleBackColor = true;
-            this.btn_Scan.Click += new System.EventHandler(this.btn_Scan_Click);
+            this.btn_Scan.Click += new System.EventHandler(this.Btn_Scan_Click);
             // 
             // btn_Nmap
             // 
@@ -81,7 +81,7 @@
             this.btn_Filter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Filter.Name = "btn_Filter";
             this.btn_Filter.UseVisualStyleBackColor = true;
-            this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click);
+            this.btn_Filter.Click += new System.EventHandler(this.Btn_Filter_Click);
             // 
             // panel_Console
             // 
@@ -111,7 +111,7 @@
             this.btnExec.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExec.Name = "btnExec";
             this.btnExec.UseVisualStyleBackColor = true;
-            this.btnExec.Click += new System.EventHandler(this.btnExec_Click);
+            this.btnExec.Click += new System.EventHandler(this.BtnExec_Click);
             // 
             // CmdBox
             // 
@@ -127,53 +127,53 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.checkBox5);
-            this.panel3.Controls.Add(this.checkBox4);
-            this.panel3.Controls.Add(this.checkBox3);
-            this.panel3.Controls.Add(this.checkBox2);
-            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Controls.Add(this.cbx_Stations);
+            this.panel3.Controls.Add(this.cbx_Profiles);
+            this.panel3.Controls.Add(this.cbx_Aggressive);
+            this.panel3.Controls.Add(this.cbx_Detailed);
+            this.panel3.Controls.Add(this.cbx_BSSID);
             this.panel3.Controls.Add(this.label1);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // checkBox5
+            // cbx_Stations
             // 
-            resources.ApplyResources(this.checkBox5, "checkBox5");
-            this.checkBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.cbx_Stations, "cbx_Stations");
+            this.cbx_Stations.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbx_Stations.Name = "cbx_Stations";
+            this.cbx_Stations.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cbx_Profiles
             // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            resources.ApplyResources(this.cbx_Profiles, "cbx_Profiles");
+            this.cbx_Profiles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbx_Profiles.Name = "cbx_Profiles";
+            this.cbx_Profiles.UseVisualStyleBackColor = true;
+            this.cbx_Profiles.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
             // 
-            // checkBox3
+            // cbx_Aggressive
             // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            resources.ApplyResources(this.cbx_Aggressive, "cbx_Aggressive");
+            this.cbx_Aggressive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbx_Aggressive.Name = "cbx_Aggressive";
+            this.cbx_Aggressive.UseVisualStyleBackColor = true;
+            this.cbx_Aggressive.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
-            // checkBox2
+            // cbx_Detailed
             // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            resources.ApplyResources(this.cbx_Detailed, "cbx_Detailed");
+            this.cbx_Detailed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbx_Detailed.Name = "cbx_Detailed";
+            this.cbx_Detailed.UseVisualStyleBackColor = true;
+            this.cbx_Detailed.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
             // 
-            // checkBox1
+            // cbx_BSSID
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            resources.ApplyResources(this.cbx_BSSID, "cbx_BSSID");
+            this.cbx_BSSID.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbx_BSSID.Name = "cbx_BSSID";
+            this.cbx_BSSID.UseVisualStyleBackColor = true;
+            this.cbx_BSSID.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // label1
             // 
@@ -187,7 +187,7 @@
             this.btn_Upload.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Upload.Name = "btn_Upload";
             this.btn_Upload.UseVisualStyleBackColor = true;
-            this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click);
+            this.btn_Upload.Click += new System.EventHandler(this.Btn_Upload_Click);
             // 
             // openFileDialogUpload
             // 
@@ -227,11 +227,11 @@
         private System.Windows.Forms.Panel panel_Console;
         private System.Windows.Forms.Panel panel_Config;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbx_Stations;
+        private System.Windows.Forms.CheckBox cbx_Profiles;
+        private System.Windows.Forms.CheckBox cbx_Aggressive;
+        private System.Windows.Forms.CheckBox cbx_Detailed;
+        private System.Windows.Forms.CheckBox cbx_BSSID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox SubConsoleBox;
         private System.Windows.Forms.TextBox ConsoleBox;

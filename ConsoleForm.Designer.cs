@@ -49,7 +49,7 @@
             this.btn_Export.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Export.Name = "btn_Export";
             this.btn_Export.UseVisualStyleBackColor = true;
-            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
+            this.btn_Export.Click += new System.EventHandler(this.Btn_Export_Click);
             // 
             // btn_CMD
             // 
@@ -57,7 +57,7 @@
             this.btn_CMD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CMD.Name = "btn_CMD";
             this.btn_CMD.UseVisualStyleBackColor = true;
-            this.btn_CMD.Click += new System.EventHandler(this.btn_CMD_Click);
+            this.btn_CMD.Click += new System.EventHandler(this.Btn_CMD_Click);
             // 
             // saveFileDialog
             // 
