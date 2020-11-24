@@ -7,7 +7,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201116";
+        private readonly string Version = "201125";
 
         private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private readonly string ServerVersion;
@@ -17,11 +17,18 @@ namespace Etwap_Detector
         {
             InitializeComponent();
 
-            WebRequest req = WebRequest.Create(URL + ServerVersionName);
-            WebResponse res = req.GetResponse();
-            Stream str = res.GetResponseStream();
-            StreamReader stdr = new StreamReader(str);
-            ServerVersion = stdr.ReadLine();
+            try
+            {
+                WebRequest req = WebRequest.Create(URL + ServerVersionName);
+                WebResponse res = req.GetResponse();
+                Stream str = res.GetResponseStream();
+                StreamReader stdr = new StreamReader(str);
+                ServerVersion = stdr.ReadLine();
+            }
+            catch
+            {
+                lbl_Update.Text = "No internet connection!";
+            }
         }
 
         private Form activeForm = null;
@@ -76,19 +83,26 @@ namespace Etwap_Detector
 
             btn_Dashboard.Enabled = false;
 
-            if (GetVersion() != ServerVersion)
+            try
             {
-                lbl_Update.Text = "New update available!";
-                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
-                notifyIcon.BalloonTipText = "New update available!";
-                notifyIcon.ShowBalloonTip(1000);
+                if (GetVersion() != ServerVersion)
+                {
+                    lbl_Update.Text = "New update available!";
+                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                    notifyIcon.BalloonTipText = "New update available!";
+                    notifyIcon.ShowBalloonTip(1000);
+                }
+                else
+                {
+                    lbl_Update.Text = "Etwap is up-to-date!";
+                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+                    notifyIcon.BalloonTipText = "Etwap is up-to-date!";
+                    notifyIcon.ShowBalloonTip(1000);
+                }
             }
-            else
+            catch
             {
-                lbl_Update.Text = "Etwap is up-to-date!";
-                notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
-                notifyIcon.BalloonTipText = "Etwap is up-to-date!";
-                notifyIcon.ShowBalloonTip(1000);
+                lbl_Update.Text = "No internet connection!";
             }
         }
 

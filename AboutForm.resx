@@ -199,13 +199,13 @@
     <value>223, 80</value>
   </data>
   <data name="labelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 21</value>
+    <value>167, 21</value>
   </data>
   <data name="labelVersion.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="labelVersion.Text" xml:space="preserve">
-    <value>v0.2a (Build 201116)</value>
+    <value>v1.0rc (Build 201125)</value>
   </data>
   <data name="labelVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
