@@ -88,8 +88,7 @@ namespace Etwap_Console.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Remove profiles without encryption? [y/n]
-        ///.
+        ///   Recherche une chaîne localisée semblable à Remove suspicious profiles? [y/n].
         /// </summary>
         internal static string DeleteAutoConnect {
             get {
@@ -98,18 +97,17 @@ namespace Etwap_Console.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à No unencrypted AP(s) found.
-        ///Option: Run with /deletewithoutencryption for auto removal.
-        ///.
+        ///   Recherche une chaîne localisée semblable à No evil-twin AP(s) found.
+        ///Option: Run with /deletewithoutencryption for auto removal..
         /// </summary>
-        internal static string NoWifi {
+        internal static string NoETWAP {
             get {
-                return ResourceManager.GetString("NoWifi", resourceCulture);
+                return ResourceManager.GetString("NoETWAP", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Warning: Suspected AP(s) detected!.
+        ///   Recherche une chaîne localisée semblable à Warning: Suspicious AP(s) detected!.
         /// </summary>
         internal static string WarningAutoConnect {
             get {
