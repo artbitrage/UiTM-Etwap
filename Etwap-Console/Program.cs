@@ -26,9 +26,9 @@
 
             foreach (var a in profiles)
             {
-                var warning = Wrapper.WithoutEncryption(a) ? Resources.stringResource.WarningAutoConnect : String.Empty;
+                var warning = Wrapper.WithoutEncryption(a) ? Resources.stringResource.WarningAutoConnect : string.Empty;
                 Console.WriteLine("{0, -30} {1, 10} {2, 10} {3, 30}", a.Name, a.ConnMode, a.Auth, warning);
-                if (!String.IsNullOrWhiteSpace(warning)) ETNetworkFoud = true;
+                if (!string.IsNullOrWhiteSpace(warning)) ETNetworkFoud = true;
             }
 
             if (ETNetworkFoud)

@@ -11,7 +11,7 @@ namespace NetSh
 
     public class Wrapper
     {
-        private static XNamespace ns = "http://www.microsoft.com/networking/WLAN/profile/v1";
+        private static readonly XNamespace ns = "http://www.microsoft.com/networking/WLAN/profile/v1";
 
         public static List<Profile> GetProfiles()
         {
@@ -43,7 +43,7 @@ namespace NetSh
 
         public static string DeleteProfiles(string profileName)
         {
-            string result = ExecuteNetSh(String.Format("wlan delete profile name=\"{0}\"", profileName));
+            string result = ExecuteNetSh(string.Format("wlan delete profile name=\"{0}\"", profileName));
             return result;
         }
 
@@ -60,7 +60,7 @@ namespace NetSh
 
             foreach (var match in listOfProfiles)
             {
-                ExecuteNetSh(String.Format("wlan export profile \"{0}\" folder=\"{1}\"", match.ToString(), Environment.CurrentDirectory));
+                ExecuteNetSh(string.Format("wlan export profile \"{0}\" folder=\"{1}\"", match.ToString(), Environment.CurrentDirectory));
                 Console.Write(".");
             }
             Console.WriteLine();
@@ -71,7 +71,7 @@ namespace NetSh
             Process p = new Process();
             p.StartInfo.FileName = "netsh.exe";
             p.StartInfo.CreateNoWindow = true;
-            p.StartInfo.Arguments = arguments ?? String.Empty;
+            p.StartInfo.Arguments = arguments ?? string.Empty;
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.RedirectStandardOutput = true;
             p.Start();
