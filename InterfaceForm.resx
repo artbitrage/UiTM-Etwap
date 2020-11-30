@@ -247,13 +247,13 @@
     <value>3, 369</value>
   </data>
   <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 21</value>
+    <value>119, 21</value>
   </data>
   <data name="lbl_Status.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="lbl_Status.Text" xml:space="preserve">
-    <value>Not Connected</value>
+    <value>Disconnected</value>
   </data>
   <data name="&gt;&gt;lbl_Status.Name" xml:space="preserve">
     <value>lbl_Status</value>
