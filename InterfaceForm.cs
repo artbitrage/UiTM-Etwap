@@ -35,14 +35,17 @@ namespace Etwap_Detector
                 if (lbl_Status.Text == WifiStatus.Connected.ToString())
                 {
                     btn_Connect.Enabled = false;
+                    txBox_SSID.Enabled = false;
                     txBox_Password.Enabled = false;
                     btn_Disconnect.Enabled = true;
                 }
                 else if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
                 {
                     btn_Connect.Enabled = true;
+                    txBox_SSID.Enabled = true;
                     txBox_Password.Enabled = true;
                     btn_Disconnect.Enabled = false;
+                    lbl_AP.Text = "N/A";
                 }
             }
         }
@@ -69,8 +72,10 @@ namespace Etwap_Detector
                     if (lbl_Status.Text == WifiStatus.Connected.ToString())
                     {
                         btn_Connect.Enabled = false;
+                        txBox_SSID.Enabled = false;
                         txBox_Password.Enabled = false;
                         btn_Disconnect.Enabled = true;
+                        lbl_AP.Text = txBox_SSID.Text.ToString();
                     }
                 }
                 else
@@ -79,9 +84,11 @@ namespace Etwap_Detector
                     if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
                     {
                         btn_Connect.Enabled = true;
+                        txBox_SSID.Enabled = true;
                         txBox_Password.Enabled = true;
                         txBox_Password.Clear();
                         btn_Disconnect.Enabled = false;
+                        lbl_AP.Text = "N/A";
                     }
                 }
             }
@@ -104,8 +111,33 @@ namespace Etwap_Detector
 
             lbl_Status.Text = WifiStatus.Disconnected.ToString();
             btn_Connect.Enabled = true;
+            txBox_SSID.Enabled = true;
             txBox_Password.Enabled = true;
             btn_Disconnect.Enabled = false;
+        }
+
+        private void ListView_AP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView_AP.SelectedIndices.Count <= 0)
+            {
+                txBox_SSID.Clear();
+                return;
+            }
+            int selectedIndex = listView_AP.SelectedIndices[0];
+
+            try
+            {
+                if (selectedIndex >= 0)
+                {
+                    var selectedSSID = listView_AP.SelectedItems[selectedIndex].Text;
+                    txBox_SSID.Text = selectedSSID;
+                    return;
+                }
+            }
+            catch (Exception lv_e)
+            {
+                MessageBox.Show(lv_e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -174,6 +174,90 @@
   <data name="pnl_Btns.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <metadata name="lbl_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_AP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_AP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 369</value>
+  </data>
+  <data name="lbl_AP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 21</value>
+  </data>
+  <data name="lbl_AP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_AP.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.Name" xml:space="preserve">
+    <value>lbl_AP</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="lbl_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_SSID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_SSID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 65</value>
+  </data>
+  <data name="lbl_SSID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 21</value>
+  </data>
+  <data name="lbl_SSID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_SSID.Text" xml:space="preserve">
+    <value>SSID:</value>
+  </data>
+  <data name="&gt;&gt;lbl_SSID.Name" xml:space="preserve">
+    <value>lbl_SSID</value>
+  </data>
+  <data name="&gt;&gt;lbl_SSID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SSID.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;lbl_SSID.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="txBox_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txBox_SSID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 89</value>
+  </data>
+  <data name="txBox_SSID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 27</value>
+  </data>
+  <data name="txBox_SSID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txBox_SSID.Name" xml:space="preserve">
+    <value>txBox_SSID</value>
+  </data>
+  <data name="&gt;&gt;txBox_SSID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txBox_SSID.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;txBox_SSID.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="lbl_Stat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -205,7 +289,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Stat.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <metadata name="btn_Disconnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -235,7 +319,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;btn_Disconnect.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <metadata name="lbl_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -244,7 +328,7 @@
     <value>True</value>
   </data>
   <data name="lbl_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 369</value>
+    <value>3, 390</value>
   </data>
   <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 21</value>
@@ -265,13 +349,13 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <metadata name="txBox_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="txBox_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 101</value>
+    <value>3, 143</value>
   </data>
   <data name="txBox_Password.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
@@ -292,7 +376,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;txBox_Password.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <metadata name="lbl_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -301,7 +385,7 @@
     <value>True</value>
   </data>
   <data name="lbl_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 77</value>
+    <value>3, 119</value>
   </data>
   <data name="lbl_Password.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 21</value>
@@ -322,7 +406,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Password.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <metadata name="btn_Connect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -349,7 +433,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;btn_Connect.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 12</value>
