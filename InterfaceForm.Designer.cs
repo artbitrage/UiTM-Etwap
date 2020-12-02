@@ -35,12 +35,15 @@ namespace Etwap_Detector
             this.clmSignal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSecure = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnl_Btns = new System.Windows.Forms.Panel();
+            this.lbl_SSID = new System.Windows.Forms.Label();
+            this.txBox_SSID = new System.Windows.Forms.TextBox();
             this.lbl_Stat = new System.Windows.Forms.Label();
             this.btn_Disconnect = new System.Windows.Forms.Button();
             this.lbl_Status = new System.Windows.Forms.Label();
             this.txBox_Password = new System.Windows.Forms.TextBox();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.btn_Connect = new System.Windows.Forms.Button();
+            this.lbl_AP = new System.Windows.Forms.Label();
             this.pnl_Btns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +58,7 @@ namespace Etwap_Detector
             this.listView_AP.Name = "listView_AP";
             this.listView_AP.UseCompatibleStateImageBehavior = false;
             this.listView_AP.View = System.Windows.Forms.View.Details;
+            this.listView_AP.SelectedIndexChanged += new System.EventHandler(this.ListView_AP_SelectedIndexChanged);
             // 
             // clmAccessPoint
             // 
@@ -71,6 +75,9 @@ namespace Etwap_Detector
             // pnl_Btns
             // 
             resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
+            this.pnl_Btns.Controls.Add(this.lbl_AP);
+            this.pnl_Btns.Controls.Add(this.lbl_SSID);
+            this.pnl_Btns.Controls.Add(this.txBox_SSID);
             this.pnl_Btns.Controls.Add(this.lbl_Stat);
             this.pnl_Btns.Controls.Add(this.btn_Disconnect);
             this.pnl_Btns.Controls.Add(this.lbl_Status);
@@ -78,6 +85,18 @@ namespace Etwap_Detector
             this.pnl_Btns.Controls.Add(this.lbl_Password);
             this.pnl_Btns.Controls.Add(this.btn_Connect);
             this.pnl_Btns.Name = "pnl_Btns";
+            // 
+            // lbl_SSID
+            // 
+            resources.ApplyResources(this.lbl_SSID, "lbl_SSID");
+            this.lbl_SSID.Name = "lbl_SSID";
+            // 
+            // txBox_SSID
+            // 
+            this.txBox_SSID.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.txBox_SSID, "txBox_SSID");
+            this.txBox_SSID.Name = "txBox_SSID";
+            this.txBox_SSID.ReadOnly = true;
             // 
             // lbl_Stat
             // 
@@ -116,6 +135,11 @@ namespace Etwap_Detector
             this.btn_Connect.UseVisualStyleBackColor = true;
             this.btn_Connect.Click += new System.EventHandler(this.Btn_Connect_Click);
             // 
+            // lbl_AP
+            // 
+            resources.ApplyResources(this.lbl_AP, "lbl_AP");
+            this.lbl_AP.Name = "lbl_AP";
+            // 
             // InterfaceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -147,5 +171,8 @@ namespace Etwap_Detector
         private System.Windows.Forms.ColumnHeader clmSecure;
         private System.Windows.Forms.Button btn_Disconnect;
         private System.Windows.Forms.Label lbl_Stat;
+        private System.Windows.Forms.TextBox txBox_SSID;
+        private System.Windows.Forms.Label lbl_SSID;
+        private System.Windows.Forms.Label lbl_AP;
     }
 }
