@@ -220,7 +220,7 @@
     <value>163, 79</value>
   </data>
   <data name="btn_Console.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="btn_Console.Text" xml:space="preserve">
     <value>Console</value>
@@ -256,7 +256,7 @@
     <value>168, 96</value>
   </data>
   <data name="panel_Logo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panel_Logo.Name" xml:space="preserve">
     <value>panel_Logo</value>
@@ -292,13 +292,13 @@
     <value>8, 24</value>
   </data>
   <data name="lbl_MainVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 16</value>
+    <value>106, 16</value>
   </data>
   <data name="lbl_MainVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="lbl_MainVersion.Text" xml:space="preserve">
-    <value>v1.0rc (Build 201125)</value>
+    <value>v1.0 (Build 201202)</value>
   </data>
   <data name="&gt;&gt;lbl_MainVersion.Name" xml:space="preserve">
     <value>lbl_MainVersion</value>
@@ -355,7 +355,7 @@
     <value>168, 47</value>
   </data>
   <data name="pnl_MainVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;pnl_MainVersion.Name" xml:space="preserve">
     <value>pnl_MainVersion</value>
@@ -404,7 +404,7 @@
     <value>163, 79</value>
   </data>
   <data name="btn_Interface.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btn_Interface.Text" xml:space="preserve">
     <value>Interface</value>
@@ -493,7 +493,7 @@
     <value>None</value>
   </data>
   <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>About</value>
@@ -502,19 +502,19 @@
     <value>None</value>
   </data>
   <data name="consoleMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="consoleMenuItem.Text" xml:space="preserve">
     <value>Console</value>
   </data>
   <data name="updateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="updateMenuItem.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="ExitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ExitMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
@@ -526,19 +526,19 @@
     <value>Menu</value>
   </data>
   <data name="createMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="createMenuItem.Text" xml:space="preserve">
     <value>Create</value>
   </data>
   <data name="openMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="openMenuItem.Text" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="configMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="configMenuItem.Text" xml:space="preserve">
     <value>Config</value>

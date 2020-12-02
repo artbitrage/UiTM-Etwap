@@ -127,15 +127,13 @@
     <value>DELETE</value>
   </data>
   <data name="DeleteAutoConnect" xml:space="preserve">
-    <value>Remove profiles without encryption? [y/n]
-</value>
+    <value>Remove suspicious profiles? [y/n]</value>
   </data>
-  <data name="NoWifi" xml:space="preserve">
-    <value>No unencrypted AP(s) found.
-Option: Run with /deletewithoutencryption for auto removal.
-</value>
+  <data name="NoETWAP" xml:space="preserve">
+    <value>No evil-twin AP(s) found.
+Option: Run with /deletewithoutencryption for auto removal.</value>
   </data>
   <data name="WarningAutoConnect" xml:space="preserve">
-    <value>Warning: Suspected AP(s) detected!</value>
+    <value>Warning: Suspicious AP(s) detected!</value>
   </data>
 </root>

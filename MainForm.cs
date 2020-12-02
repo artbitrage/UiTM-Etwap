@@ -7,7 +7,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201125";
+        private readonly string Version = "201202";
 
         private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private readonly string ServerVersion;
@@ -51,7 +51,11 @@ namespace Etwap_Detector
             OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = true;
         }
 
@@ -69,7 +73,11 @@ namespace Etwap_Detector
             OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = false;
         }
 
@@ -82,6 +90,11 @@ namespace Etwap_Detector
             OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
 
             try
             {
@@ -132,7 +145,11 @@ namespace Etwap_Detector
             OpenChildForm(new AboutForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = true;
         }
 
@@ -141,7 +158,11 @@ namespace Etwap_Detector
             OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = false;
         }
 

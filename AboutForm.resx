@@ -129,7 +129,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelTop.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panelTop.Name" xml:space="preserve">
     <value>panelTop</value>
@@ -160,13 +160,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelSubtitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 40</value>
+    <value>201, 40</value>
   </data>
   <data name="labelSubtitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 25</value>
   </data>
   <data name="labelSubtitle.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="labelSubtitle.Text" xml:space="preserve">
     <value>An Evil Twin Detector</value>
@@ -196,16 +196,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 80</value>
+    <value>236, 80</value>
   </data>
   <data name="labelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 21</value>
+    <value>152, 21</value>
   </data>
   <data name="labelVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="labelVersion.Text" xml:space="preserve">
-    <value>v1.0rc (Build 201125)</value>
+    <value>v1.0 (Build 201202)</value>
   </data>
   <data name="labelVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -235,7 +235,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 8</value>
+    <value>231, 8</value>
   </data>
   <data name="labelTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 32</value>
@@ -268,7 +268,7 @@
     <value>624, 104</value>
   </data>
   <data name="panelDesc.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panelDesc.Name" xml:space="preserve">
     <value>panelDesc</value>
@@ -292,7 +292,7 @@
     <value>624, 104</value>
   </data>
   <data name="panelDev.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panelDev.Name" xml:space="preserve">
     <value>panelDev</value>
@@ -316,7 +316,7 @@
     <value>624, 104</value>
   </data>
   <data name="panelBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panelBottom.Name" xml:space="preserve">
     <value>panelBottom</value>
@@ -343,7 +343,7 @@
     <value>624, 104</value>
   </data>
   <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panelLogo.Name" xml:space="preserve">
     <value>panelLogo</value>
