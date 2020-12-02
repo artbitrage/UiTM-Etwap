@@ -190,7 +190,7 @@
     <value>68, 21</value>
   </data>
   <data name="lbl_Stat.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="lbl_Stat.Text" xml:space="preserve">
     <value>Status:-</value>
@@ -220,7 +220,7 @@
     <value>178, 47</value>
   </data>
   <data name="btn_Disconnect.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="btn_Disconnect.Text" xml:space="preserve">
     <value>Disconnect</value>
@@ -250,7 +250,7 @@
     <value>119, 21</value>
   </data>
   <data name="lbl_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="lbl_Status.Text" xml:space="preserve">
     <value>Disconnected</value>
@@ -307,7 +307,7 @@
     <value>86, 21</value>
   </data>
   <data name="lbl_Password.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="lbl_Password.Text" xml:space="preserve">
     <value>Password:</value>
@@ -334,7 +334,7 @@
     <value>178, 47</value>
   </data>
   <data name="btn_Connect.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btn_Connect.Text" xml:space="preserve">
     <value>Connect</value>
