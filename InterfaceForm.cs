@@ -48,6 +48,15 @@ namespace Etwap_Detector
                     lbl_AP.Text = "N/A";
                 }
             }
+
+            try
+            {
+                lbl_AP.Text = listView_AP.Items[0].Text;
+            }
+            catch
+            {
+                lbl_AP.Text = "N/A";
+            }
         }
 
         private void TxBox_Password_KeyDown(object sender, KeyEventArgs e)
@@ -134,9 +143,9 @@ namespace Etwap_Detector
                     return;
                 }
             }
-            catch (Exception lv_e)
+            catch (Exception err)
             {
-                MessageBox.Show(lv_e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
