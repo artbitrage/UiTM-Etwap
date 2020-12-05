@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -124,22 +125,6 @@ namespace Etwap_Detector
             return Version;
         }
 
-        private void CheckForUpdate()
-        {
-            if (GetVersion() != ServerVersion)
-            {
-                UpdateForm updateForm = new UpdateForm
-                {
-                    StartPosition = FormStartPosition.CenterParent
-                };
-                updateForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Etwap is up-to-date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         private void AboutMenuItem_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AboutForm());
@@ -168,7 +153,23 @@ namespace Etwap_Detector
 
         private void UpdateMenuItem_Click(object sender, EventArgs e)
         {
-            CheckForUpdate();
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        Process.Start(@".\Etwap-Updater.exe");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)
