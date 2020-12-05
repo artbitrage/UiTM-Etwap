@@ -159,6 +159,7 @@ namespace Etwap_Detector
                     if (GetVersion() != ServerVersion)
                     {
                         Process.Start(@".\Etwap-Updater.exe");
+                        Close();
                     }
                     else
                     {
