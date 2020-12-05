@@ -8,7 +8,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201202";
+        private readonly string Version = "201201";
 
         private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private readonly string ServerVersion;
@@ -158,12 +158,16 @@ namespace Etwap_Detector
                 {
                     if (GetVersion() != ServerVersion)
                     {
-                        Process.Start(@".\Etwap-Updater.exe");
-                        Close();
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Etwap is up-to-date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
