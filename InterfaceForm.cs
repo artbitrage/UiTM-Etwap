@@ -51,7 +51,14 @@ namespace Etwap_Detector
 
             try
             {
-                lbl_AP.Text = listView_AP.Items[0].Text;
+                if (lbl_Status.Text == WifiStatus.Connected.ToString())
+                {
+                    lbl_AP.Text = listView_AP.Items[0].Text;
+                }
+                else if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
+                {
+                    lbl_AP.Text = "N/A";
+                }
             }
             catch
             {
@@ -118,6 +125,7 @@ namespace Etwap_Detector
             if (wifi.ConnectionStatus == WifiStatus.Connected)
                 wifi.Disconnect();
 
+            lbl_AP.Text = "N/A";
             lbl_Status.Text = WifiStatus.Disconnected.ToString();
             btn_Connect.Enabled = true;
             txBox_SSID.Enabled = true;
