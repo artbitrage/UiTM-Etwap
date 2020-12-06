@@ -147,7 +147,11 @@ namespace Etwap_Detector
                 {
                     string selectedSSID = listView_AP.SelectedItems[0].Text.ToString();
                     if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
+                    {
                         txBox_SSID.Text = selectedSSID;
+                        if (listView_AP.SelectedItems[0].SubItems[2].Text.ToString() == "False")
+                            lbl_Warning.Visible = true;
+                    }
                     return;
                 }
             }

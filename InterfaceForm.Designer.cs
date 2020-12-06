@@ -29,12 +29,15 @@ namespace Etwap_Detector
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfaceForm));
             this.listView_AP = new System.Windows.Forms.ListView();
             this.clmAccessPoint = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSignal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSecure = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnl_Btns = new System.Windows.Forms.Panel();
+            this.lbl_Warning = new System.Windows.Forms.Label();
+            this.lbl_AP = new System.Windows.Forms.Label();
             this.lbl_SSID = new System.Windows.Forms.Label();
             this.txBox_SSID = new System.Windows.Forms.TextBox();
             this.lbl_Stat = new System.Windows.Forms.Label();
@@ -43,7 +46,7 @@ namespace Etwap_Detector
             this.txBox_Password = new System.Windows.Forms.TextBox();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.btn_Connect = new System.Windows.Forms.Button();
-            this.lbl_AP = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pnl_Btns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +78,7 @@ namespace Etwap_Detector
             // pnl_Btns
             // 
             resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
+            this.pnl_Btns.Controls.Add(this.lbl_Warning);
             this.pnl_Btns.Controls.Add(this.lbl_AP);
             this.pnl_Btns.Controls.Add(this.lbl_SSID);
             this.pnl_Btns.Controls.Add(this.txBox_SSID);
@@ -85,6 +89,20 @@ namespace Etwap_Detector
             this.pnl_Btns.Controls.Add(this.lbl_Password);
             this.pnl_Btns.Controls.Add(this.btn_Connect);
             this.pnl_Btns.Name = "pnl_Btns";
+            // 
+            // lbl_Warning
+            // 
+            resources.ApplyResources(this.lbl_Warning, "lbl_Warning");
+            this.lbl_Warning.BackColor = System.Drawing.Color.Red;
+            this.lbl_Warning.Cursor = System.Windows.Forms.Cursors.Help;
+            this.lbl_Warning.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_Warning.Name = "lbl_Warning";
+            this.toolTip.SetToolTip(this.lbl_Warning, resources.GetString("lbl_Warning.ToolTip"));
+            // 
+            // lbl_AP
+            // 
+            resources.ApplyResources(this.lbl_AP, "lbl_AP");
+            this.lbl_AP.Name = "lbl_AP";
             // 
             // lbl_SSID
             // 
@@ -135,10 +153,12 @@ namespace Etwap_Detector
             this.btn_Connect.UseVisualStyleBackColor = true;
             this.btn_Connect.Click += new System.EventHandler(this.Btn_Connect_Click);
             // 
-            // lbl_AP
+            // toolTip
             // 
-            resources.ApplyResources(this.lbl_AP, "lbl_AP");
-            this.lbl_AP.Name = "lbl_AP";
+            this.toolTip.IsBalloon = true;
+            this.toolTip.ShowAlways = true;
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.toolTip.ToolTipTitle = "Warning!";
             // 
             // InterfaceForm
             // 
@@ -174,5 +194,7 @@ namespace Etwap_Detector
         private System.Windows.Forms.TextBox txBox_SSID;
         private System.Windows.Forms.Label lbl_SSID;
         private System.Windows.Forms.Label lbl_AP;
+        private System.Windows.Forms.Label lbl_Warning;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
