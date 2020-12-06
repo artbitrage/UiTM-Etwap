@@ -48,6 +48,22 @@ namespace Etwap_Detector
                     lbl_AP.Text = "N/A";
                 }
             }
+
+            try
+            {
+                if (lbl_Status.Text == WifiStatus.Connected.ToString())
+                {
+                    lbl_AP.Text = listView_AP.Items[0].Text;
+                }
+                else if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
+                {
+                    lbl_AP.Text = "N/A";
+                }
+            }
+            catch
+            {
+                lbl_AP.Text = "N/A";
+            }
         }
 
         private void TxBox_Password_KeyDown(object sender, KeyEventArgs e)
@@ -109,6 +125,7 @@ namespace Etwap_Detector
             if (wifi.ConnectionStatus == WifiStatus.Connected)
                 wifi.Disconnect();
 
+            lbl_AP.Text = "N/A";
             lbl_Status.Text = WifiStatus.Disconnected.ToString();
             btn_Connect.Enabled = true;
             txBox_SSID.Enabled = true;
@@ -118,25 +135,29 @@ namespace Etwap_Detector
 
         private void ListView_AP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView_AP.SelectedIndices.Count <= 0)
+            if (listView_AP.SelectedItems.Count <= 0)
             {
                 txBox_SSID.Clear();
                 return;
             }
-            int selectedIndex = listView_AP.SelectedIndices[0];
 
             try
             {
-                if (selectedIndex >= 0)
+                if (listView_AP.SelectedItems[0].Tag != null)
                 {
-                    var selectedSSID = listView_AP.SelectedItems[selectedIndex].Text;
-                    txBox_SSID.Text = selectedSSID;
+                    string selectedSSID = listView_AP.SelectedItems[0].Text.ToString();
+                    if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
+                    {
+                        txBox_SSID.Text = selectedSSID;
+                        if (listView_AP.SelectedItems[0].SubItems[2].Text.ToString() == "False")
+                            lbl_Warning.Visible = true;
+                    }
                     return;
                 }
             }
-            catch (Exception lv_e)
+            catch (Exception err)
             {
-                MessageBox.Show(lv_e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

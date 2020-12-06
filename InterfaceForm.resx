@@ -120,10 +120,32 @@
   <metadata name="listView_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 457</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
+    <value>listView_AP</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="clmAccessPoint.Text" xml:space="preserve">
     <value>Access Point(s)</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="clmAccessPoint.Width" type="System.Int32, mscorlib">
     <value>140</value>
   </data>
@@ -146,33 +168,50 @@
   <data name="clmSecure.Width" type="System.Int32, mscorlib">
     <value>110</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>394, 457</value>
-  </data>
-  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
-    <value>listView_AP</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="pnl_Btns.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pnl_Btns.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <metadata name="lbl_Warning.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_Warning.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Warning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 65</value>
+  </data>
+  <data name="lbl_Warning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 21</value>
+  </data>
+  <data name="lbl_Warning.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_Warning.Text" xml:space="preserve">
+    <value>Warning!</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lbl_Warning.ToolTip" xml:space="preserve">
+    <value>Suspected evil twin AP detected!</value>
+  </data>
+  <data name="lbl_Warning.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_Warning.Name" xml:space="preserve">
+    <value>lbl_Warning</value>
+  </data>
+  <data name="&gt;&gt;lbl_Warning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Warning.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;lbl_Warning.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="lbl_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -202,7 +241,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_AP.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="lbl_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -232,7 +271,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_SSID.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="txBox_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -256,7 +295,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;txBox_SSID.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="lbl_Stat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -289,7 +328,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Stat.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="btn_Disconnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -319,7 +358,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;btn_Disconnect.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="lbl_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -349,7 +388,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="txBox_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -376,7 +415,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;txBox_Password.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <metadata name="lbl_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -406,7 +445,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;lbl_Password.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="btn_Connect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -433,7 +472,7 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;btn_Connect.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 12</value>
@@ -753,6 +792,12 @@
   </data>
   <data name="&gt;&gt;clmSecure.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>InterfaceForm</value>
