@@ -135,19 +135,19 @@ namespace Etwap_Detector
 
         private void ListView_AP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView_AP.SelectedIndices.Count <= 0)
+            if (listView_AP.SelectedItems.Count <= 0)
             {
                 txBox_SSID.Clear();
                 return;
             }
-            int selectedIndex = listView_AP.SelectedIndices[0];
 
             try
             {
-                if (selectedIndex >= 0)
+                if (listView_AP.SelectedItems[0].Tag != null)
                 {
-                    var selectedSSID = listView_AP.SelectedItems[selectedIndex].Text;
-                    txBox_SSID.Text = selectedSSID;
+                    string selectedSSID = listView_AP.SelectedItems[0].Text.ToString();
+                    if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
+                        txBox_SSID.Text = selectedSSID;
                     return;
                 }
             }
