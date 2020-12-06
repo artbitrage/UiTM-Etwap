@@ -328,13 +328,13 @@
     <value>8, 8</value>
   </data>
   <data name="lbl_MainTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 16</value>
+    <value>84, 16</value>
   </data>
   <data name="lbl_MainTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="lbl_MainTitle.Text" xml:space="preserve">
-    <value>UiTM Etwap</value>
+    <value>UiTM Etwap™</value>
   </data>
   <data name="&gt;&gt;lbl_MainTitle.Name" xml:space="preserve">
     <value>lbl_MainTitle</value>
@@ -493,7 +493,7 @@
     <value>None</value>
   </data>
   <data name="aboutMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>About</value>
@@ -502,19 +502,19 @@
     <value>None</value>
   </data>
   <data name="consoleMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="consoleMenuItem.Text" xml:space="preserve">
     <value>Console</value>
   </data>
   <data name="updateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="updateMenuItem.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="ExitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="ExitMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
@@ -526,19 +526,19 @@
     <value>Menu</value>
   </data>
   <data name="createMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>110, 22</value>
   </data>
   <data name="createMenuItem.Text" xml:space="preserve">
     <value>Create</value>
   </data>
   <data name="openMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>110, 22</value>
   </data>
   <data name="openMenuItem.Text" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="configMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>110, 22</value>
   </data>
   <data name="configMenuItem.Text" xml:space="preserve">
     <value>Config</value>
@@ -917,7 +917,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>UiTM Etwap</value>
+    <value>UiTM Etwap™</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem.Name" xml:space="preserve">
     <value>toolStripMenuItem</value>
