@@ -151,6 +151,8 @@ namespace Etwap_Detector
                         txBox_SSID.Text = selectedSSID;
                         if (listView_AP.SelectedItems[0].SubItems[2].Text.ToString() == "False")
                             lbl_Warning.Visible = true;
+                        if (listView_AP.SelectedItems[0].SubItems[2].Text.ToString() == "True")
+                            lbl_Warning.Visible = false;
                     }
                     return;
                 }
