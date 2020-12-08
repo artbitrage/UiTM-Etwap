@@ -31,13 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelDesc = new System.Windows.Forms.Panel();
-            this.labelSubtitle = new System.Windows.Forms.Label();
-            this.labelVersion = new System.Windows.Forms.Label();
-            this.labelTitle = new System.Windows.Forms.Label();
+            this.lblSubtitle = new System.Windows.Forms.Label();
+            this.lblBuild = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.panelDev = new System.Windows.Forms.Panel();
+            this.lnklblLicense = new System.Windows.Forms.LinkLabel();
+            this.lnklblVersion = new System.Windows.Forms.LinkLabel();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelDesc.SuspendLayout();
+            this.panelDev.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop
@@ -47,31 +50,49 @@
             // 
             // panelDesc
             // 
-            this.panelDesc.Controls.Add(this.labelSubtitle);
-            this.panelDesc.Controls.Add(this.labelVersion);
-            this.panelDesc.Controls.Add(this.labelTitle);
+            this.panelDesc.Controls.Add(this.lblSubtitle);
+            this.panelDesc.Controls.Add(this.lblBuild);
+            this.panelDesc.Controls.Add(this.lblTitle);
             resources.ApplyResources(this.panelDesc, "panelDesc");
             this.panelDesc.Name = "panelDesc";
             // 
-            // labelSubtitle
+            // lblSubtitle
             // 
-            resources.ApplyResources(this.labelSubtitle, "labelSubtitle");
-            this.labelSubtitle.Name = "labelSubtitle";
+            resources.ApplyResources(this.lblSubtitle, "lblSubtitle");
+            this.lblSubtitle.Name = "lblSubtitle";
             // 
-            // labelVersion
+            // lblBuild
             // 
-            resources.ApplyResources(this.labelVersion, "labelVersion");
-            this.labelVersion.Name = "labelVersion";
+            resources.ApplyResources(this.lblBuild, "lblBuild");
+            this.lblBuild.Name = "lblBuild";
             // 
-            // labelTitle
+            // lblTitle
             // 
-            resources.ApplyResources(this.labelTitle, "labelTitle");
-            this.labelTitle.Name = "labelTitle";
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.Name = "lblTitle";
             // 
             // panelDev
             // 
+            this.panelDev.Controls.Add(this.lnklblLicense);
+            this.panelDev.Controls.Add(this.lnklblVersion);
             resources.ApplyResources(this.panelDev, "panelDev");
             this.panelDev.Name = "panelDev";
+            // 
+            // lnklblLicense
+            // 
+            resources.ApplyResources(this.lnklblLicense, "lnklblLicense");
+            this.lnklblLicense.Name = "lnklblLicense";
+            this.lnklblLicense.TabStop = true;
+            this.lnklblLicense.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnklblLicense_LinkClicked);
+            // 
+            // lnklblVersion
+            // 
+            resources.ApplyResources(this.lnklblVersion, "lnklblVersion");
+            this.lnklblVersion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lnklblVersion.Name = "lnklblVersion";
+            this.lnklblVersion.TabStop = true;
+            this.lnklblVersion.UseCompatibleTextRendering = true;
+            this.lnklblVersion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnklblVersion_LinkClicked);
             // 
             // panelBottom
             // 
@@ -97,8 +118,11 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutForm";
+            this.Load += new System.EventHandler(this.AboutForm_Load);
             this.panelDesc.ResumeLayout(false);
             this.panelDesc.PerformLayout();
+            this.panelDev.ResumeLayout(false);
+            this.panelDev.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -109,8 +133,10 @@
         private System.Windows.Forms.Panel panelDesc;
         private System.Windows.Forms.Panel panelDev;
         private System.Windows.Forms.Panel panelBottom;
-        private System.Windows.Forms.Label labelSubtitle;
-        private System.Windows.Forms.Label labelVersion;
-        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label lblSubtitle;
+        private System.Windows.Forms.Label lblBuild;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.LinkLabel lnklblVersion;
+        private System.Windows.Forms.LinkLabel lnklblLicense;
     }
 }
