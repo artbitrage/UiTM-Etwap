@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -7,7 +8,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201202";
+        private readonly string Version = "201209";
 
         private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private readonly string ServerVersion;
@@ -124,22 +125,6 @@ namespace Etwap_Detector
             return Version;
         }
 
-        private void CheckForUpdate()
-        {
-            if (GetVersion() != ServerVersion)
-            {
-                UpdateForm updateForm = new UpdateForm
-                {
-                    StartPosition = FormStartPosition.CenterParent
-                };
-                updateForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Etwap is up-to-date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         private void AboutMenuItem_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AboutForm());
@@ -168,7 +153,28 @@ namespace Etwap_Detector
 
         private void UpdateMenuItem_Click(object sender, EventArgs e)
         {
-            CheckForUpdate();
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)

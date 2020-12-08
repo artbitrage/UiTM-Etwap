@@ -146,119 +146,119 @@
   <metadata name="panelDesc.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelSubtitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblSubtitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="labelSubtitle.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblSubtitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelSubtitle.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblSubtitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelSubtitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblSubtitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelSubtitle.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblSubtitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 40</value>
   </data>
-  <data name="labelSubtitle.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblSubtitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 25</value>
   </data>
-  <data name="labelSubtitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblSubtitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelSubtitle.Text" xml:space="preserve">
+  <data name="lblSubtitle.Text" xml:space="preserve">
     <value>An Evil Twin Detector</value>
   </data>
-  <data name="labelSubtitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblSubtitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;labelSubtitle.Name" xml:space="preserve">
-    <value>labelSubtitle</value>
+  <data name="&gt;&gt;lblSubtitle.Name" xml:space="preserve">
+    <value>lblSubtitle</value>
   </data>
-  <data name="&gt;&gt;labelSubtitle.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblSubtitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelSubtitle.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblSubtitle.Parent" xml:space="preserve">
     <value>panelDesc</value>
   </data>
-  <data name="&gt;&gt;labelSubtitle.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblSubtitle.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="labelVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblBuild.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="labelVersion.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblBuild.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblBuild.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 80</value>
+  <data name="lblBuild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 80</value>
   </data>
-  <data name="labelVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 21</value>
+  <data name="lblBuild.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 21</value>
   </data>
-  <data name="labelVersion.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblBuild.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelVersion.Text" xml:space="preserve">
-    <value>v1.0 (Build 201202)</value>
+  <data name="lblBuild.Text" xml:space="preserve">
+    <value>Marong (Build 201209)</value>
   </data>
-  <data name="labelVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblBuild.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;labelVersion.Name" xml:space="preserve">
-    <value>labelVersion</value>
+  <data name="&gt;&gt;lblBuild.Name" xml:space="preserve">
+    <value>lblBuild</value>
   </data>
-  <data name="&gt;&gt;labelVersion.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblBuild.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelVersion.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblBuild.Parent" xml:space="preserve">
     <value>panelDesc</value>
   </data>
-  <data name="&gt;&gt;labelVersion.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblBuild.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="labelTitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblTitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="labelTitle.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 20.25pt, style=Bold</value>
   </data>
-  <data name="labelTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelTitle.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>231, 8</value>
   </data>
-  <data name="labelTitle.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 32</value>
   </data>
-  <data name="labelTitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelTitle.Text" xml:space="preserve">
+  <data name="lblTitle.Text" xml:space="preserve">
     <value>UiTM Etwap</value>
   </data>
-  <data name="labelTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;labelTitle.Name" xml:space="preserve">
-    <value>labelTitle</value>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
   </data>
-  <data name="&gt;&gt;labelTitle.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelTitle.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
     <value>panelDesc</value>
   </data>
-  <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="panelDesc.Location" type="System.Drawing.Point, System.Drawing">
@@ -285,6 +285,72 @@
   <metadata name="panelDev.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="lnklblLicense.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lnklblLicense.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnklblLicense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 52</value>
+  </data>
+  <data name="lnklblLicense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 21</value>
+  </data>
+  <data name="lnklblLicense.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lnklblLicense.Text" xml:space="preserve">
+    <value>License and Open Source Notices</value>
+  </data>
+  <data name="&gt;&gt;lnklblLicense.Name" xml:space="preserve">
+    <value>lnklblLicense</value>
+  </data>
+  <data name="&gt;&gt;lnklblLicense.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnklblLicense.Parent" xml:space="preserve">
+    <value>panelDev</value>
+  </data>
+  <data name="&gt;&gt;lnklblLicense.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="lnklblVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lnklblVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnklblVersion.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>7, 13</value>
+  </data>
+  <data name="lnklblVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 18</value>
+  </data>
+  <data name="lnklblVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 25</value>
+  </data>
+  <data name="lnklblVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lnklblVersion.Text" xml:space="preserve">
+    <value>v1.1a (release notes)</value>
+  </data>
+  <data name="lnklblVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lnklblVersion.Name" xml:space="preserve">
+    <value>lnklblVersion</value>
+  </data>
+  <data name="&gt;&gt;lnklblVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnklblVersion.Parent" xml:space="preserve">
+    <value>panelDev</value>
+  </data>
+  <data name="&gt;&gt;lnklblVersion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="panelDev.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 312</value>
   </data>

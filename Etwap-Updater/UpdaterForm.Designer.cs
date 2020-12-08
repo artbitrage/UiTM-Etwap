@@ -1,6 +1,6 @@
-﻿namespace Etwap_Detector
+﻿namespace Etwap_Updater
 {
-    partial class UpdateForm
+    partial class UpdaterForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdaterForm));
             this.ReleaseNote = new System.Windows.Forms.RichTextBox();
             this.btn_Update = new System.Windows.Forms.Button();
-            this.SaveFileDialogUpdate = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // ReleaseNote
             // 
             resources.ApplyResources(this.ReleaseNote, "ReleaseNote");
             this.ReleaseNote.Name = "ReleaseNote";
+            this.ReleaseNote.ReadOnly = true;
             // 
             // btn_Update
             // 
@@ -45,17 +45,18 @@
             this.btn_Update.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.UseVisualStyleBackColor = true;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            this.btn_Update.Click += new System.EventHandler(this.Btn_Update_Click);
             // 
-            // UpdateForm
+            // UpdaterForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.ReleaseNote);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "UpdateForm";
+            this.Name = "UpdaterForm";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.UpdateForm_Load);
             this.ResumeLayout(false);
@@ -66,6 +67,5 @@
 
         private System.Windows.Forms.RichTextBox ReleaseNote;
         private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.SaveFileDialog SaveFileDialogUpdate;
     }
 }
