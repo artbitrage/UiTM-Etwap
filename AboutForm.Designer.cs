@@ -35,10 +35,10 @@
             this.lblBuild = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDev = new System.Windows.Forms.Panel();
+            this.lnklblLicense = new System.Windows.Forms.LinkLabel();
             this.lnklblVersion = new System.Windows.Forms.LinkLabel();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.lnklblLicense = new System.Windows.Forms.LinkLabel();
             this.panelDesc.SuspendLayout();
             this.panelDev.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +78,13 @@
             resources.ApplyResources(this.panelDev, "panelDev");
             this.panelDev.Name = "panelDev";
             // 
+            // lnklblLicense
+            // 
+            resources.ApplyResources(this.lnklblLicense, "lnklblLicense");
+            this.lnklblLicense.Name = "lnklblLicense";
+            this.lnklblLicense.TabStop = true;
+            this.lnklblLicense.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnklblLicense_LinkClicked);
+            // 
             // lnklblVersion
             // 
             resources.ApplyResources(this.lnklblVersion, "lnklblVersion");
@@ -97,13 +104,6 @@
             this.panelLogo.BackgroundImage = global::Etwap_Detector.Properties.Resources.android_chrome_96x96;
             resources.ApplyResources(this.panelLogo, "panelLogo");
             this.panelLogo.Name = "panelLogo";
-            // 
-            // lnklblLicense
-            // 
-            resources.ApplyResources(this.lnklblLicense, "lnklblLicense");
-            this.lnklblLicense.Name = "lnklblLicense";
-            this.lnklblLicense.TabStop = true;
-            this.lnklblLicense.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnklblLicense_LinkClicked);
             // 
             // AboutForm
             // 
