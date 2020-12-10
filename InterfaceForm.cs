@@ -34,17 +34,15 @@ namespace Etwap_Detector
 
                 if (lbl_Status.Text == WifiStatus.Connected.ToString())
                 {
-                    btn_Connect.Enabled = false;
+                    btn_Connect.Text = "Disconnect";
                     txBox_SSID.Enabled = false;
                     txBox_Password.Enabled = false;
-                    btn_Disconnect.Enabled = true;
                 }
                 else if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
                 {
-                    btn_Connect.Enabled = true;
+                    btn_Connect.Text = "Connect";
                     txBox_SSID.Enabled = true;
                     txBox_Password.Enabled = true;
-                    btn_Disconnect.Enabled = false;
                     lbl_AP.Text = "N/A";
                 }
             }
@@ -76,37 +74,48 @@ namespace Etwap_Detector
 
         private void Btn_Connect_Click(object sender, EventArgs e)
         {
-            if (listView_AP.SelectedItems.Count > 0 && txBox_Password.Text.Length > 0)
+            if (wifi.ConnectionStatus == WifiStatus.Disconnected)
             {
-                ListViewItem selectedItem = listView_AP.SelectedItems[0];
-
-                AccessPoint ap = (AccessPoint)selectedItem.Tag;
-
-                if (Connecter(ap, txBox_Password.Text))
+                if (listView_AP.SelectedItems.Count > 0 && txBox_Password.Text.Length > 0)
                 {
-                    lbl_Status.Text = wifi.ConnectionStatus.ToString();
-                    if (lbl_Status.Text == WifiStatus.Connected.ToString())
+                    ListViewItem selectedItem = listView_AP.SelectedItems[0];
+
+                    AccessPoint ap = (AccessPoint)selectedItem.Tag;
+
+                    if (Connecter(ap, txBox_Password.Text))
                     {
-                        btn_Connect.Enabled = false;
-                        txBox_SSID.Enabled = false;
-                        txBox_Password.Enabled = false;
-                        btn_Disconnect.Enabled = true;
-                        lbl_AP.Text = txBox_SSID.Text.ToString();
+                        lbl_Status.Text = wifi.ConnectionStatus.ToString();
+                        if (lbl_Status.Text == WifiStatus.Connected.ToString())
+                        {
+                            btn_Connect.Text = "Disconnect";
+                            txBox_SSID.Enabled = false;
+                            txBox_Password.Enabled = false;
+                            lbl_AP.Text = txBox_SSID.Text.ToString();
+                        }
+                    }
+                    else
+                    {
+                        lbl_Status.Text = wifi.ConnectionStatus.ToString();
+                        if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
+                        {
+                            btn_Connect.Text = "Connect";
+                            txBox_SSID.Enabled = true;
+                            txBox_Password.Enabled = true;
+                            txBox_Password.Clear();
+                            lbl_AP.Text = "N/A";
+                        }
                     }
                 }
-                else
-                {
-                    lbl_Status.Text = wifi.ConnectionStatus.ToString();
-                    if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
-                    {
-                        btn_Connect.Enabled = true;
-                        txBox_SSID.Enabled = true;
-                        txBox_Password.Enabled = true;
-                        txBox_Password.Clear();
-                        btn_Disconnect.Enabled = false;
-                        lbl_AP.Text = "N/A";
-                    }
-                }
+            }
+            if (wifi.ConnectionStatus == WifiStatus.Connected)
+            {
+                wifi.Disconnect();
+
+                lbl_AP.Text = "N/A";
+                lbl_Status.Text = WifiStatus.Disconnected.ToString();
+                btn_Connect.Text = "Connect";
+                txBox_SSID.Enabled = true;
+                txBox_Password.Enabled = true;
             }
         }
 
@@ -118,19 +127,6 @@ namespace Etwap_Detector
             };
 
             return ap.Connect(authRequest);
-        }
-
-        private void Btn_Disconnect_Click(object sender, EventArgs e)
-        {
-            if (wifi.ConnectionStatus == WifiStatus.Connected)
-                wifi.Disconnect();
-
-            lbl_AP.Text = "N/A";
-            lbl_Status.Text = WifiStatus.Disconnected.ToString();
-            btn_Connect.Enabled = true;
-            txBox_SSID.Enabled = true;
-            txBox_Password.Enabled = true;
-            btn_Disconnect.Enabled = false;
         }
 
         private void ListView_AP_SelectedIndexChanged(object sender, EventArgs e)
