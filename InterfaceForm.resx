@@ -217,7 +217,7 @@
     <value>0</value>
   </data>
   <data name="lbl_Refreshed.Text" xml:space="preserve">
-    <value>Refreshed: 1s ago</value>
+    <value>Refreshed: 0s ago</value>
   </data>
   <data name="&gt;&gt;lbl_Refreshed.Name" xml:space="preserve">
     <value>lbl_Refreshed</value>
