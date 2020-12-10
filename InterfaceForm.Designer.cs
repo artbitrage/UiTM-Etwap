@@ -36,6 +36,7 @@ namespace Etwap_Detector
             this.clmSignal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSecure = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnl_Btns = new System.Windows.Forms.Panel();
+            this.lbl_Scanned = new System.Windows.Forms.Label();
             this.grp_Manager = new System.Windows.Forms.GroupBox();
             this.lbl_SSID = new System.Windows.Forms.Label();
             this.lbl_Warning = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@ namespace Etwap_Detector
             this.lbl_AP = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnl_Btns.SuspendLayout();
             this.grp_Manager.SuspendLayout();
             this.grp_Status.SuspendLayout();
@@ -80,9 +82,15 @@ namespace Etwap_Detector
             // pnl_Btns
             // 
             resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
+            this.pnl_Btns.Controls.Add(this.lbl_Scanned);
             this.pnl_Btns.Controls.Add(this.grp_Manager);
             this.pnl_Btns.Controls.Add(this.grp_Status);
             this.pnl_Btns.Name = "pnl_Btns";
+            // 
+            // lbl_Scanned
+            // 
+            resources.ApplyResources(this.lbl_Scanned, "lbl_Scanned");
+            this.lbl_Scanned.Name = "lbl_Scanned";
             // 
             // grp_Manager
             // 
@@ -162,6 +170,11 @@ namespace Etwap_Detector
             this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
             this.toolTip.ToolTipTitle = "Warning!";
             // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // InterfaceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -174,6 +187,7 @@ namespace Etwap_Detector
             this.Name = "InterfaceForm";
             this.Load += new System.EventHandler(this.InterfaceForm_Load);
             this.pnl_Btns.ResumeLayout(false);
+            this.pnl_Btns.PerformLayout();
             this.grp_Manager.ResumeLayout(false);
             this.grp_Manager.PerformLayout();
             this.grp_Status.ResumeLayout(false);
@@ -201,5 +215,7 @@ namespace Etwap_Detector
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.GroupBox grp_Status;
         private System.Windows.Forms.GroupBox grp_Manager;
+        private System.Windows.Forms.Label lbl_Scanned;
+        private System.Windows.Forms.Timer timer;
     }
 }

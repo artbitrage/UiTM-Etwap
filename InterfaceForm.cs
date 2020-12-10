@@ -8,6 +8,7 @@ namespace Etwap_Detector
     public partial class InterfaceForm : Form
     {
         private static Wifi wifi;
+        private int Ticks;
 
         public InterfaceForm()
         {
@@ -62,6 +63,8 @@ namespace Etwap_Detector
             {
                 lbl_AP.Text = "N/A";
             }
+            timer.Enabled = true;
+            timer.Start();
         }
 
         private void TxBox_Password_KeyDown(object sender, KeyEventArgs e)
@@ -157,6 +160,14 @@ namespace Etwap_Detector
             {
                 MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            Ticks++;
+            Text = Ticks.ToString();
+
+            lbl_Scanned.Text = "Scanned: " + Text + "s ago";
         }
     }
 }

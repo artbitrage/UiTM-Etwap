@@ -120,32 +120,10 @@
   <metadata name="listView_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 496</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
-    <value>listView_AP</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="clmAccessPoint.Text" xml:space="preserve">
     <value>Access Point(s)</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="clmAccessPoint.Width" type="System.Int32, mscorlib">
     <value>169</value>
   </data>
@@ -168,11 +146,63 @@
   <data name="clmSecure.Width" type="System.Int32, mscorlib">
     <value>88</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 496</value>
+  </data>
+  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
+    <value>listView_AP</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="pnl_Btns.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pnl_Btns.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <metadata name="lbl_Scanned.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_Scanned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Scanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 466</value>
+  </data>
+  <data name="lbl_Scanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 21</value>
+  </data>
+  <data name="lbl_Scanned.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_Scanned.Text" xml:space="preserve">
+    <value>Scanned: 1s ago</value>
+  </data>
+  <data name="&gt;&gt;lbl_Scanned.Name" xml:space="preserve">
+    <value>lbl_Scanned</value>
+  </data>
+  <data name="&gt;&gt;lbl_Scanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Scanned.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;lbl_Scanned.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="grp_Manager.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -210,9 +240,6 @@
   <metadata name="lbl_Warning.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="lbl_Warning.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -228,6 +255,9 @@
   <data name="lbl_Warning.Text" xml:space="preserve">
     <value>Warning!</value>
   </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lbl_Warning.ToolTip" xml:space="preserve">
     <value>Suspected evil twin AP detected!</value>
   </data>
@@ -373,80 +403,11 @@
     <value>pnl_Btns</value>
   </data>
   <data name="&gt;&gt;grp_Manager.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="grp_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="&gt;&gt;lbl_AP.Name" xml:space="preserve">
-    <value>lbl_AP</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.Parent" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.Name" xml:space="preserve">
-    <value>lbl_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.Parent" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="grp_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 287</value>
-  </data>
-  <data name="grp_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 111</value>
-  </data>
-  <data name="grp_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grp_Status.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.Name" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.Parent" xml:space="preserve">
-    <value>pnl_Btns</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 12</value>
-  </data>
-  <data name="pnl_Btns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 496</value>
-  </data>
-  <data name="pnl_Btns.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.Name" xml:space="preserve">
-    <value>pnl_Btns</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="lbl_AP.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -501,8 +462,53 @@
   <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="grp_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 287</value>
+  </data>
+  <data name="grp_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 111</value>
+  </data>
+  <data name="grp_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grp_Status.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.Name" xml:space="preserve">
+    <value>grp_Status</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 12</value>
+  </data>
+  <data name="pnl_Btns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 496</value>
+  </data>
+  <data name="pnl_Btns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Name" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -807,6 +813,12 @@
   </data>
   <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer.Name" xml:space="preserve">
+    <value>timer</value>
+  </data>
+  <data name="&gt;&gt;timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>InterfaceForm</value>
