@@ -49,6 +49,7 @@ namespace Etwap_Detector
             this.lbl_Status = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.pnl_Btns.SuspendLayout();
             this.grp_Manager.SuspendLayout();
             this.grp_Status.SuspendLayout();
@@ -82,6 +83,7 @@ namespace Etwap_Detector
             // pnl_Btns
             // 
             resources.ApplyResources(this.pnl_Btns, "pnl_Btns");
+            this.pnl_Btns.Controls.Add(this.btn_Refresh);
             this.pnl_Btns.Controls.Add(this.lbl_Scanned);
             this.pnl_Btns.Controls.Add(this.grp_Manager);
             this.pnl_Btns.Controls.Add(this.grp_Status);
@@ -175,6 +177,14 @@ namespace Etwap_Detector
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btn_Refresh, "btn_Refresh");
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.Btn_Refresh_Click);
+            // 
             // InterfaceForm
             // 
             resources.ApplyResources(this, "$this");
@@ -217,5 +227,6 @@ namespace Etwap_Detector
         private System.Windows.Forms.GroupBox grp_Manager;
         private System.Windows.Forms.Label lbl_Scanned;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }
