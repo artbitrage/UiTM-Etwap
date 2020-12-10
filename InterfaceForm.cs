@@ -167,7 +167,7 @@ namespace Etwap_Detector
             Ticks++;
             Text = Ticks.ToString();
 
-            lbl_Scanned.Text = "Scanned: " + Text + "s ago";
+            lbl_Refreshed.Text = "Refreshed: " + Text + "s ago";
         }
 
         private void Btn_Refresh_Click(object sender, EventArgs e)
