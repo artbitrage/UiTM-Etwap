@@ -77,6 +77,16 @@ namespace Etwap_Detector
 
         private void Btn_Connect_Click(object sender, EventArgs e)
         {
+            if (wifi.ConnectionStatus == WifiStatus.Connected)
+            {
+                wifi.Disconnect();
+
+                lbl_AP.Text = "N/A";
+                lbl_Status.Text = WifiStatus.Disconnected.ToString();
+                btn_Connect.Text = "Connect";
+                txBox_SSID.Enabled = true;
+                txBox_Password.Enabled = true;
+            }
             if (wifi.ConnectionStatus == WifiStatus.Disconnected)
             {
                 if (listView_AP.SelectedItems.Count > 0 && txBox_Password.Text.Length > 0)
@@ -96,29 +106,7 @@ namespace Etwap_Detector
                             lbl_AP.Text = txBox_SSID.Text.ToString();
                         }
                     }
-                    else
-                    {
-                        lbl_Status.Text = wifi.ConnectionStatus.ToString();
-                        if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
-                        {
-                            btn_Connect.Text = "Connect";
-                            txBox_SSID.Enabled = true;
-                            txBox_Password.Enabled = true;
-                            txBox_Password.Clear();
-                            lbl_AP.Text = "N/A";
-                        }
-                    }
                 }
-            }
-            if (wifi.ConnectionStatus == WifiStatus.Connected)
-            {
-                wifi.Disconnect();
-
-                lbl_AP.Text = "N/A";
-                lbl_Status.Text = WifiStatus.Disconnected.ToString();
-                btn_Connect.Text = "Connect";
-                txBox_SSID.Enabled = true;
-                txBox_Password.Enabled = true;
             }
         }
 
@@ -149,9 +137,21 @@ namespace Etwap_Detector
                     {
                         txBox_SSID.Text = selectedSSID;
                         if (listView_AP.SelectedItems[0].SubItems[2].Text.ToString() == "False")
+                        {
                             lbl_Warning.Visible = true;
+                            txBox_Password.Text = "#";
+                            lbl_Password.Visible = false;
+                            txBox_Password.Visible = false;
+                            txBox_Password.ReadOnly = true;
+                        }
                         if (listView_AP.SelectedItems[0].SubItems[2].Text.ToString() == "True")
+                        {
                             lbl_Warning.Visible = false;
+                            txBox_Password.Clear();
+                            lbl_Password.Visible = true;
+                            txBox_Password.Visible = true;
+                            txBox_Password.ReadOnly = false;
+                        }
                     }
                     return;
                 }
