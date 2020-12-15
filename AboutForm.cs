@@ -5,7 +5,7 @@ namespace Etwap_Detector
 {
     public partial class AboutForm : Form
     {
-        private readonly string Version = "201209";
+        private readonly string Version = "201216";
 
         public AboutForm()
         {

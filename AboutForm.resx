@@ -322,19 +322,19 @@
     <value>True</value>
   </data>
   <data name="lnklblVersion.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
-    <value>7, 13</value>
+    <value>8, 13</value>
   </data>
   <data name="lnklblVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 18</value>
+    <value>224, 18</value>
   </data>
   <data name="lnklblVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 25</value>
+    <value>176, 25</value>
   </data>
   <data name="lnklblVersion.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="lnklblVersion.Text" xml:space="preserve">
-    <value>v1.1a (release notes)</value>
+    <value>v1.1rc (release notes)</value>
   </data>
   <data name="lnklblVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
