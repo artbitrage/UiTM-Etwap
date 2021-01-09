@@ -84,10 +84,6 @@ namespace Etwap_Detector
             btn_Console.Enabled = false;
         }
 
-        private void PanelChildForm_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             OpenChildForm(new DashboardForm());
@@ -104,15 +100,15 @@ namespace Etwap_Detector
                 if (GetVersion() != ServerVersion)
                 {
                     lbl_Update.Text = "New update available!";
-                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
                     notifyIcon.BalloonTipText = "New update available!";
+                    notifyIcon.Text = "New update available!";
                     notifyIcon.ShowBalloonTip(1000);
                 }
                 else
                 {
                     lbl_Update.Text = "Etwap is up-to-date!";
-                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
                     notifyIcon.BalloonTipText = "Etwap is up-to-date!";
+                    notifyIcon.Text = "Etwap is up-to-date!";
                     notifyIcon.ShowBalloonTip(1000);
                 }
             }
@@ -182,6 +178,32 @@ namespace Etwap_Detector
         private void ExitMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void NotifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

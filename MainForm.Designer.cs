@@ -210,11 +210,11 @@
             // 
             resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelChildForm_Paint);
             // 
             // notifyIcon
             // 
             resources.ApplyResources(this.notifyIcon, "notifyIcon");
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseDoubleClick);
             // 
             // MainForm
             // 
