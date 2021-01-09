@@ -136,7 +136,7 @@
     <value>600, 461</value>
   </data>
   <data name="ConsoleBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ConsoleBox.Name" xml:space="preserve">
     <value>ConsoleBox</value>
@@ -169,7 +169,7 @@
     <value>75, 23</value>
   </data>
   <data name="btn_Export.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>0</value>
   </data>
   <data name="btn_Export.Text" xml:space="preserve">
     <value>Export</value>
@@ -186,46 +186,43 @@
   <data name="&gt;&gt;btn_Export.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="btn_CMD.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btn_Console.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btn_CMD.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_Console.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="btn_CMD.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btn_CMD.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Console.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btn_CMD.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Console.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="btn_CMD.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Console.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_CMD.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Console.Location" type="System.Drawing.Point, System.Drawing">
     <value>456, 485</value>
   </data>
-  <data name="btn_CMD.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Console.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="btn_CMD.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="btn_Console.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="btn_CMD.Text" xml:space="preserve">
-    <value>CMD</value>
+  <data name="btn_Console.Text" xml:space="preserve">
+    <value>Console</value>
   </data>
-  <data name="&gt;&gt;btn_CMD.Name" xml:space="preserve">
-    <value>btn_CMD</value>
+  <data name="&gt;&gt;btn_Console.Name" xml:space="preserve">
+    <value>btn_Console</value>
   </data>
-  <data name="&gt;&gt;btn_CMD.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Console.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_CMD.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Console.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_CMD.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Console.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="saveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

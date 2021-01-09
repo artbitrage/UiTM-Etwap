@@ -118,7 +118,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutForm";
-            this.Load += new System.EventHandler(this.AboutForm_Load);
             this.panelDesc.ResumeLayout(false);
             this.panelDesc.PerformLayout();
             this.panelDev.ResumeLayout(false);
