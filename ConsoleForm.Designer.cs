@@ -57,7 +57,7 @@
             this.btn_Console.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Console.Name = "btn_Console";
             this.btn_Console.UseVisualStyleBackColor = true;
-            this.btn_Console.Click += new System.EventHandler(this.Btn_CMD_Click);
+            this.btn_Console.Click += new System.EventHandler(this.Btn_Console_Click);
             // 
             // saveFileDialog
             // 
