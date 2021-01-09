@@ -220,7 +220,7 @@
     <value>163, 79</value>
   </data>
   <data name="btn_Console.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="btn_Console.Text" xml:space="preserve">
     <value>Console</value>
@@ -256,7 +256,7 @@
     <value>168, 96</value>
   </data>
   <data name="panel_Logo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panel_Logo.Name" xml:space="preserve">
     <value>panel_Logo</value>
@@ -295,10 +295,10 @@
     <value>116, 16</value>
   </data>
   <data name="lbl_MainVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="lbl_MainVersion.Text" xml:space="preserve">
-    <value>v1.0rc (Build 201125)</value>
+    <value>v1.1rc (Build 201216)</value>
   </data>
   <data name="&gt;&gt;lbl_MainVersion.Name" xml:space="preserve">
     <value>lbl_MainVersion</value>
@@ -328,13 +328,13 @@
     <value>8, 8</value>
   </data>
   <data name="lbl_MainTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 16</value>
+    <value>84, 16</value>
   </data>
   <data name="lbl_MainTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="lbl_MainTitle.Text" xml:space="preserve">
-    <value>UiTM Etwap</value>
+    <value>UiTM Etwap™</value>
   </data>
   <data name="&gt;&gt;lbl_MainTitle.Name" xml:space="preserve">
     <value>lbl_MainTitle</value>
@@ -355,7 +355,7 @@
     <value>168, 47</value>
   </data>
   <data name="pnl_MainVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;pnl_MainVersion.Name" xml:space="preserve">
     <value>pnl_MainVersion</value>
@@ -404,7 +404,7 @@
     <value>163, 79</value>
   </data>
   <data name="btn_Interface.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btn_Interface.Text" xml:space="preserve">
     <value>Interface</value>
@@ -917,7 +917,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>UiTM Etwap</value>
+    <value>UiTM Etwap™</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem.Name" xml:space="preserve">
     <value>toolStripMenuItem</value>
