@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Etwap_Detector
@@ -18,13 +18,14 @@ namespace Etwap_Detector
             ConsoleBox.Text = DashboardForm.ConsoleLog;
         }
 
-        private void Btn_CMD_Click(object sender, EventArgs e)
+        private void Btn_Console_Click(object sender, EventArgs e)
         {
-            AllocConsole();
-
-            [DllImport("kernel32.dll", SetLastError = true)]
-            [return: MarshalAs(UnmanagedType.Bool)]
-            static extern bool AllocConsole();
+            ConsoleBox.Clear();
+            var ConsoleApp = Process.Start(@"Etwap-Console.exe");
+            ConsoleBox.Text = ConsoleApp.ToString();
+            ConsoleBox.Text = "Executing Etwap-Console.exe ...";
+            ConsoleApp.WaitForExit();
+            ConsoleBox.Text = "Exit application.";
         }
 
         private void Btn_Export_Click(object sender, EventArgs e)
