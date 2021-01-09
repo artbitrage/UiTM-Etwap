@@ -54,10 +54,16 @@
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuEtwap = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuIExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuConsole = new System.Windows.Forms.ToolStripMenuItem();
             this.MainPanel.SuspendLayout();
             this.panelUpdate.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
             this.menuStrip.SuspendLayout();
+            this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -214,7 +220,43 @@
             // notifyIcon
             // 
             resources.ApplyResources(this.notifyIcon, "notifyIcon");
+            this.notifyIcon.ContextMenuStrip = this.contextMenuStrip;
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseDoubleClick);
+            // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuEtwap,
+            this.toolStripMenuConsole,
+            this.toolStripMenuUpdate,
+            this.toolStripMenuIExit});
+            this.contextMenuStrip.Name = "contextMenuStrip";
+            resources.ApplyResources(this.contextMenuStrip, "contextMenuStrip");
+            // 
+            // toolStripMenuEtwap
+            // 
+            this.toolStripMenuEtwap.Image = global::Etwap_Detector.Properties.Resources.favicon_32x32;
+            this.toolStripMenuEtwap.Name = "toolStripMenuEtwap";
+            resources.ApplyResources(this.toolStripMenuEtwap, "toolStripMenuEtwap");
+            this.toolStripMenuEtwap.Click += new System.EventHandler(this.ToolStripMenuEtwap_Click);
+            // 
+            // toolStripMenuUpdate
+            // 
+            this.toolStripMenuUpdate.Name = "toolStripMenuUpdate";
+            resources.ApplyResources(this.toolStripMenuUpdate, "toolStripMenuUpdate");
+            this.toolStripMenuUpdate.Click += new System.EventHandler(this.ToolStripMenuUpdate_Click);
+            // 
+            // toolStripMenuIExit
+            // 
+            this.toolStripMenuIExit.Name = "toolStripMenuIExit";
+            resources.ApplyResources(this.toolStripMenuIExit, "toolStripMenuIExit");
+            this.toolStripMenuIExit.Click += new System.EventHandler(this.ToolStripMenuIExit_Click);
+            // 
+            // toolStripMenuConsole
+            // 
+            this.toolStripMenuConsole.Name = "toolStripMenuConsole";
+            resources.ApplyResources(this.toolStripMenuConsole, "toolStripMenuConsole");
+            this.toolStripMenuConsole.Click += new System.EventHandler(this.ToolStripMenuConsole_Click);
             // 
             // MainForm
             // 
@@ -226,6 +268,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
@@ -235,6 +278,7 @@
             this.pnl_MainVersion.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            this.contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -265,5 +309,10 @@
         private System.Windows.Forms.ToolStripMenuItem autoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuUpdate;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuIExit;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuEtwap;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuConsole;
     }
 }

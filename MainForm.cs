@@ -205,5 +205,56 @@ namespace Etwap_Detector
                 MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void ToolStripMenuUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ToolStripMenuIExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            WindowState = FormWindowState.Minimized;
+            ShowIcon = false;
+            ShowInTaskbar = false;
+        }
+
+        private void ToolStripMenuEtwap_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+            ShowIcon = true;
+            ShowInTaskbar = true;
+        }
+
+        private void ToolStripMenuConsole_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"Etwap-Console.exe");
+        }
     }
 }
