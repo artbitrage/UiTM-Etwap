@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Etwap_Detector
@@ -12,15 +13,11 @@ namespace Etwap_Detector
             InitializeComponent();
         }
 
-        private void AboutForm_Load(object sender, EventArgs e)
-        {
-        }
-
         private void LnklblVersion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             try
             {
-                System.Diagnostics.Process.Start("https://servdocs.syafiqhadzir.dev/Projects/Etwap/" + Version + "/ReleaseNote.txt");
+                Process.Start("https://servdocs.syafiqhadzir.dev/Projects/Etwap/" + Version + "/ReleaseNote.txt");
             }
             catch (Exception err)
             {
@@ -32,7 +29,7 @@ namespace Etwap_Detector
         {
             try
             {
-                System.Diagnostics.Process.Start("https://servdocs.syafiqhadzir.dev/Projects/Etwap/" + Version + "/License.txt");
+                Process.Start("https://servdocs.syafiqhadzir.dev/Projects/Etwap/" + Version + "/License.txt");
             }
             catch (Exception err)
             {
