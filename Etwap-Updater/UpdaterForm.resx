@@ -117,311 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="panelTop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ReleaseNote.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="ReleaseNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="panelTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
+  <data name="ReleaseNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 159</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelTop.TabIndex" type="System.Int32, mscorlib">
+  <data name="ReleaseNote.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;panelTop.Name" xml:space="preserve">
-    <value>panelTop</value>
+  <data name="ReleaseNote.Text" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;panelTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ReleaseNote.Name" xml:space="preserve">
+    <value>ReleaseNote</value>
   </data>
-  <data name="&gt;&gt;panelTop.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ReleaseNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReleaseNote.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelTop.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;ReleaseNote.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <metadata name="panelDesc.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btn_Update.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lblSubtitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lblSubtitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSubtitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 15.75pt, style=Bold</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblSubtitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btn_Update.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="lblSubtitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 40</value>
+  <data name="btn_Update.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="lblSubtitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 25</value>
+  <data name="btn_Update.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="lblSubtitle.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="btn_Update.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 186</value>
   </data>
-  <data name="lblSubtitle.Text" xml:space="preserve">
-    <value>An Evil Twin Detector</value>
+  <data name="btn_Update.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="lblSubtitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblSubtitle.Name" xml:space="preserve">
-    <value>lblSubtitle</value>
-  </data>
-  <data name="&gt;&gt;lblSubtitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSubtitle.Parent" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;lblSubtitle.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="lblBuild.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lblBuild.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblBuild.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblBuild.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 80</value>
-  </data>
-  <data name="lblBuild.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 21</value>
-  </data>
-  <data name="lblBuild.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblBuild.Text" xml:space="preserve">
-    <value>Marong (Build 201209)</value>
-  </data>
-  <data name="lblBuild.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblBuild.Name" xml:space="preserve">
-    <value>lblBuild</value>
-  </data>
-  <data name="&gt;&gt;lblBuild.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblBuild.Parent" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;lblBuild.ZOrder" xml:space="preserve">
+  <data name="btn_Update.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <metadata name="lblTitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btn_Update.Text" xml:space="preserve">
+    <value>Update</value>
   </data>
-  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 20.25pt, style=Bold</value>
+  <data name="&gt;&gt;btn_Update.Name" xml:space="preserve">
+    <value>btn_Update</value>
   </data>
-  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;btn_Update.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 8</value>
-  </data>
-  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 32</value>
-  </data>
-  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblTitle.Text" xml:space="preserve">
-    <value>UiTM Etwap</value>
-  </data>
-  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
-    <value>lblTitle</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 208</value>
-  </data>
-  <data name="panelDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelDesc.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.Name" xml:space="preserve">
-    <value>panelDesc</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelDesc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Update.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelDesc.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="panelDev.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lnklblLicense.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lnklblLicense.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lnklblLicense.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 52</value>
-  </data>
-  <data name="lnklblLicense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 21</value>
-  </data>
-  <data name="lnklblLicense.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btn_Update.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="lnklblLicense.Text" xml:space="preserve">
-    <value>License and Open Source Notices</value>
-  </data>
-  <data name="&gt;&gt;lnklblLicense.Name" xml:space="preserve">
-    <value>lnklblLicense</value>
-  </data>
-  <data name="&gt;&gt;lnklblLicense.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnklblLicense.Parent" xml:space="preserve">
-    <value>panelDev</value>
-  </data>
-  <data name="&gt;&gt;lnklblLicense.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="lnklblVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lnklblVersion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lnklblVersion.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
-    <value>8, 13</value>
-  </data>
-  <data name="lnklblVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 18</value>
-  </data>
-  <data name="lnklblVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 25</value>
-  </data>
-  <data name="lnklblVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lnklblVersion.Text" xml:space="preserve">
-    <value>v1.1rc (release notes)</value>
-  </data>
-  <data name="lnklblVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lnklblVersion.Name" xml:space="preserve">
-    <value>lnklblVersion</value>
-  </data>
-  <data name="&gt;&gt;lnklblVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnklblVersion.Parent" xml:space="preserve">
-    <value>panelDev</value>
-  </data>
-  <data name="&gt;&gt;lnklblVersion.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelDev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 312</value>
-  </data>
-  <data name="panelDev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelDev.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelDev.Name" xml:space="preserve">
-    <value>panelDev</value>
-  </data>
-  <data name="&gt;&gt;panelDev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelDev.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelDev.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="panelBottom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="panelBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 416</value>
-  </data>
-  <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Name" xml:space="preserve">
-    <value>panelBottom</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="panelLogo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="panelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="panelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 104</value>
-  </data>
-  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 104</value>
-  </data>
-  <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelLogo.Name" xml:space="preserve">
-    <value>panelLogo</value>
-  </data>
-  <data name="&gt;&gt;panelLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelLogo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -430,13 +190,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 21</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 520</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+    <value>296, 221</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -697,11 +454,14 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>AboutForm</value>
+    <value>Etwap Updater</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AboutForm</value>
+    <value>UpdaterForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

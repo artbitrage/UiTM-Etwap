@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsoleForm));
             this.ConsoleBox = new System.Windows.Forms.TextBox();
             this.btn_Export = new System.Windows.Forms.Button();
-            this.btn_CMD = new System.Windows.Forms.Button();
+            this.btn_Console = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
@@ -51,13 +51,13 @@
             this.btn_Export.UseVisualStyleBackColor = true;
             this.btn_Export.Click += new System.EventHandler(this.Btn_Export_Click);
             // 
-            // btn_CMD
+            // btn_Console
             // 
-            resources.ApplyResources(this.btn_CMD, "btn_CMD");
-            this.btn_CMD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CMD.Name = "btn_CMD";
-            this.btn_CMD.UseVisualStyleBackColor = true;
-            this.btn_CMD.Click += new System.EventHandler(this.Btn_CMD_Click);
+            resources.ApplyResources(this.btn_Console, "btn_Console");
+            this.btn_Console.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Console.Name = "btn_Console";
+            this.btn_Console.UseVisualStyleBackColor = true;
+            this.btn_Console.Click += new System.EventHandler(this.Btn_Console_Click);
             // 
             // saveFileDialog
             // 
@@ -67,7 +67,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btn_CMD);
+            this.Controls.Add(this.btn_Console);
             this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.ConsoleBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -84,7 +84,7 @@
 
         private System.Windows.Forms.TextBox ConsoleBox;
         private System.Windows.Forms.Button btn_Export;
-        private System.Windows.Forms.Button btn_CMD;
+        private System.Windows.Forms.Button btn_Console;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }

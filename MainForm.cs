@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -7,7 +8,7 @@ namespace Etwap_Detector
 {
     public partial class MainForm : Form
     {
-        private readonly string Version = "201125";
+        private readonly string Version = "201216";
 
         private readonly string URL = "https://servdocs.syafiqhadzir.dev/Projects/Etwap/";
         private readonly string ServerVersion;
@@ -20,6 +21,8 @@ namespace Etwap_Detector
             try
             {
                 WebRequest req = WebRequest.Create(URL + ServerVersionName);
+                req.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36");
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls13;
                 WebResponse res = req.GetResponse();
                 Stream str = res.GetResponseStream();
                 StreamReader stdr = new StreamReader(str);
@@ -51,7 +54,11 @@ namespace Etwap_Detector
             OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = true;
         }
 
@@ -69,12 +76,12 @@ namespace Etwap_Detector
             OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = false;
-        }
-
-        private void PanelChildForm_Paint(object sender, PaintEventArgs e)
-        {
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -82,21 +89,26 @@ namespace Etwap_Detector
             OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
 
             try
             {
                 if (GetVersion() != ServerVersion)
                 {
                     lbl_Update.Text = "New update available!";
-                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
                     notifyIcon.BalloonTipText = "New update available!";
+                    notifyIcon.Text = "New update available!";
                     notifyIcon.ShowBalloonTip(1000);
                 }
                 else
                 {
                     lbl_Update.Text = "Etwap is up-to-date!";
-                    notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
                     notifyIcon.BalloonTipText = "Etwap is up-to-date!";
+                    notifyIcon.Text = "Etwap is up-to-date!";
                     notifyIcon.ShowBalloonTip(1000);
                 }
             }
@@ -111,28 +123,16 @@ namespace Etwap_Detector
             return Version;
         }
 
-        private void CheckForUpdate()
-        {
-            if (GetVersion() != ServerVersion)
-            {
-                UpdateForm updateForm = new UpdateForm
-                {
-                    StartPosition = FormStartPosition.CenterParent
-                };
-                updateForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Etwap is up-to-date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         private void AboutMenuItem_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AboutForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = true;
         }
 
@@ -141,18 +141,120 @@ namespace Etwap_Detector
             OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            btn_Interface.Enabled = true;
+            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
+            if (File.Exists(path))
+            {
+                btn_Interface.Enabled = true;
+            }
             btn_Console.Enabled = false;
         }
 
         private void UpdateMenuItem_Click(object sender, EventArgs e)
         {
-            CheckForUpdate();
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void NotifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ToolStripMenuUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                {
+                    if (GetVersion() != ServerVersion)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("There is an update available. Would you like to download it now?", "Software Update", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            Process.Start(@".\Etwap-Updater.exe");
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Etwap is up-to-date!", "Software Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ToolStripMenuIExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            WindowState = FormWindowState.Minimized;
+            ShowIcon = false;
+            ShowInTaskbar = false;
+        }
+
+        private void ToolStripMenuEtwap_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+            ShowIcon = true;
+            ShowInTaskbar = true;
+        }
+
+        private void ToolStripMenuConsole_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"Etwap-Console.exe");
         }
     }
 }
