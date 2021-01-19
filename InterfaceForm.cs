@@ -57,6 +57,15 @@ namespace Etwap_Detector
                     txBox_SSID.Enabled = true;
                     txBox_Password.Enabled = true;
                     lbl_AP.Text = "N/A";
+
+                    if (NetworkInterface.GetIsNetworkAvailable())
+                    {
+                        lbl_StatInt.Text = "Secured";
+                    }
+                    else
+                    {
+                        lbl_StatInt.Text = "No Internet";
+                    }
                 }
             }
 
@@ -91,10 +100,6 @@ namespace Etwap_Detector
         {
             var watch = new Stopwatch();
             watch.Start();
-            for (int i = 0; i < 1000; i++)
-            {
-                ConsoleLog = i.ToString();
-            }
 
             if (wifi.ConnectionStatus == WifiStatus.Connected)
             {
@@ -133,9 +138,17 @@ namespace Etwap_Detector
                             txBox_Password.Enabled = false;
                             lbl_AP.Text = txBox_SSID.Text.ToString();
 
-                            watch.Stop();
-                            ConsoleLog = "Connect to Wi-Fi in " + watch.ElapsedMilliseconds.ToString() + " ms";
+                            if (NetworkInterface.GetIsNetworkAvailable())
+                            {
+                                lbl_StatInt.Text = "Secured";
+                            }
+                            else
+                            {
+                                lbl_StatInt.Text = "No Internet";
+                            }
                         }
+                        watch.Stop();
+                        ConsoleLog = "Connected to Wi-Fi in " + watch.ElapsedMilliseconds.ToString() + " ms";
                     }
                 }
             }
@@ -244,6 +257,15 @@ namespace Etwap_Detector
                     txBox_SSID.Enabled = true;
                     txBox_Password.Enabled = true;
                     lbl_AP.Text = "N/A";
+
+                    if (NetworkInterface.GetIsNetworkAvailable())
+                    {
+                        lbl_StatInt.Text = "Secured";
+                    }
+                    else
+                    {
+                        lbl_StatInt.Text = "No Internet";
+                    }
                 }
             }
 
