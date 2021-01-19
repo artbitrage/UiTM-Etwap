@@ -50,6 +50,7 @@ namespace Etwap_Detector
             this.lbl_Status = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.lbl_StatInt = new System.Windows.Forms.Label();
             this.pnl_Btns.SuspendLayout();
             this.grp_Manager.SuspendLayout();
             this.grp_Status.SuspendLayout();
@@ -156,6 +157,7 @@ namespace Etwap_Detector
             // 
             // grp_Status
             // 
+            this.grp_Status.Controls.Add(this.lbl_StatInt);
             this.grp_Status.Controls.Add(this.lbl_AP);
             this.grp_Status.Controls.Add(this.lbl_Status);
             resources.ApplyResources(this.grp_Status, "grp_Status");
@@ -184,6 +186,12 @@ namespace Etwap_Detector
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // lbl_StatInt
+            // 
+            resources.ApplyResources(this.lbl_StatInt, "lbl_StatInt");
+            this.lbl_StatInt.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_StatInt.Name = "lbl_StatInt";
             // 
             // InterfaceForm
             // 
@@ -228,5 +236,6 @@ namespace Etwap_Detector
         private System.Windows.Forms.Label lbl_Refreshed;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Button btn_Refresh;
+        private System.Windows.Forms.Label lbl_StatInt;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using SimpleWifi;
 using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace Etwap_Detector
@@ -38,6 +39,15 @@ namespace Etwap_Detector
                     btn_Connect.Text = "Disconnect";
                     txBox_SSID.Enabled = false;
                     txBox_Password.Enabled = false;
+
+                    if (NetworkInterface.GetIsNetworkAvailable())
+                    {
+                        lbl_StatInt.Text = "Secured";
+                    }
+                    else
+                    {
+                        lbl_StatInt.Text = "No Internet";
+                    }
                 }
                 else if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
                 {
@@ -86,6 +96,15 @@ namespace Etwap_Detector
                 btn_Connect.Text = "Connect";
                 txBox_SSID.Enabled = true;
                 txBox_Password.Enabled = true;
+
+                if (NetworkInterface.GetIsNetworkAvailable())
+                {
+                    lbl_StatInt.Text = "Secured";
+                }
+                else
+                {
+                    lbl_StatInt.Text = "No Internet";
+                }
             }
             if (wifi.ConnectionStatus == WifiStatus.Disconnected)
             {
@@ -197,6 +216,15 @@ namespace Etwap_Detector
                     btn_Connect.Text = "Disconnect";
                     txBox_SSID.Enabled = false;
                     txBox_Password.Enabled = false;
+
+                    if (NetworkInterface.GetIsNetworkAvailable())
+                    {
+                        lbl_StatInt.Text = "Secured";
+                    }
+                    else
+                    {
+                        lbl_StatInt.Text = "No Internet";
+                    }
                 }
                 else if (lbl_Status.Text == WifiStatus.Disconnected.ToString())
                 {
