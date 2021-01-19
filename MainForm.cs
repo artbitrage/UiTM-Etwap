@@ -54,21 +54,29 @@ namespace Etwap_Detector
             OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
-            if (File.Exists(path))
+            string dll_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\SimpleWifi.dll");
+            if (File.Exists(dll_path))
             {
                 btn_Interface.Enabled = true;
             }
-            btn_Console.Enabled = true;
+            string console_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\Etwap-Console.exe");
+            if (File.Exists(console_path))
+            {
+                btn_Console.Enabled = true;
+            }
         }
 
-        private void Btn_Users_Click(object sender, EventArgs e)
+        private void Btn_Interface_Click(object sender, EventArgs e)
         {
             OpenChildForm(new InterfaceForm());
 
             btn_Dashboard.Enabled = true;
             btn_Interface.Enabled = false;
-            btn_Console.Enabled = true;
+            string console_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\Etwap-Console.exe");
+            if (File.Exists(console_path))
+            {
+                btn_Console.Enabled = true;
+            }
         }
 
         private void Btn_Console_Click(object sender, EventArgs e)
@@ -76,8 +84,8 @@ namespace Etwap_Detector
             OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
-            if (File.Exists(path))
+            string dll_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\SimpleWifi.dll");
+            if (File.Exists(dll_path))
             {
                 btn_Interface.Enabled = true;
             }
@@ -89,12 +97,16 @@ namespace Etwap_Detector
             OpenChildForm(new DashboardForm());
 
             btn_Dashboard.Enabled = false;
-            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
-            if (File.Exists(path))
+            string dll_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\SimpleWifi.dll");
+            if (File.Exists(dll_path))
             {
                 btn_Interface.Enabled = true;
             }
-
+            string console_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\Etwap-Console.exe");
+            if (File.Exists(console_path))
+            {
+                btn_Console.Enabled = true;
+            }
             try
             {
                 if (GetVersion() != ServerVersion)
@@ -128,8 +140,8 @@ namespace Etwap_Detector
             OpenChildForm(new AboutForm());
 
             btn_Dashboard.Enabled = true;
-            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
-            if (File.Exists(path))
+            string dll_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\SimpleWifi.dll");
+            if (File.Exists(dll_path))
             {
                 btn_Interface.Enabled = true;
             }
@@ -141,8 +153,8 @@ namespace Etwap_Detector
             OpenChildForm(new ConsoleForm());
 
             btn_Dashboard.Enabled = true;
-            string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "SimpleWifi.dll");
-            if (File.Exists(path))
+            string dll_path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), @".\SimpleWifi.dll");
+            if (File.Exists(dll_path))
             {
                 btn_Interface.Enabled = true;
             }
@@ -254,7 +266,21 @@ namespace Etwap_Detector
 
         private void ToolStripMenuConsole_Click(object sender, EventArgs e)
         {
-            Process.Start(@"Etwap-Console.exe");
+            try
+            {
+                try
+                {
+                    Process.Start(@".\Etwap-Console.exe");
+                }
+                catch (Exception interr)
+                {
+                    MessageBox.Show(interr.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception uperr)
+            {
+                MessageBox.Show(uperr.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

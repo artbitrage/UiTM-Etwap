@@ -127,11 +127,31 @@
   <metadata name="panelUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="panelUpdate.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <metadata name="lbl_Update.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="panelUpdate.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_Update.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_Update.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 8.25pt</value>
+  </data>
+  <data name="lbl_Update.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 4</value>
+  </data>
+  <data name="lbl_Update.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 16</value>
+  </data>
+  <data name="lbl_Update.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_Update.Text" xml:space="preserve">
+    <value>Etwap is up-to-date!</value>
   </data>
   <data name="&gt;&gt;lbl_Update.Name" xml:space="preserve">
     <value>lbl_Update</value>
@@ -145,14 +165,12 @@
   <data name="&gt;&gt;lbl_Update.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelUpdate.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 449</value>
   </data>
   <data name="panelUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 28</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -173,6 +191,9 @@
   </metadata>
   <data name="btn_Console.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="btn_Console.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="btn_Console.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -255,260 +276,8 @@
   <metadata name="pnl_MainVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lbl_MainVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lbl_MainTitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="pnl_MainVersion.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainVersion.Name" xml:space="preserve">
-    <value>lbl_MainVersion</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainVersion.Parent" xml:space="preserve">
-    <value>pnl_MainVersion</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainVersion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainTitle.Name" xml:space="preserve">
-    <value>lbl_MainTitle</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainTitle.Parent" xml:space="preserve">
-    <value>pnl_MainVersion</value>
-  </data>
-  <data name="&gt;&gt;lbl_MainTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnl_MainVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 472</value>
-  </data>
-  <data name="pnl_MainVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 47</value>
-  </data>
-  <data name="pnl_MainVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnl_MainVersion.Name" xml:space="preserve">
-    <value>pnl_MainVersion</value>
-  </data>
-  <data name="&gt;&gt;pnl_MainVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_MainVersion.Parent" xml:space="preserve">
-    <value>MainPanel</value>
-  </data>
-  <data name="&gt;&gt;pnl_MainVersion.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="btn_Interface.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btn_Interface.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_Interface.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Interface.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="btn_Interface.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAa1JREFUSEvt
-        1TtLHFEYh/GJIBEFox/AwiZg0hhSCQpGBFsvWIbUESWBEGs7EUQkaRUUG79BRLRQbCxstLIKaAh4qUIq
-        ze15ds/AODm760Y3WPiHH2fPmfO+M84eNbmreYgn6EF/GJ27fuPUoRcfcYCf+B3h+j4+wP3WXTtNeIvP
-        iDWvxDrr7VM2ozhGrEm1jmC/v9KIZcSKLrCJ9xhGN56G0fkkvO6+WP0S7F9IK3aQ33SOd2hBNr6e9jBm
-        4z73W5fvZX/vk7zAL6QX/MJn0AzzGD79Nr4j28T5FrzuPvMI1mcPlP29TyFj+IEzDLhAOrCKUqcwz33u
-        t87Yx372tf+VeGzbih+TcVwi1rQS66w39rNvycwi1uQQc/ApB/EKU9hF9mtI2adiXiJbtI4ulMtzbCBb
-        Z59rZQJfMVKYFU/ea6zBdY+54ye47tF+ED5/g/VVpT6MQzhF9qnzTuCrNQ1hrDoe59j3EeO+9Pj/c6aR
-        NvyCefh75eg8vea+W4nN3yD/78S56/4pu/U8wwr2wtiJmsWfMH1tcl6zeLwX4Y0Wwrym8QZ9YbzP/06S
-        /AEbv8dWQ8WnYAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btn_Interface.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Interface.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 248</value>
-  </data>
-  <data name="btn_Interface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 79</value>
-  </data>
-  <data name="btn_Interface.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btn_Interface.Text" xml:space="preserve">
-    <value>Interface</value>
-  </data>
-  <data name="btn_Interface.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btn_Interface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="&gt;&gt;btn_Interface.Name" xml:space="preserve">
-    <value>btn_Interface</value>
-  </data>
-  <data name="&gt;&gt;btn_Interface.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Interface.Parent" xml:space="preserve">
-    <value>MainPanel</value>
-  </data>
-  <data name="&gt;&gt;btn_Interface.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="btn_Dashboard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btn_Dashboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_Dashboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Dashboard.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="btn_Dashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAUZJREFUSEvt
-        1TErhVEYwPGr2HwDRZmIjGKxUcoHsCgWo9UmH8DEIPkOlEEZGFgtDBaDSZSiLITw/9c5t+N2uO9xbe5T
-        v3re857neXrvufe9tXb8ZXRjJTCPMYetwPxX0YNTfATn6IOxj7huXhzjuIUNHgLzG4yhpQE+8jMsvsRQ
-        YO7aE65DXjSgA6t4h4Un6MceDkJ+iNi4aIAHuINYtI1BXCRrPsEwNpI1NR3gwZ3Bza9YwiTuw1rKNe+5
-        x72uXaEX2fAwPTg3PmIGi3gJazlvWMYU4uHfYQJfYhbpYY7AjyZt9hP3WhMP3172rMcavHGEARyH6xLW
-        WGsPr+1Zj07Mowu7aCyuylp7LMCe2Uh/OKUqfU2/G7AOD13muT0tDZhGDPPcnn8ywPdNrrjKAGubxig2
-        Ef9EIt89Mcwb71tjbTtKolb7BBmV1+O1fYqoAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btn_Dashboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Dashboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 168</value>
-  </data>
-  <data name="btn_Dashboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 79</value>
-  </data>
-  <data name="btn_Dashboard.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btn_Dashboard.Text" xml:space="preserve">
-    <value>Dashboard</value>
-  </data>
-  <data name="btn_Dashboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btn_Dashboard.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="&gt;&gt;btn_Dashboard.Name" xml:space="preserve">
-    <value>btn_Dashboard</value>
-  </data>
-  <data name="&gt;&gt;btn_Dashboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Dashboard.Parent" xml:space="preserve">
-    <value>MainPanel</value>
-  </data>
-  <data name="&gt;&gt;btn_Dashboard.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="menuStrip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 24</value>
-  </data>
-  <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="menuStrip.Text" xml:space="preserve">
-    <value>menuStrip</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
-    <value>menuStrip</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
-    <value>MainPanel</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="MainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="MainPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MainPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 519</value>
-  </data>
-  <data name="MainPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MainPanel.Name" xml:space="preserve">
-    <value>MainPanel</value>
-  </data>
-  <data name="&gt;&gt;MainPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MainPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MainPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="lbl_Update.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lbl_Update.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_Update.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 8.25pt</value>
-  </data>
-  <data name="lbl_Update.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 4</value>
-  </data>
-  <data name="lbl_Update.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 16</value>
-  </data>
-  <data name="lbl_Update.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lbl_Update.Text" xml:space="preserve">
-    <value>Etwap is up-to-date!</value>
-  </data>
-  <data name="&gt;&gt;lbl_Update.Name" xml:space="preserve">
-    <value>lbl_Update</value>
-  </data>
-  <data name="&gt;&gt;lbl_Update.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Update.Parent" xml:space="preserve">
-    <value>panelUpdate</value>
-  </data>
-  <data name="&gt;&gt;lbl_Update.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="lbl_MainVersion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -582,12 +351,153 @@
   <data name="&gt;&gt;lbl_MainTitle.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+  <data name="pnl_MainVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 472</value>
   </data>
-  <data name="toolStripMenuItem.Text" xml:space="preserve">
-    <value>Menu</value>
+  <data name="pnl_MainVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 47</value>
   </data>
+  <data name="pnl_MainVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnl_MainVersion.Name" xml:space="preserve">
+    <value>pnl_MainVersion</value>
+  </data>
+  <data name="&gt;&gt;pnl_MainVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_MainVersion.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;pnl_MainVersion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="btn_Interface.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btn_Interface.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_Interface.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_Interface.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Interface.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="btn_Interface.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAa1JREFUSEvt
+        1TtLHFEYh/GJIBEFox/AwiZg0hhSCQpGBFsvWIbUESWBEGs7EUQkaRUUG79BRLRQbCxstLIKaAh4qUIq
+        ze15ds/AODm760Y3WPiHH2fPmfO+M84eNbmreYgn6EF/GJ27fuPUoRcfcYCf+B3h+j4+wP3WXTtNeIvP
+        iDWvxDrr7VM2ozhGrEm1jmC/v9KIZcSKLrCJ9xhGN56G0fkkvO6+WP0S7F9IK3aQ33SOd2hBNr6e9jBm
+        4z73W5fvZX/vk7zAL6QX/MJn0AzzGD79Nr4j28T5FrzuPvMI1mcPlP29TyFj+IEzDLhAOrCKUqcwz33u
+        t87Yx372tf+VeGzbih+TcVwi1rQS66w39rNvycwi1uQQc/ApB/EKU9hF9mtI2adiXiJbtI4ulMtzbCBb
+        Z59rZQJfMVKYFU/ea6zBdY+54ye47tF+ED5/g/VVpT6MQzhF9qnzTuCrNQ1hrDoe59j3EeO+9Pj/c6aR
+        NvyCefh75eg8vea+W4nN3yD/78S56/4pu/U8wwr2wtiJmsWfMH1tcl6zeLwX4Y0Wwrym8QZ9YbzP/06S
+        /AEbv8dWQ8WnYAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_Interface.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Interface.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 248</value>
+  </data>
+  <data name="btn_Interface.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 79</value>
+  </data>
+  <data name="btn_Interface.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_Interface.Text" xml:space="preserve">
+    <value>Interface</value>
+  </data>
+  <data name="btn_Interface.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btn_Interface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btn_Interface.Name" xml:space="preserve">
+    <value>btn_Interface</value>
+  </data>
+  <data name="&gt;&gt;btn_Interface.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Interface.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;btn_Interface.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="btn_Dashboard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btn_Dashboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_Dashboard.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_Dashboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Dashboard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="btn_Dashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAUZJREFUSEvt
+        1TErhVEYwPGr2HwDRZmIjGKxUcoHsCgWo9UmH8DEIPkOlEEZGFgtDBaDSZSiLITw/9c5t+N2uO9xbe5T
+        v3re857neXrvufe9tXb8ZXRjJTCPMYetwPxX0YNTfATn6IOxj7huXhzjuIUNHgLzG4yhpQE+8jMsvsRQ
+        YO7aE65DXjSgA6t4h4Un6MceDkJ+iNi4aIAHuINYtI1BXCRrPsEwNpI1NR3gwZ3Bza9YwiTuw1rKNe+5
+        x72uXaEX2fAwPTg3PmIGi3gJazlvWMYU4uHfYQJfYhbpYY7AjyZt9hP3WhMP3172rMcavHGEARyH6xLW
+        WGsPr+1Zj07Mowu7aCyuylp7LMCe2Uh/OKUqfU2/G7AOD13muT0tDZhGDPPcnn8ywPdNrrjKAGubxig2
+        Ef9EIt89Mcwb71tjbTtKolb7BBmV1+O1fYqoAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_Dashboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Dashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 168</value>
+  </data>
+  <data name="btn_Dashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 79</value>
+  </data>
+  <data name="btn_Dashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_Dashboard.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="btn_Dashboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btn_Dashboard.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btn_Dashboard.Name" xml:space="preserve">
+    <value>btn_Dashboard</value>
+  </data>
+  <data name="&gt;&gt;btn_Dashboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Dashboard.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;btn_Dashboard.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="menuStrip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="aboutMenuItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -618,11 +528,11 @@
   <data name="ExitMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="toolStripMenu.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 20</value>
   </data>
-  <data name="toolStripMenu.Text" xml:space="preserve">
-    <value>Editor</value>
+  <data name="toolStripMenuItem.Text" xml:space="preserve">
+    <value>Menu</value>
   </data>
   <data name="createMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 22</value>
@@ -641,6 +551,60 @@
   </data>
   <data name="configMenuItem.Text" xml:space="preserve">
     <value>Config</value>
+  </data>
+  <data name="toolStripMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="toolStripMenu.Text" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 24</value>
+  </data>
+  <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="menuStrip.Text" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="MainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="MainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 519</value>
+  </data>
+  <data name="MainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Name" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="autoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 22</value>
@@ -691,31 +655,31 @@
     <value>231, 17</value>
   </metadata>
   <data name="toolStripMenuEtwap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="toolStripMenuEtwap.Text" xml:space="preserve">
     <value>Etwap</value>
   </data>
   <data name="toolStripMenuConsole.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="toolStripMenuConsole.Text" xml:space="preserve">
     <value>Console</value>
   </data>
   <data name="toolStripMenuUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="toolStripMenuUpdate.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="toolStripMenuIExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="toolStripMenuIExit.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 114</value>
+    <value>118, 92</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip.Name" xml:space="preserve">
     <value>contextMenuStrip</value>
@@ -1340,6 +1304,12 @@
   <data name="&gt;&gt;toolStripMenuEtwap.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripMenuConsole.Name" xml:space="preserve">
+    <value>toolStripMenuConsole</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuConsole.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripMenuUpdate.Name" xml:space="preserve">
     <value>toolStripMenuUpdate</value>
   </data>
@@ -1350,12 +1320,6 @@
     <value>toolStripMenuIExit</value>
   </data>
   <data name="&gt;&gt;toolStripMenuIExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuConsole.Name" xml:space="preserve">
-    <value>toolStripMenuConsole</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuConsole.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

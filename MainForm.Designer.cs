@@ -56,9 +56,9 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuEtwap = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuConsole = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuIExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuConsole = new System.Windows.Forms.ToolStripMenuItem();
             this.MainPanel.SuspendLayout();
             this.panelUpdate.SuspendLayout();
             this.pnl_MainVersion.SuspendLayout();
@@ -126,7 +126,7 @@
             this.btn_Interface.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Interface.Name = "btn_Interface";
             this.btn_Interface.UseVisualStyleBackColor = true;
-            this.btn_Interface.Click += new System.EventHandler(this.Btn_Users_Click);
+            this.btn_Interface.Click += new System.EventHandler(this.Btn_Interface_Click);
             // 
             // btn_Dashboard
             // 
@@ -240,6 +240,12 @@
             resources.ApplyResources(this.toolStripMenuEtwap, "toolStripMenuEtwap");
             this.toolStripMenuEtwap.Click += new System.EventHandler(this.ToolStripMenuEtwap_Click);
             // 
+            // toolStripMenuConsole
+            // 
+            this.toolStripMenuConsole.Name = "toolStripMenuConsole";
+            resources.ApplyResources(this.toolStripMenuConsole, "toolStripMenuConsole");
+            this.toolStripMenuConsole.Click += new System.EventHandler(this.ToolStripMenuConsole_Click);
+            // 
             // toolStripMenuUpdate
             // 
             this.toolStripMenuUpdate.Name = "toolStripMenuUpdate";
@@ -251,12 +257,6 @@
             this.toolStripMenuIExit.Name = "toolStripMenuIExit";
             resources.ApplyResources(this.toolStripMenuIExit, "toolStripMenuIExit");
             this.toolStripMenuIExit.Click += new System.EventHandler(this.ToolStripMenuIExit_Click);
-            // 
-            // toolStripMenuConsole
-            // 
-            this.toolStripMenuConsole.Name = "toolStripMenuConsole";
-            resources.ApplyResources(this.toolStripMenuConsole, "toolStripMenuConsole");
-            this.toolStripMenuConsole.Click += new System.EventHandler(this.ToolStripMenuConsole_Click);
             // 
             // MainForm
             // 
