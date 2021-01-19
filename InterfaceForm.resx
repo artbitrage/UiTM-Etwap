@@ -120,32 +120,10 @@
   <metadata name="listView_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 496</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
-    <value>listView_AP</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="clmAccessPoint.Text" xml:space="preserve">
     <value>Access Point(s)</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="clmAccessPoint.Width" type="System.Int32, mscorlib">
     <value>169</value>
   </data>
@@ -167,6 +145,28 @@
   </data>
   <data name="clmSecure.Width" type="System.Int32, mscorlib">
     <value>88</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listView_AP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="listView_AP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 496</value>
+  </data>
+  <data name="listView_AP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Name" xml:space="preserve">
+    <value>listView_AP</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listView_AP.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="pnl_Btns.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -237,270 +237,6 @@
   <metadata name="lbl_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lbl_Warning.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="txBox_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btn_Connect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="txBox_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lbl_Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;lbl_SSID.Name" xml:space="preserve">
-    <value>lbl_SSID</value>
-  </data>
-  <data name="&gt;&gt;lbl_SSID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_SSID.Parent" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;lbl_SSID.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lbl_Warning.Name" xml:space="preserve">
-    <value>lbl_Warning</value>
-  </data>
-  <data name="&gt;&gt;lbl_Warning.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Warning.Parent" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;lbl_Warning.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txBox_Password.Name" xml:space="preserve">
-    <value>txBox_Password</value>
-  </data>
-  <data name="&gt;&gt;txBox_Password.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txBox_Password.Parent" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;txBox_Password.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_Connect.Name" xml:space="preserve">
-    <value>btn_Connect</value>
-  </data>
-  <data name="&gt;&gt;btn_Connect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Connect.Parent" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;btn_Connect.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txBox_SSID.Name" xml:space="preserve">
-    <value>txBox_SSID</value>
-  </data>
-  <data name="&gt;&gt;txBox_SSID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txBox_SSID.Parent" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;txBox_SSID.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lbl_Password.Name" xml:space="preserve">
-    <value>lbl_Password</value>
-  </data>
-  <data name="&gt;&gt;lbl_Password.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Password.Parent" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;lbl_Password.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="grp_Manager.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="grp_Manager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 226</value>
-  </data>
-  <data name="grp_Manager.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grp_Manager.Text" xml:space="preserve">
-    <value>Wi-Fi Manager</value>
-  </data>
-  <data name="&gt;&gt;grp_Manager.Name" xml:space="preserve">
-    <value>grp_Manager</value>
-  </data>
-  <data name="&gt;&gt;grp_Manager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grp_Manager.Parent" xml:space="preserve">
-    <value>pnl_Btns</value>
-  </data>
-  <data name="&gt;&gt;grp_Manager.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="grp_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lbl_StatInt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lbl_StatInt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_StatInt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="lbl_StatInt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_StatInt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 77</value>
-  </data>
-  <data name="lbl_StatInt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
-  </data>
-  <data name="lbl_StatInt.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lbl_StatInt.Text" xml:space="preserve">
-    <value>No Internet</value>
-  </data>
-  <data name="&gt;&gt;lbl_StatInt.Name" xml:space="preserve">
-    <value>lbl_StatInt</value>
-  </data>
-  <data name="&gt;&gt;lbl_StatInt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_StatInt.Parent" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_StatInt.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="lbl_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lbl_AP.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_AP.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="lbl_AP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 36</value>
-  </data>
-  <data name="lbl_AP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 20</value>
-  </data>
-  <data name="lbl_AP.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lbl_AP.Text" xml:space="preserve">
-    <value>N/A</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.Name" xml:space="preserve">
-    <value>lbl_AP</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.Parent" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_AP.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="lbl_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lbl_Status.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_Status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="lbl_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 57</value>
-  </data>
-  <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 20</value>
-  </data>
-  <data name="lbl_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lbl_Status.Text" xml:space="preserve">
-    <value>Disconnected</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.Name" xml:space="preserve">
-    <value>lbl_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.Parent" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="grp_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 287</value>
-  </data>
-  <data name="grp_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 111</value>
-  </data>
-  <data name="grp_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grp_Status.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.Name" xml:space="preserve">
-    <value>grp_Status</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.Parent" xml:space="preserve">
-    <value>pnl_Btns</value>
-  </data>
-  <data name="&gt;&gt;grp_Status.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 12</value>
-  </data>
-  <data name="pnl_Btns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 496</value>
-  </data>
-  <data name="pnl_Btns.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.Name" xml:space="preserve">
-    <value>pnl_Btns</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnl_Btns.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="lbl_SSID.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="lbl_SSID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -531,9 +267,6 @@
   <metadata name="lbl_Warning.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="lbl_Warning.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -549,6 +282,9 @@
   <data name="lbl_Warning.Text" xml:space="preserve">
     <value>Warning!</value>
   </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lbl_Warning.ToolTip" xml:space="preserve">
     <value>Suspected evil twin AP detected!</value>
   </data>
@@ -672,9 +408,180 @@
   <data name="&gt;&gt;lbl_Password.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="grp_Manager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="grp_Manager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 226</value>
+  </data>
+  <data name="grp_Manager.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grp_Manager.Text" xml:space="preserve">
+    <value>Wi-Fi Manager</value>
+  </data>
+  <data name="&gt;&gt;grp_Manager.Name" xml:space="preserve">
+    <value>grp_Manager</value>
+  </data>
+  <data name="&gt;&gt;grp_Manager.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grp_Manager.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;grp_Manager.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="grp_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
+  <metadata name="lbl_StatInt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_StatInt.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_StatInt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="lbl_StatInt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_StatInt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 77</value>
+  </data>
+  <data name="lbl_StatInt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="lbl_StatInt.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_StatInt.Text" xml:space="preserve">
+    <value>No Internet</value>
+  </data>
+  <data name="&gt;&gt;lbl_StatInt.Name" xml:space="preserve">
+    <value>lbl_StatInt</value>
+  </data>
+  <data name="&gt;&gt;lbl_StatInt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_StatInt.Parent" xml:space="preserve">
+    <value>grp_Status</value>
+  </data>
+  <data name="&gt;&gt;lbl_StatInt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="lbl_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_AP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_AP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="lbl_AP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 36</value>
+  </data>
+  <data name="lbl_AP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
+  </data>
+  <data name="lbl_AP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_AP.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.Name" xml:space="preserve">
+    <value>lbl_AP</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.Parent" xml:space="preserve">
+    <value>grp_Status</value>
+  </data>
+  <data name="&gt;&gt;lbl_AP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="lbl_Status.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_Status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Status.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="lbl_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 57</value>
+  </data>
+  <data name="lbl_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="lbl_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_Status.Text" xml:space="preserve">
+    <value>Disconnected</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.Name" xml:space="preserve">
+    <value>lbl_Status</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.Parent" xml:space="preserve">
+    <value>grp_Status</value>
+  </data>
+  <data name="&gt;&gt;lbl_Status.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grp_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 287</value>
+  </data>
+  <data name="grp_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 111</value>
+  </data>
+  <data name="grp_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grp_Status.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.Name" xml:space="preserve">
+    <value>grp_Status</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.Parent" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;grp_Status.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnl_Btns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 12</value>
+  </data>
+  <data name="pnl_Btns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 496</value>
+  </data>
+  <data name="pnl_Btns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Name" xml:space="preserve">
+    <value>pnl_Btns</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnl_Btns.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>107, 17</value>
   </metadata>
