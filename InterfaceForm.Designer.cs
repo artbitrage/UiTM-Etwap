@@ -46,11 +46,11 @@ namespace Etwap_Detector
             this.txBox_SSID = new System.Windows.Forms.TextBox();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.grp_Status = new System.Windows.Forms.GroupBox();
+            this.lbl_StatInt = new System.Windows.Forms.Label();
             this.lbl_AP = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.lbl_StatInt = new System.Windows.Forms.Label();
             this.pnl_Btns.SuspendLayout();
             this.grp_Manager.SuspendLayout();
             this.grp_Status.SuspendLayout();
@@ -164,6 +164,12 @@ namespace Etwap_Detector
             this.grp_Status.Name = "grp_Status";
             this.grp_Status.TabStop = false;
             // 
+            // lbl_StatInt
+            // 
+            resources.ApplyResources(this.lbl_StatInt, "lbl_StatInt");
+            this.lbl_StatInt.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_StatInt.Name = "lbl_StatInt";
+            // 
             // lbl_AP
             // 
             resources.ApplyResources(this.lbl_AP, "lbl_AP");
@@ -186,12 +192,6 @@ namespace Etwap_Detector
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
-            // 
-            // lbl_StatInt
-            // 
-            resources.ApplyResources(this.lbl_StatInt, "lbl_StatInt");
-            this.lbl_StatInt.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbl_StatInt.Name = "lbl_StatInt";
             // 
             // InterfaceForm
             // 

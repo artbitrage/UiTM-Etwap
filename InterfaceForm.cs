@@ -1,6 +1,7 @@
 ﻿using SimpleWifi;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
@@ -10,6 +11,7 @@ namespace Etwap_Detector
     {
         private static Wifi wifi;
         private int Ticks;
+        public static string ConsoleLog = "";
 
         public InterfaceForm()
         {
@@ -87,6 +89,13 @@ namespace Etwap_Detector
 
         private void Btn_Connect_Click(object sender, EventArgs e)
         {
+            var watch = new Stopwatch();
+            watch.Start();
+            for (int i = 0; i < 1000; i++)
+            {
+                ConsoleLog = i.ToString();
+            }
+
             if (wifi.ConnectionStatus == WifiStatus.Connected)
             {
                 wifi.Disconnect();
@@ -123,6 +132,9 @@ namespace Etwap_Detector
                             txBox_SSID.Enabled = false;
                             txBox_Password.Enabled = false;
                             lbl_AP.Text = txBox_SSID.Text.ToString();
+
+                            watch.Stop();
+                            ConsoleLog = "Connect to Wi-Fi in " + watch.ElapsedMilliseconds.ToString() + " ms";
                         }
                     }
                 }

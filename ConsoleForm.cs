@@ -16,6 +16,7 @@ namespace Etwap_Detector
         {
             ConsoleBox.ReadOnly = true;
             ConsoleBox.Text = DashboardForm.ConsoleLog;
+            ConsoleBox.Text = InterfaceForm.ConsoleLog;
         }
 
         private void Btn_Console_Click(object sender, EventArgs e)
