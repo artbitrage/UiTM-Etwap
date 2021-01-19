@@ -67,6 +67,7 @@
             this.btn_Nmap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Nmap.Name = "btn_Nmap";
             this.btn_Nmap.UseVisualStyleBackColor = true;
+            this.btn_Nmap.Click += new System.EventHandler(this.Btn_Nmap_Click);
             // 
             // btn_Deauth
             // 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.IO;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using System.Text;
@@ -188,11 +189,30 @@ namespace Etwap_Detector
                 foreach (string fileName in openFileDialog.FileNames)
                 {
                     Process.Start(fileName);
-                    string text = System.IO.File.ReadAllText(fileName);
+                    string text = File.ReadAllText(fileName);
                     CmdBox.Text = text;
                     SubConsoleBox.Text = RunScript(text);
                     ConsoleLog = SubConsoleBox.Text;
                 }
+            }
+        }
+
+        private void Btn_Nmap_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                try
+                {
+                    Process.Start(@"Nmap-Downloader.exe");
+                }
+                catch (Exception interr)
+                {
+                    MessageBox.Show(interr.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception uperr)
+            {
+                MessageBox.Show(uperr.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
